@@ -16,12 +16,12 @@ public:
 
       int len = A.size();
       B[0] = 1;
-      for (int i = 1; i < len;i++) {
+      for (int i = 1; i < len;i++) {  // 先对左边部分自顶向下求值
         B[i] = B[i - 1] * A[i - 1];
       }
 
       double temp = 1; // 复用B，Temp充当D[i]
-      for (int i = len - 2; i >= 0;i--) {
+      for (int i = len - 2; i >= 0;i--) {  // 再对右边部分自底向上求值
         temp = temp * A[i + 1];
         B[i] *= temp;
       }
