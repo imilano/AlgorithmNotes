@@ -1,0 +1,74 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "defines": [],
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/",
+                "/usr/local/include",
+                "/usr/include/c++/8.3.0/**",
+                "/usr/lib/clang/8.0.0/include",
+                "/usr/include/linux",
+                "/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0",
+                "/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu",
+                "/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/backward",
+                "/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "/usr/include/c++/8.3.0/**",
+                    "/usr/local/include",
+                    "/usr/include",
+                    "/usr/lib/clang/8.0.0/include",
+                    "/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0",
+                    "/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu",
+                    "/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/backward",
+                    "/usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "compilerPath": "/usr/bin/clang++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        },
+
+        {
+            "name": "win32",
+            "includePath":[
+                "${workspaceFolder}/**",
+                "E:\\Software\\MinGW64\\mingw64\\include",
+                "E:\\MinGW64\\mingw64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\*",
+                "E:\\MinGW64\\mingw64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++\\*",
+                "E:\\MinGW64\\mingw64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++\\mingw32\\*",
+                "E:\\MinGW64\\mingw64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++\\mingw32\\backward\\*"
+
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "E:\\Software\\MinGW64\\mingw64\\include",
+                    "E:\\MinGW64\\mingw64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\*",
+                    "E:\\MinGW64\\mingw64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++\\*",
+                    "E:\\MinGW64\\mingw64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++\\mingw32\\*",
+                    "E:\\MinGW64\\mingw64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++\\mingw32\\backward\\*"    
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "E:\\MinGW64\\mingw64\\bin\\gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,77 @@
+{
+        "version": "2.0.0",
+        "tasks": [
+                {
+                        "label": "build-c",
+                        "command": "clang",
+                        "args": [
+                                "-g",
+                                "${file}",
+                                "-o",
+                                "${workspaceFolder}/bin/${fileBasenameNoExtension}",
+                                "-Weverything",
+                                "-static-libgcc",
+                                "-std=c11"
+                        ],
+                        "type": "shell",
+                        "group": {
+                                "kind": "build",
+                                "isDefault": true
+                        },
+                        "presentation": {
+                                "echo": true,
+                                "reveal": "always",
+                                "focus": false,
+                                "panel": "shared",
+                                "showReuseMessage": true,
+                                "clear": false
+                        },
+                        "problemMatcher": [
+                                "$gcc"
+                        ]
+                },
+                {
+                        "label": "build-c++",
+                        "command": "clang++",
+                        "args": [
+                                "-g",
+                                "${relativeFile}",
+                                "-o",
+                                "${workspaceFolder}/bin/${fileBasenameNoExtension}",
+                                "-Weverything",
+                                "-static-libgcc",
+                                "-std=c++11"
+                        ],
+                        "type": "shell",
+                        "group": {
+                                "kind": "build",
+                                "isDefault": true
+                        },
+                        "presentation": {
+                                "echo": true,
+                                "reveal": "always",
+                                "focus": false,
+                                "panel": "shared",
+                                "showReuseMessage": true,
+                                "clear": false
+                        },
+                        "problemMatcher": [
+                                "$gcc"
+                        ]
+                },
+                {
+                        "type": "shell",
+                        "label": "clang++ build active file",
+                        "command": "/usr/bin/clang++",
+                        "args": [
+                                "-g",
+                                "${file}",
+                                "-o",
+                                "${fileDirname}/${fileBasenameNoExtension}"
+                        ],
+                        "options": {
+                                "cwd": "/usr/bin"
+                        }
+                }
+        ]
+}
