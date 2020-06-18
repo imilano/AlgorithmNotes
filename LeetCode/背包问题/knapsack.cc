@@ -2,7 +2,9 @@
 
 
 const int N = 100;
-int weight[N]={0};
+int numbers;
+int capacities;
+int weight[N] = {0};
 int value[N] = {0};
 int dp[N][N] = {0};  // 自动将所有元素初始化为0
 
@@ -18,9 +20,11 @@ int knapsack() {
 }
 
 int OptimizedKnapsack() {
-        for (int i=1;i<= numbers;i++)
-          for (int j = capacities; j >= 0;j--) 
-          if j >= w[i] dp[j] = std::max(dp[j], dp[j - w[i]] + v[i]);
+  int dp[N+1] = {0};
+  for (int i = 1; i <= numbers; i++)
+    for (int j = capacities; j >= 0; j--)
+      if j
+        >= w[i] dp[j] = std::max(dp[j], dp[j - weight[i]] + value[i]);
 
-        return dp[N];
+  return dp[N];
 }
