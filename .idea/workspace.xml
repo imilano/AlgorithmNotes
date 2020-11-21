@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -27,393 +24,39 @@
       </path>
     </select>
   </component>
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
-  </component>
-  <component name="CMakeSettings">
-    <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
-      <configuration PROFILE_NAME="Release" CONFIG_NAME="Release" />
-    </configurations>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="79186f14-4dfe-4b92-b2ed-b15ed97cd4f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_93/restore_ip_address.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/algorithm.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_118/pascal_triangle.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_118/pascal_triangle_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ClangdSettings">
-    <option name="formatViaClangd" value="false" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Go File" />
-      </list>
-    </option>
-  </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.15.5/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="2" />
-    <option name="recentBranches">
-      <RecentBranches>
-        <option name="branchesForRepo">
-          <list>
-            <RecentBranchesForRepo>
-              <option name="branches">
-                <list>
-                  <RecentBranch>
-                    <option name="branchName" value="leetcode" />
-                    <option name="lastUsedInstant" value="1605702407" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="upstream_master" />
-                    <option name="lastUsedInstant" value="1605665194" />
-                  </RecentBranch>
-                </list>
-              </option>
-              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
-            </RecentBranchesForRepo>
-          </list>
-        </option>
-      </RecentBranches>
-    </option>
-  </component>
-  <component name="GoLibraries">
-    <option name="indexEntireGoPath" value="false" />
-  </component>
-  <component name="KubernetesApiPersistence">
-    <option name="context" value="docker-desktop" />
-    <option name="namespace" value="default" />
-  </component>
-  <component name="ProjectId" id="1hOFCxdjaBpF47C8ZfObwj7XfKo" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="cf.first.check.clang-format" value="false" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/leetcode" />
-      <recent name="$PROJECT_DIR$/leetcode/leet_173/inorder" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestNumDecodings in lightsinger.life/algorithm/leetcode/leet_91">
-    <configuration name="TestMinWindow in lightsinger.life/algorithm/leetcode/leet_76" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/leetcode/leet_76" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_76" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestMinWindow\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestMyPower in lightsinger.life/algorithm/leetcode/leet_50" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/leetcode/leet_50" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_50" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestMyPower\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestNumDecodings in lightsinger.life/algorithm/leetcode/leet_91" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/leetcode/leet_91" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_91" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestNumDecodings\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestNySqrt in lightsinger.life/algorithm/leetcode/leet_69" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/leetcode/leet_69" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_69" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestNySqrt\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestPermutationUnique in lightsinger.life/algorithm/leetcode/leet_47" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/leetcode/leet_47" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_47" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestPermutationUnique\E$" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Go Test.TestPermutationUnique in lightsinger.life/algorithm/leetcode/leet_47" />
-        <item itemvalue="Go Test.TestNySqrt in lightsinger.life/algorithm/leetcode/leet_69" />
-        <item itemvalue="Go Test.TestNumDecodings in lightsinger.life/algorithm/leetcode/leet_91" />
-        <item itemvalue="Go Test.TestMyPower in lightsinger.life/algorithm/leetcode/leet_50" />
-        <item itemvalue="Go Test.TestMinWindow in lightsinger.life/algorithm/leetcode/leet_76" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="79186f14-4dfe-4b92-b2ed-b15ed97cd4f9" name="Default Changelist" comment="" />
-      <created>1599874107354</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1599874107354</updated>
-      <workItem from="1599874109900" duration="63000" />
-      <workItem from="1599874185795" duration="751000" />
-      <workItem from="1600913679820" duration="65000" />
-    </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="leetcode" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
-  </component>
   <component name="WindowStateProjectService">
-    <state x="504" y="394" key="#GOROOT" timestamp="1605364861705">
+    <state x="185" y="122" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605946312541">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="504" y="394" key="#GOROOT/0.23.1440.877@0.23.1440.877" timestamp="1605364861705" />
-    <state x="411" y="167" key="#HTTP_Proxy" timestamp="1600242340211">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="411" y="167" key="#HTTP_Proxy/0.23.1440.877@0.23.1440.877" timestamp="1600242340211" />
-    <state x="464" y="300" key="#Notifications" timestamp="1605663513785">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="464" y="300" key="#Notifications/0.23.1440.877@0.23.1440.877" timestamp="1605663513785" />
-    <state x="476" y="184" key="#TODO" timestamp="1604108187416">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="476" y="184" key="#TODO/0.23.1440.877@0.23.1440.877" timestamp="1604108187416" />
-    <state x="390" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601949732691">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="390" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1601949732691" />
-    <state x="277" y="49" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1604219175316">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="277" y="49" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1440.877@0.23.1440.877" timestamp="1604219175316" />
-    <state x="409" y="203" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600915152784">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="409" y="203" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877@0.23.1440.877" timestamp="1600915152784" />
-    <state width="1396" height="30" key="GridCell.Tab.0.bottom" timestamp="1605618444380">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="30" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1605618444380" />
-    <state width="1396" height="30" key="GridCell.Tab.0.center" timestamp="1605618444379">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="30" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1605618444379" />
-    <state width="1396" height="30" key="GridCell.Tab.0.left" timestamp="1605618444379">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="30" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1605618444379" />
-    <state width="1396" height="30" key="GridCell.Tab.0.right" timestamp="1605618444379">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="30" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1605618444379" />
-    <state width="1396" height="317" key="GridCell.Tab.1.bottom" timestamp="1605618444374">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="317" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1605618444374" />
-    <state width="1396" height="317" key="GridCell.Tab.1.center" timestamp="1605618444373">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="317" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1605618444373" />
-    <state width="1396" height="317" key="GridCell.Tab.1.left" timestamp="1605618444373">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="317" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1605618444373" />
-    <state width="1396" height="317" key="GridCell.Tab.1.right" timestamp="1605618444374">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="317" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1605618444374" />
-    <state x="309" y="210" key="IDE.errors.dialog" timestamp="1600180966619">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="309" y="210" key="IDE.errors.dialog/0.23.1440.877@0.23.1440.877" timestamp="1600180966619" />
-    <state x="115" y="77" width="1318" height="722" key="SettingsEditor" timestamp="1605682957464">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="115" y="77" width="1318" height="722" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1605682957464" />
-    <state width="719" height="437" key="XDebugger.FullValuePopup" timestamp="1605447900234">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="719" height="437" key="XDebugger.FullValuePopup/0.23.1440.877@0.23.1440.877" timestamp="1605447900234" />
-    <state x="480" y="223" key="com.goide.refactor.move.GoMoveDeclarationDialog" timestamp="1600077862282">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="480" y="223" key="com.goide.refactor.move.GoMoveDeclarationDialog/0.23.1440.877@0.23.1440.877" timestamp="1600077862282" />
-    <state x="263" y="114" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603184470109">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="263" y="114" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.877@0.23.1440.877" timestamp="1603184470109" />
-    <state x="171" y="113" width="1130" height="604" key="dock-window-1" timestamp="1602484154748">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="171" y="113" width="1130" height="604" key="dock-window-1/0.23.1440.877@0.23.1440.877" timestamp="1602484154748" />
-    <state x="423" y="199" width="596" height="522" key="find.popup" timestamp="1605854152946">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="423" y="199" width="596" height="522" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1605854152946" />
-    <state x="360" y="151" width="820" height="722" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1602417593475">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="360" y="151" width="820" height="722" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.1440.877@0.23.1440.877" timestamp="1602417593475" />
-    <state x="549" y="230" key="refactoring.ChangeSignatureDialog" timestamp="1604290654777">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="549" y="230" key="refactoring.ChangeSignatureDialog/0.23.1440.877@0.23.1440.877" timestamp="1604290654777" />
-    <state x="385" y="223" width="670" height="676" key="search.everywhere.popup" timestamp="1605854137021">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="385" y="223" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1605854137021" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/leetcode/leet_10/match_test.go</url>
-          <line>6</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/leetcode/main/main.go</url>
-          <line>36</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/leetcode/leet_39/combinationSum_test.go</url>
-          <line>10</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/leetcode/leet_39/combination_sum.go</url>
-          <line>18</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/leetcode/leet_32/longest_valid_parentheses_test.go</url>
-          <line>9</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/leetcode/leet_67/add_binary_test.go</url>
-          <line>10</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/leetcode/leet_67/add_binary_test.go</url>
-          <line>7</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/leetcode/leet_43/multiply_strings_test.go</url>
-          <line>38</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/leetcode/leet_43/multiply_strings_test.go</url>
-          <line>64</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/leetcode/leet_44/wildcard_matching_test.go</url>
-          <line>10</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/leetcode/leet_47/permutation_II_test.go</url>
-          <line>9</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/leetcode/leet_50/calculate_power_test.go</url>
-          <line>9</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/leetcode/leet_76/minimum_window_substring_test.go</url>
-          <line>8</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/leetcode/leet_91/decode_ways_test.go</url>
-          <line>11</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="185" y="122" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1605946312541" />
   </component>
 </project>
