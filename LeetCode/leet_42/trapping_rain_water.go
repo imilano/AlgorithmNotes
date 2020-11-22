@@ -5,7 +5,78 @@ package leet_42
 	compute how much water it can trap after raining.
  */
 
+// stack
+import "sync"
+
+type (
+	Stack struct {
+		top *Node
+		length int
+		lock *sync.RWMutex
+	}
+
+	Node struct {
+		value interface{}
+		pre *Node
+	}
+)
+
+// Create new stack
+func NewStack() *Stack{
+	return &Stack{
+		top:    nil,
+		length: 0,
+		lock:   &sync.RWMutex{},
+	}
+}
+
+// Length of stack
+func (s *Stack) Len() int{
+	return s.length
+}
+
+// Top element  of stack
+func (s *Stack) Top()  interface{} {
+	if s.length ==0 {
+		return nil
+	}
+
+	return s.top.value
+}
+
+// Pop pop out top node and return its value
+func (s *Stack) Pop() interface{} {
+	s.lock.Lock()
+	defer s.lock.Unlock()
+
+	if s.length == 0 {
+		return nil
+	}
+
+	r := s.top
+	s.length--
+	s.top = r.pre
+	return r.value
+}
+
+// Push push a node into stack
+func (s *Stack) Push(value interface{}) {
+	node := &Node{
+		value: value,
+		pre:   s.top,
+	}
+
+	s.length++
+	s.top = node
+}
+
+// Empty check if it is an empty stack
+func (s *Stack) Empty()  bool{
+	return s.Len() == 0
+}
+
 // tool function
+
 func count(height []int, left, right int) int {
 	width := right - left -1
 	area := height[left] * width
@@ -102,6 +173,39 @@ func trapWith2Pointer(height []int) int {
 	return res
 }
 
+
+// ------------------------------------------------
+// Monotone Stack
+// 使用单调递减栈的思想。本处的目的在于形成一个水坑，假设当前元素为e，如果当前元素大于栈顶元素，那么我们可能会形成一个水坑：如果此时栈里面有两个元素，就可以形成一个水坑，
+// 如果栈里面只有一个元素，就无法形成水坑，此时继续扫描。如果当前元素小于栈顶元素或者栈为空，那么将当前元素压入栈中。
+// 需要注意的是，我们并不是直接把高度压入栈，为了方便计算宽度，我们把当前的坐标压入栈（因而实际的栈中的元素是逐渐递增的）。
+func trapWithMonotoneStack(height []int) int {
+	var res int
+	length := len(height)
+	if length == 0 {
+		return  res
+	}
+
+	stack := NewStack()
+	var index int
+	for index <length {
+		// 注意等号
+		if stack.Empty() || height[index] <= height[stack.Top().(int)] {
+			stack.Push(index)
+			index++
+		} else {
+			bottom := stack.Top().(int)
+			stack.Pop()
+			if stack.Empty() {
+				continue
+			}
+			border := stack.Top().(int)
+			res += (min(height[index],height[border])-height[bottom]) * (index - border-1)
+		}
+	}
+
+	return  res
+}
 
 // ------------------------------------------------
 // Original wrong solution
