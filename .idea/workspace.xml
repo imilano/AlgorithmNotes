@@ -26,21 +26,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_118/pascal_triangle.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_118/pascal_triangle_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_115/distinct_subsequence.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_120/triangle.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/contents.md" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/contents.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_37/sudoku_solver.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_37/sudoku_solver.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -51,6 +62,15 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -58,5 +78,9 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="185" y="122" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1605946312541" />
+    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup" timestamp="1606035178175">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1606035178175" />
   </component>
 </project>

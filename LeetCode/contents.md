@@ -78,3 +78,11 @@
 
 ## Binary Search Tree
 0450. Delete a node in BST      [Meidum]
+
+## Backtrace
+
+Valid Sudoku
+Sudoku Solver
+Permutations
+Combinations
+N-Queen
