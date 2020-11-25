@@ -26,11 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_115/distinct_subsequence.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_120/triangle.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/contents.md" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/contents.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/leet_37/sudoku_solver.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_37/sudoku_solver.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +43,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
   </component>
   <component name="RecentsManager">
@@ -73,14 +76,21 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="185" y="122" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605946312541">
+    <state x="185" y="122" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606057804881">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="185" y="122" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1605946312541" />
-    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup" timestamp="1606035178175">
+    <state x="185" y="122" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1606057804881" />
+    <state x="484" y="106" width="688" height="522" key="find.popup" timestamp="1606057913033">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1606035178175" />
+    <state x="484" y="106" width="688" height="522" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1606057913033" />
+    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup" timestamp="1606058293368">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1606058293368" />
   </component>
 </project>

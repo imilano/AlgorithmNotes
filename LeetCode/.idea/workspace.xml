@@ -20,18 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc4889ae-92dd-4161-9539-6d2a041d6a57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/leetcode.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_125/valid_palindrome.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_125/valid_palindrome_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_127/word_ladder.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_128/longest_consecutive_sequence.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_128/longest_consecutive_sequence_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_130/surrounded_regions.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_131/palindrome_partitioning.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_139/break_word.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_647/palindromic_substrings.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leet_125/valid_palindrome.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_125/valid_palindrome.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leet_125/valid_palindrome_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_125/valid_palindrome_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leet_127/word_ladder.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_127/word_ladder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leet_128/longest_consecutive_sequence.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_128/longest_consecutive_sequence.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leet_128/longest_consecutive_sequence_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_128/longest_consecutive_sequence_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,22 +150,22 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1396" height="273" key="GridCell.Tab.0.bottom" timestamp="1606187541445">
+    <state width="1396" height="311" key="GridCell.Tab.0.bottom" timestamp="1606267411324">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="273" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606187541445" />
-    <state width="1396" height="273" key="GridCell.Tab.0.center" timestamp="1606187541444">
+    <state width="1396" height="311" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606267411324" />
+    <state width="1396" height="311" key="GridCell.Tab.0.center" timestamp="1606267411323">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="273" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1606187541444" />
-    <state width="1396" height="273" key="GridCell.Tab.0.left" timestamp="1606187541443">
+    <state width="1396" height="311" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1606267411323" />
+    <state width="1396" height="311" key="GridCell.Tab.0.left" timestamp="1606267411323">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="273" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1606187541443" />
-    <state width="1396" height="273" key="GridCell.Tab.0.right" timestamp="1606187541444">
+    <state width="1396" height="311" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1606267411323" />
+    <state width="1396" height="311" key="GridCell.Tab.0.right" timestamp="1606267411324">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="273" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1606187541444" />
+    <state width="1396" height="311" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1606267411324" />
     <state width="1396" height="146" key="GridCell.Tab.1.bottom" timestamp="1606187372140">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
