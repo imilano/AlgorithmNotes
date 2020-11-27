@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc4889ae-92dd-4161-9539-6d2a041d6a57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leet_133/clone_group.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_134/gas_station.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_135/candy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_136/single_number.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_137/SingleNumber.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_137/single_number_II.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_137/single_number_II_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +74,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Go Build.go build lightsinger.life/algorithm/leetcode/main">
+  <component name="RunManager" selected="Go Test.TestSingleNumber in lightsinger.life/algorithm/leetcode/leet_137">
     <configuration name="go build lightsinger.life/algorithm/leetcode/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <working_directory value="$PROJECT_DIR$" />
@@ -103,8 +106,20 @@
       <pattern value="^\QTestLongestConsecutive\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestSingleNumber in lightsinger.life/algorithm/leetcode/leet_137" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <working_directory value="$PROJECT_DIR$/leet_137" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_137" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestSingleNumber\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestSingleNumber in lightsinger.life/algorithm/leetcode/leet_137" />
         <item itemvalue="Go Build.go build lightsinger.life/algorithm/leetcode/main" />
         <item itemvalue="Go Test.TestLongestConsecutive in lightsinger.life/algorithm/leetcode/leet_128" />
         <item itemvalue="Go Test.TestIsValidPalindrome in lightsinger.life/algorithm/leetcode/leet_125" />
@@ -144,42 +159,42 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1396" height="311" key="GridCell.Tab.0.bottom" timestamp="1606307637099">
+    <state width="1396" height="311" key="GridCell.Tab.0.bottom" timestamp="1606449358380">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="311" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606307637099" />
-    <state width="1396" height="311" key="GridCell.Tab.0.center" timestamp="1606307637099">
+    <state width="1396" height="311" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606449358380" />
+    <state width="1396" height="311" key="GridCell.Tab.0.center" timestamp="1606449358380">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="311" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1606307637099" />
-    <state width="1396" height="311" key="GridCell.Tab.0.left" timestamp="1606307637099">
+    <state width="1396" height="311" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1606449358380" />
+    <state width="1396" height="311" key="GridCell.Tab.0.left" timestamp="1606449358379">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="311" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1606307637099" />
-    <state width="1396" height="311" key="GridCell.Tab.0.right" timestamp="1606307637099">
+    <state width="1396" height="311" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1606449358379" />
+    <state width="1396" height="311" key="GridCell.Tab.0.right" timestamp="1606449358380">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="311" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1606307637099" />
-    <state width="1396" height="146" key="GridCell.Tab.1.bottom" timestamp="1606307637086">
+    <state width="1396" height="311" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1606449358380" />
+    <state width="1396" height="286" key="GridCell.Tab.1.bottom" timestamp="1606449308751">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="146" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606307637086" />
-    <state width="1396" height="146" key="GridCell.Tab.1.center" timestamp="1606307637086">
+    <state width="1396" height="286" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606449308751" />
+    <state width="1396" height="286" key="GridCell.Tab.1.center" timestamp="1606449308751">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="146" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1606307637086" />
-    <state width="1396" height="146" key="GridCell.Tab.1.left" timestamp="1606307637086">
+    <state width="1396" height="286" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1606449308751" />
+    <state width="1396" height="286" key="GridCell.Tab.1.left" timestamp="1606449308751">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="146" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1606307637086" />
-    <state width="1396" height="146" key="GridCell.Tab.1.right" timestamp="1606307637086">
+    <state width="1396" height="286" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1606449308751" />
+    <state width="1396" height="286" key="GridCell.Tab.1.right" timestamp="1606449308751">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="146" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1606307637086" />
-    <state x="518" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606386294450">
+    <state width="1396" height="286" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1606449308751" />
+    <state x="518" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606440922441">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="518" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1606386294450" />
+    <state x="518" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1606440922441" />
     <state x="386" y="212" width="670" height="676" key="search.everywhere.popup" timestamp="1606058590043">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -197,6 +212,11 @@
           <url>file://$PROJECT_DIR$/leet_128/longest_consecutive_sequence_test.go</url>
           <line>6</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leet_137/single_number_II_test.go</url>
+          <line>6</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
