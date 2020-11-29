@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc4889ae-92dd-4161-9539-6d2a041d6a57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leet_138/copy_list_with_random_pointer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_140/word_break_II.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_140/word_break_II_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_141/linked_list_circle.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_142/linked_list_circle_II.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_147/insert_sort_list.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_148/sort_list.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_150/evaluate_reverse_polish_notation.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_150/evaluate_reverse_polish_notation_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +73,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Go Test.TestWordBreak in lightsinger.life/algorithm/leetcode/leet_140">
+  <component name="RunManager" selected="Go Test.TestEvalRPM in lightsinger.life/algorithm/leetcode/leet_150">
     <configuration name="go build lightsinger.life/algorithm/leetcode/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <working_directory value="$PROJECT_DIR$" />
@@ -84,15 +83,15 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestIsValidPalindrome in lightsinger.life/algorithm/leetcode/leet_125" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestEvalRPM in lightsinger.life/algorithm/leetcode/leet_150" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_125" />
+      <working_directory value="$PROJECT_DIR$/leet_150" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_125" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_150" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestIsValidPalindrome\E$" />
+      <pattern value="^\QTestEvalRPM\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestLongestConsecutive in lightsinger.life/algorithm/leetcode/leet_128" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -130,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestEvalRPM in lightsinger.life/algorithm/leetcode/leet_150" />
         <item itemvalue="Go Test.TestWordBreak in lightsinger.life/algorithm/leetcode/leet_140" />
         <item itemvalue="Go Test.TestSingleNumber in lightsinger.life/algorithm/leetcode/leet_137" />
         <item itemvalue="Go Build.go build lightsinger.life/algorithm/leetcode/main" />
         <item itemvalue="Go Test.TestLongestConsecutive in lightsinger.life/algorithm/leetcode/leet_128" />
-        <item itemvalue="Go Test.TestIsValidPalindrome in lightsinger.life/algorithm/leetcode/leet_125" />
       </list>
     </recent_temporary>
   </component>
@@ -171,38 +170,38 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1396" height="392" key="GridCell.Tab.0.bottom" timestamp="1606616242919">
+    <state width="1396" height="330" key="GridCell.Tab.0.bottom" timestamp="1606642309087">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="392" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606616242919" />
-    <state width="1396" height="392" key="GridCell.Tab.0.center" timestamp="1606616242919">
+    <state width="1396" height="330" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606642309087" />
+    <state width="1396" height="330" key="GridCell.Tab.0.center" timestamp="1606642309086">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="392" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1606616242919" />
-    <state width="1396" height="392" key="GridCell.Tab.0.left" timestamp="1606616242918">
+    <state width="1396" height="330" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1606642309086" />
+    <state width="1396" height="330" key="GridCell.Tab.0.left" timestamp="1606642309086">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="392" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1606616242918" />
-    <state width="1396" height="392" key="GridCell.Tab.0.right" timestamp="1606616242919">
+    <state width="1396" height="330" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1606642309086" />
+    <state width="1396" height="330" key="GridCell.Tab.0.right" timestamp="1606642309086">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="392" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1606616242919" />
-    <state width="1396" height="392" key="GridCell.Tab.1.bottom" timestamp="1606616242921">
+    <state width="1396" height="330" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1606642309086" />
+    <state width="1396" height="425" key="GridCell.Tab.1.bottom" timestamp="1606641896044">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="392" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606616242921" />
-    <state width="1396" height="392" key="GridCell.Tab.1.center" timestamp="1606616242920">
+    <state width="1396" height="425" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606641896044" />
+    <state width="1396" height="425" key="GridCell.Tab.1.center" timestamp="1606641896043">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="392" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1606616242920" />
-    <state width="1396" height="392" key="GridCell.Tab.1.left" timestamp="1606616242920">
+    <state width="1396" height="425" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1606641896043" />
+    <state width="1396" height="425" key="GridCell.Tab.1.left" timestamp="1606641896043">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="392" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1606616242920" />
-    <state width="1396" height="392" key="GridCell.Tab.1.right" timestamp="1606616242921">
+    <state width="1396" height="425" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1606641896043" />
+    <state width="1396" height="425" key="GridCell.Tab.1.right" timestamp="1606641896043">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1396" height="392" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1606616242921" />
+    <state width="1396" height="425" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1606641896043" />
     <state x="518" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606440922441">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -234,6 +233,11 @@
           <url>file://$PROJECT_DIR$/leet_140/word_break_II_test.go</url>
           <line>12</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leet_150/evaluate_reverse_polish_notation_test.go</url>
+          <line>10</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
