@@ -26,7 +26,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/ch13_red_black_tree/red_balck_tree.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/ch13_red_black_tree/red_black_tree_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_143/reorder_list.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_143/reorder_list_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_151/reverse_words_in_a_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_151/reverse_words_in_a_string_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_152/maximum_product_subarray.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_153/find_minimum_in_rotated_sorted_array.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_154/find_minimum_in_rotated_sorted_array_II.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_155/min_stack.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/Notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_98/validate_bst.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_98/validate_bst.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +53,15 @@
       </list>
     </option>
   </component>
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.15.5/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -49,27 +69,116 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="docker-desktop" />
+    <option name="namespace" value="default" />
+  </component>
+  <component name="ProjectId" id="1kxmQnnmIKOnE3rVY8I0XJeHGvM" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="RunManager" selected="Go Test.TestRBT in lightsinger.life/algorithm/IntroductionToAlgorithm/ch13_red_black_tree">
+    <configuration name="TestRBT in lightsinger.life/algorithm/IntroductionToAlgorithm/ch13_red_black_tree" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <working_directory value="$PROJECT_DIR$/IntroductionToAlgorithm/ch13_red_black_tree" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="lightsinger.life/algorithm/IntroductionToAlgorithm/ch13_red_black_tree" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestRBT\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestRBT in lightsinger.life/algorithm/IntroductionToAlgorithm/ch13_red_black_tree" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <working_directory value="$PROJECT_DIR$/IntroductionToAlgorithm/ch13_red_black_tree" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="lightsinger.life/algorithm/IntroductionToAlgorithm/ch13_red_black_tree" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestRBT\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestReorderList in lightsinger.life/algorithm/leetcode/leet_143" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <working_directory value="$PROJECT_DIR$/leetcode/leet_143" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_143" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestReorderList\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestReverseWrods in lightsinger.life/algorithm/leetcode/leet_151" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <working_directory value="$PROJECT_DIR$/leetcode/leet_151" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_151" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestReverseWrods\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestRBT in lightsinger.life/algorithm/IntroductionToAlgorithm/ch13_red_black_tree" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="" />
+      <created>1606650602809</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606650602809</updated>
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="leetcode" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -79,18 +188,79 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="WindowStateProjectService">
     <state x="185" y="122" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606057804881">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="185" y="122" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1606057804881" />
+    <state width="1396" height="128" key="GridCell.Tab.0.bottom" timestamp="1606802690943">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="128" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606802690943" />
+    <state width="1396" height="128" key="GridCell.Tab.0.center" timestamp="1606802690942">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="128" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1606802690942" />
+    <state width="1396" height="128" key="GridCell.Tab.0.left" timestamp="1606802690941">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="128" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1606802690941" />
+    <state width="1396" height="128" key="GridCell.Tab.0.right" timestamp="1606802690942">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="128" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1606802690942" />
+    <state width="1396" height="379" key="GridCell.Tab.1.bottom" timestamp="1606724057586">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="379" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606724057586" />
+    <state width="1396" height="379" key="GridCell.Tab.1.center" timestamp="1606724057585">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="379" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1606724057585" />
+    <state width="1396" height="379" key="GridCell.Tab.1.left" timestamp="1606724057585">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="379" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1606724057585" />
+    <state width="1396" height="379" key="GridCell.Tab.1.right" timestamp="1606724057586">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="379" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1606724057586" />
     <state x="484" y="106" width="688" height="522" key="find.popup" timestamp="1606057913033">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="484" y="106" width="688" height="522" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1606057913033" />
-    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup" timestamp="1606058293368">
+    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup" timestamp="1606896330061">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1606058293368" />
+    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1606896330061" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leetcode/leet_143/reorder_list_test.go</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leetcode/leet_151/reverse_words_in_a_string_test.go</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/IntroductionToAlgorithm/ch13_red_black_tree/red_black_tree_test.go</url>
+          <line>7</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leetcode/leet_153/find_minimum_in_rotated_sorted_array.go</url>
+          <line>26</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
