@@ -132,10 +132,16 @@ func main() {
 	////fmt.Println(gcd(28,28))
 	//fmt.Println(string('3') + string('2'))
 	//fmt.Println(strconv.Itoa('3') + strconv.Itoa('2'))
-	m := make(map[string]bool)
-	v := m["hello"]
-	fmt.Println(v)
+	//m := make(map[string]bool)
+	//v := m["hello"]
+	//fmt.Println(v)
+	fmt.Print('a' - 'A')
+	a := "hello"
+	t := []byte(a)
+	t[0] = 'o'
+	fmt.Print(a, " ",string(t)," ",a)
 }
+
 
 func gcd(n1,n2 int) int {
 	var gcd int
@@ -152,3 +158,4 @@ func gcd(n1,n2 int) int {
 func sliceCopy(a []int) {
 	fmt.Printf("%p\n",a)
 }
+

@@ -23,8 +23,10 @@ import "lightsinger.life/algorithm/leetcode/utils"
      Right *TreeNode
  }
 
+ // Time complexity: O(n)
+ // Space complexity: O(n)
 func isValidWithInorder(root *TreeNode) bool {
-    var pre *TreeNode
+    var pre *TreeNode // point to node iterated previously
     if root == nil {
         return true
     }
@@ -48,6 +50,8 @@ func isValidWithInorder(root *TreeNode) bool {
     return true
 }
 
+ // Time complexity: O(n)
+ // Space complexity: O(n)
 func isValidRec(node *TreeNode,min *TreeNode,max *TreeNode) bool {
     if node == nil {
         return true
