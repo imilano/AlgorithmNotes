@@ -26,11 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_156/binary_tree_upside_down.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_159/longest_substring_with_at_most_two_distinct_characters.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_160/intersection_of_two_linked_list.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_162/find_peek_element.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_163/missing_ranges.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_228/summary_ranges.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/leet_159/longest_substring_withh_at_most_two_distinct_characters.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,64 +194,6 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="185" y="122" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606057804881">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="185" y="122" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1606057804881" />
-    <state x="647" y="138" width="382" height="644" key="#xdebugger.XInspectDialog" timestamp="1606960200788">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="647" y="138" width="382" height="644" key="#xdebugger.XInspectDialog/0.23.1440.877@0.23.1440.877" timestamp="1606960200788" />
-    <state x="484" y="85" key="#xdebugger.evaluate" timestamp="1606960208754">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="484" y="85" key="#xdebugger.evaluate/0.23.1440.877@0.23.1440.877" timestamp="1606960208754" />
-    <state width="698" height="260" key="GridCell.Tab.0.bottom" timestamp="1606961044075">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="698" height="260" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606961044075" />
-    <state width="698" height="260" key="GridCell.Tab.0.center" timestamp="1606961044075">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="698" height="260" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1606961044075" />
-    <state width="698" height="260" key="GridCell.Tab.0.left" timestamp="1606961044074">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="698" height="260" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1606961044074" />
-    <state width="698" height="260" key="GridCell.Tab.0.right" timestamp="1606961044075">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="698" height="260" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1606961044075" />
-    <state width="698" height="260" key="GridCell.Tab.1.bottom" timestamp="1606961044076">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="698" height="260" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606961044076" />
-    <state width="698" height="260" key="GridCell.Tab.1.center" timestamp="1606961044076">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="698" height="260" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1606961044076" />
-    <state width="698" height="260" key="GridCell.Tab.1.left" timestamp="1606961044075">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="698" height="260" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1606961044075" />
-    <state width="698" height="260" key="GridCell.Tab.1.right" timestamp="1606961044076">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="698" height="260" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1606961044076" />
-    <state x="518" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606961032768">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="518" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1606961032768" />
-    <state x="484" y="106" width="688" height="522" key="find.popup" timestamp="1606057913033">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="484" y="106" width="688" height="522" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1606057913033" />
-    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup" timestamp="1606896330061">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1606896330061" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
