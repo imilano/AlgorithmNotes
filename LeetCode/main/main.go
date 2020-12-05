@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 )
 
 type Node struct {
@@ -135,11 +136,24 @@ func main() {
 	//m := make(map[string]bool)
 	//v := m["hello"]
 	//fmt.Println(v)
-	fmt.Print('a' - 'A')
-	a := "hello"
-	t := []byte(a)
-	t[0] = 'o'
-	fmt.Print(a, " ",string(t)," ",a)
+	//fmt.Print('a' - 'A')
+	//a := "hello"
+	//t := []byte(a)
+	//t[0] = 'o'
+	//fmt.Print(a, " ",string(t)," ",a)
+
+
+	fmt.Println(string('a' ))
+	var res int
+	res = 1 << 31 -1
+	fmt.Println(res)
+	res = 1 << 32
+	fmt.Printf("%T",res)
+	fmt.Printf("%T\n",1 << 32)
+	fmt.Println(reflect.TypeOf(res).String())
+	res = -(1 << 32)
+	fmt.Println(res)
+
 }
 
 

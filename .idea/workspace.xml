@@ -26,10 +26,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_162/find_peek_element.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_163/missing_ranges.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_228/summary_ranges.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_167/two_sum_II.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_168/excel_sheet_column_title.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_168/excel_sheet_column_title.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_169/majority_element.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/Notes.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +89,16 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestLength in lightsinger.life/algorithm/leetcode/leet_159">
+  <component name="RunManager" selected="Go Build.go build lightsinger.life/algorithm/leetcode/main">
+    <configuration name="go build lightsinger.life/algorithm/leetcode/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <working_directory value="$PROJECT_DIR$/leetcode" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/leetcode/main/main.go" />
+      <package value="lightsinger.life/algorithm/leetcode/main" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestLength in lightsinger.life/algorithm/leetcode/leet_159" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <working_directory value="$PROJECT_DIR$/leetcode/leet_159" />
@@ -144,6 +156,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build lightsinger.life/algorithm/leetcode/main" />
         <item itemvalue="Go Test.TestLength in lightsinger.life/algorithm/leetcode/leet_159" />
         <item itemvalue="Go Test.TestReverseWrods in lightsinger.life/algorithm/leetcode/leet_151" />
         <item itemvalue="Go Test.TestReorderList in lightsinger.life/algorithm/leetcode/leet_143" />
