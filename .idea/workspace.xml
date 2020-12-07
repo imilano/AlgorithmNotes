@@ -26,17 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_170/two_sum_III.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_171/excel_sheet_column_number.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_172/factorial_trailing_zeros.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_175/combine_two_tables.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_176/second_highest_salary.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_177/Nth_highest_salary.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_179/largest_number.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_179/largest_number_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_190/reverse_bits.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_191/number_of_1_bits.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/16_greedy/task_scheduling.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/16_greedy/task_scheduling_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_178/rank_scores.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_184/department_highest_salary.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +88,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestLargestNumber in lightsinger.life/algorithm/leetcode/leet_179">
+  <component name="RunManager" selected="Go Test.TestScheduling in lightsinger.life/algorithm/IntroductionToAlgorithm/16_greedy">
     <configuration name="go build lightsinger.life/algorithm/leetcode/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <working_directory value="$PROJECT_DIR$/leetcode" />
@@ -138,17 +131,6 @@
       <pattern value="^\QTestRBT\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestReorderList in lightsinger.life/algorithm/leetcode/leet_143" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/leetcode/leet_143" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_143" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestReorderList\E$" />
-      <method v="2" />
-    </configuration>
     <configuration name="TestReverseWrods in lightsinger.life/algorithm/leetcode/leet_151" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <working_directory value="$PROJECT_DIR$/leetcode/leet_151" />
@@ -160,13 +142,24 @@
       <pattern value="^\QTestReverseWrods\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestScheduling in lightsinger.life/algorithm/IntroductionToAlgorithm/16_greedy" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <working_directory value="$PROJECT_DIR$/IntroductionToAlgorithm/16_greedy" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="lightsinger.life/algorithm/IntroductionToAlgorithm/16_greedy" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestScheduling\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestScheduling in lightsinger.life/algorithm/IntroductionToAlgorithm/16_greedy" />
         <item itemvalue="Go Test.TestLargestNumber in lightsinger.life/algorithm/leetcode/leet_179" />
         <item itemvalue="Go Build.go build lightsinger.life/algorithm/leetcode/main" />
         <item itemvalue="Go Test.TestLength in lightsinger.life/algorithm/leetcode/leet_159" />
         <item itemvalue="Go Test.TestReverseWrods in lightsinger.life/algorithm/leetcode/leet_151" />
-        <item itemvalue="Go Test.TestReorderList in lightsinger.life/algorithm/leetcode/leet_143" />
       </list>
     </recent_temporary>
   </component>
