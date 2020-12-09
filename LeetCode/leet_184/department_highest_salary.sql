@@ -31,6 +31,7 @@
 -- Max and Jim both have the highest salary in the IT department and Henry has the highest salary in the Sales department.
 --
 
+-- #TODO figure it out
 SELECT d.Name AS Department,e1.Name AS Employee,e1.Salary AS Salary
 FROM Employee e1 JOIN Department d ON e1.DepartmentId = d.Id
 WHERE Salary IN (

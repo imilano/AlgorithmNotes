@@ -26,11 +26,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/16_greedy/task_scheduling.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/16_greedy/task_scheduling_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_178/rank_scores.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_184/department_highest_salary.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_180/consecutive_numbers.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_189/rotate_array.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_195/tenth_line.bash" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_200/number_of_islands.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_201/bitwaise_and_of_numbers_range.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_202/happy_number.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_203/remove_linked_list_element.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_184/department_highest_salary.sql" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_184/department_highest_salary.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +89,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/leetcode/leet_195" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
