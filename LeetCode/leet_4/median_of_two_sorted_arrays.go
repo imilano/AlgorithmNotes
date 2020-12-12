@@ -30,6 +30,7 @@ func getMin(x,y int) int {
 // time complexity: O(log(min(m,n))
 // detail see markdown
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
+	// 始终保证nums1是长度更小的数组
 	if len(nums1) > len(nums2) {
 		return findMedianSortedArrays(nums2,nums1)
 	}
@@ -37,7 +38,9 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	x,y := len(nums1),len(nums2)
 	low,high := 0,x
 	var maxLeftX,maxLeftY,minRightX,minRightY int
-	for low <= high {
+	for low <= high {  // 为什么是小于等于而不是小于？
+		// partitionX = (low+high)/2
+		// partitionX + partitionY = (x+y+1)/2
 		partitionX := (low+high)/2
 		partitionY := (x+y+1)/2 - partitionX
 
@@ -75,7 +78,7 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 			}
 		} else if maxLeftX > minRightY {
 			// We go far right, we need move left
-			high = partitionX -1
+			high = partitionX -1   // 为什么要减1 #TODO figure it out
 		} else  {
 			// We go far left, we need move right
 			low = partitionX + 1

@@ -1,7 +1,5 @@
 package leet_02
 
-import "fmt"
-
 /**
  * You are given two non-empty linked lists representing two non-negative integers.
  * The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
@@ -20,7 +18,7 @@ import "fmt"
  }
 
  func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-     // 一味的使用边界检查并不会加快程序运行速度
+     // 一味的使用边界检查并不会加快程序运行速度，太多的if会严重妨碍流水线的效率
      // if l1 == nil {
      //     return l2
      // }
@@ -32,7 +30,7 @@ import "fmt"
      // 使用new的开销还是比较大，不如直接构造
      //cur := new(ListNode)
      cur := &ListNode{}
-     head := cur
+     head := cur  // 由于cur不断移动，所以需要dummyHead来标识表头
 
      for l1 != nil || l2 != nil || carry != 0 {
          if l1 != nil {
@@ -119,28 +117,3 @@ func addTwoNumbersOriginal(l1 *ListNode, l2 *ListNode) *ListNode {
 
     return result.Next
 }
- 
- func main() {
-     n1 := &ListNode{
-         Val:  1,
-         Next: nil,
-     }
-     
-     n2 := &ListNode{
-         Val:  8,
-         Next: nil,
-     }
-     n3 := &ListNode{
-         Val:  0,
-         Next: nil,
-     }
-
-     n1.Next = n2
-
-     r := addTwoNumbers(n1,n3)
-
-     for ;r != nil; {
-         fmt.Print(r.Val)
-         r = r.Next
-     }
- }

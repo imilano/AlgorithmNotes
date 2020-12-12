@@ -6,6 +6,7 @@
 package leet_01
 
 // 暴力枚举
+// time complexity: O(n^2)
 func brutalForce(nums []int, target int) []int {
 	if nums == nil {
 		return nil
@@ -22,7 +23,11 @@ func brutalForce(nums []int, target int) []int {
 	return nil
 }
 
-// 从前向后遍历，提前占位
+
+// 使用map，从前向后遍历nums，对于nums中每个num，检查map中key为num的记录是否存在，如果不存在，则map[target-num]=indexOfNum，记录当前的下标值；
+// 否则如果存在，则找到了一个结果，直接返回即可。
+// time complexity: O(n)
+// space complexity: O(n)
 func Pri(nums []int, target int) []int {
 	m := make(map[int]int)
 	for k,v := range nums {
@@ -37,6 +42,27 @@ func Pri(nums []int, target int) []int {
 	return nil
 }
 
+
 func twoSum(nums []int, target int) []int {
 	return Pri(nums,target)
 }
+
+// 双指针法
+// time complexity: O(nlogn)
+// space complexity: O(1)
+// WRONG，由于需要返回的是元素下标，而排序已经改变了元素的下标。
+
+//func twoSum2(nums []int, target int) []int {
+//	sort.Ints(nums)
+//	left,right := 0,len(nums) -1
+//	for left < right {
+//		if nums[left] + nums[right] == target {
+//			return []int{left,right}
+//		}
+//
+//		left++
+//		right--
+//	}
+//
+//	return nil
+//}

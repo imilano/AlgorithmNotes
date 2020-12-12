@@ -31,3 +31,26 @@ BS中如何决定是使用left < right 还是left  <= right 呢？ 当你想要�
 ## Go
 - string('a')会直接得到a，而strconv.Itoa('a')只会得到98.
 - int和int32不是同一个类型。int的实际大小与平台相关，比如在32位上就是32位，在64位上就是64位。官方只保证他和uint有同样的size。也就说说，int可以用来存储比uint32或者int32还要大的数字。
+
+
+## Puzzles
+1. Nil Pointer Reference
+```go
+ type ListNode struct {
+     Val int
+     Next *ListNode
+ }
+ 
+ func main()  {
+ 	var t1 *ListNode
+ 	t2 := new(ListNode)
+ 	t3 := &ListNode{}
+ 	
+ 	// why t1.Next will lead to null pointer reference
+ 	fmt.Println(t1.Next)
+}
+```
+The default pointer value in go is nil. You can pass a nil pointer to a method which takes pointer as its receiver(you can also pass a value, rather than a pointer), but dereference a nil pointer would lead to panic.
+If x is nil, evaluate x will cause a run-time panic.
+
+In Go we can create variables that contains the "value of" itself or an address to that value. When the "value of" that variable is an address, the varibale is considered as a pointer. Hence if a pointer is nil, it points to nothing, so evaluate a nil point will lead to panic.
