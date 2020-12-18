@@ -5,10 +5,38 @@ import "math"
 /*
 	Given a 32-bit signed integer, reverse digits of an integer.
 	Note:
-	Assume we are dealing with an environment that could only store integers within the 32-bit signed integer range: [−231,  231 − 1]. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
+	Assume we are dealing with an environment that could only store integers within the 32-bit signed integer range: [−231,  231 − 1].
+	For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
  */
 
 
+func reverseConcise(x int) int {
+	var res int
+	var neg bool
+	if x < 0 {
+		neg = true
+		x = -x
+	}
+
+	for x != 0 {
+		res *= 10
+		res = res + x % 10
+		x /= 10
+	}
+
+	if res > math.MaxInt32 || res < math.MinInt32 {
+		return 0
+	}
+
+	if neg {
+		res = -res
+	}
+
+	return res
+}
+
+
+// original
 func get_digits(x int) []int{
 	var res []int
 	num := x

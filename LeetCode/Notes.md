@@ -32,6 +32,78 @@ BS中如何决定是使用left < right 还是left  <= right 呢？ 当你想要�
 - string('a')会直接得到a，而strconv.Itoa('a')只会得到98.
 - int和int32不是同一个类型。int的实际大小与平台相关，比如在32位上就是32位，在64位上就是64位。官方只保证他和uint有同样的size。也就说说，int可以用来存储比uint32或者int32还要大的数字。
 
+## Palindrome
+需要注意字符串的长度是奇数还是偶数，奇数偶数对应着不同的判定方法。
+题目：
+- 5
+1. 中心扩散法
+```go
+func getPalindrome(s string, left,right int) string {
+	for left >= 0 && right < len(s) && s[left] == s[right] {
+		left--
+		right++
+    }
+    
+    // 注意，是left+1
+    return s[left+1: end]
+}
+
+func longestPalindrome(s string) s string {
+	var res string
+	for i := 0 ; i < len(s);i++ {
+		// handle with odd length
+		odd := getPalindrome(s,i,i)
+		// handle with even length 
+		even := getPalindrome(s,i,i+1)
+		
+		res = max(res,max(odd,even))
+		
+    }
+    
+    return res
+}
+
+```
+
+2. 动态规划法
+首先，如果一个字符串长度小于2，那么这个字符串肯定是回文串。定义二维数组dp[i][j]，表示从s[i]到s[j]是否为回文串。根据之前的推论，从而引出动态规划的base case， dp[0]=dp[1]=true. 接下来处理状态转移。 
+有dp[i][j]为最长回文串的前提是dp[i+1][j-1]是回文串且s[i]==s[j]，因此，在 s[i] == s[j] 成立和 j - i < 3 的前提下，直接可以下结论，dp[i][j] = true，否则才执行状态转移。初始化时，dp[i][i]必然为true。
+```go
+func longestPalindrome(s string) string {
+	var res stirng
+	start,maxLen := 0,1  // 非空字符必然会有长度至少为1的子串
+	dp := make([][]bool,len(s))
+	for i := range dp {
+		dp[i] = make([]bool,len(s))
+	}
+	
+    for j := 0; j < n; j++ {
+    	// base case
+    	dp[j][j] = true
+        for i := 0; i < j; i++ {
+            //if s[i] != s[j] {
+            //    dp[i][j] = false
+            //} else {
+            //if j-i < 3 {
+            //    dp[i][j] = true
+            //} else {
+            //    dp[i][j] = dp[i+1][j-1]
+            //    }
+            //}
+        	
+        	// 上述更精简的写法. 状态转移的核心
+        	dp[i][j] = s[i] == s[j] && (j -i < 2 || dp[i+1][j-1])
+            if dp[i][j] && j-i+1 > maxLen {
+                 start = i
+                 maxLen = j - i + 1
+                }
+            }
+        }
+    return s[start : start+maxLen]
+}
+```
+   
+
 
 ## Puzzles
 1. Nil Pointer Reference
@@ -54,3 +126,6 @@ The default pointer value in go is nil. You can pass a nil pointer to a method w
 If x is nil, evaluate x will cause a run-time panic.
 
 In Go we can create variables that contains the "value of" itself or an address to that value. When the "value of" that variable is an address, the varibale is considered as a pointer. Hence if a pointer is nil, it points to nothing, so evaluate a nil point will lead to panic.
+
+2. Rune and String
+可以直接将rune数组转换为string，如`s = string(runeArr)`。

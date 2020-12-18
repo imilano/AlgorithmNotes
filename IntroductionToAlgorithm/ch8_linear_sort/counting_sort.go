@@ -10,22 +10,22 @@ package ch8_linear_sort
 //空间复杂度：\Theta (n+k). (总空间复杂度n+k, 额外空间复杂度k)
 
 func CountingSort(arr []int) []int {
-	max,min := findMaxAndMin(arr)
-	return countingSort(arr,max,min)
+	max, min := findMaxAndMin(arr)
+	return countingSort(arr, max, min)
 }
 
-func countingSort(arr []int, maxVal int,minVal int) []int {
+func countingSort(arr []int, maxVal int, minVal int) []int {
 	bucketLen := maxVal - minVal + 1
 	bucket := make([]int, bucketLen)
 
-	for _,v := range arr {
+	for _, v := range arr {
 		bucket[v-minVal] += 1
-}
+	}
 
 	sortedIndex := 0
-	for i := 0;  i< bucketLen; i++ {
-		for bucket[i] > 0{
-			arr[sortedIndex] = i+minVal
+	for i := 0; i < bucketLen; i++ {
+		for bucket[i] > 0 {
+			arr[sortedIndex] = i + minVal
 			sortedIndex += 1
 			bucket[i]--
 		}
@@ -34,9 +34,9 @@ func countingSort(arr []int, maxVal int,minVal int) []int {
 	return arr
 }
 
-func findMaxAndMin(arr []int) (int,int) {
-	max ,min:= arr[0],arr[0]
-	for _,v := range arr {
+func findMaxAndMin(arr []int) (int, int) {
+	max, min := arr[0], arr[0]
+	for _, v := range arr {
 		if v > max {
 			max = v
 		}
@@ -46,5 +46,5 @@ func findMaxAndMin(arr []int) (int,int) {
 		}
 	}
 
-	return max,min
+	return max, min
 }

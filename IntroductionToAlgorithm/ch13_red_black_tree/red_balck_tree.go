@@ -74,8 +74,8 @@ const (
 
 // Tree holds elements of the red-black tree
 type Tree struct {
-	Root       *Node
-	size       int
+	Root *Node
+	size int
 	//Comparator utils.Comparator
 }
 
@@ -88,7 +88,6 @@ type Node struct {
 	Right  *Node
 	Parent *Node
 }
-
 
 // Put inserts node into the tree.
 // Key should adhere to the comparator's type assertion, otherwise method panics.
@@ -513,7 +512,6 @@ func (tree *Tree) insertCase5(node *Node) {
 	}
 }
 
-
 func (node *Node) maximumNode() *Node {
 	if node == nil {
 		return nil
@@ -604,11 +602,9 @@ func (tree *Tree) deleteCase6(node *Node) {
 	}
 }
 
-
 func nodeColor(node *Node) color {
 	if node == nil {
 		return black
 	}
 	return node.color
 }
-

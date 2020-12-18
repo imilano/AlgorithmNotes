@@ -21,6 +21,40 @@ Roman numerals are usually written largest to smallest from left to right. Howev
     C can be placed before D (500) and M (1000) to make 400 and 900.
 */
 
+/*
+注意这几个规则：
+1、相同的数字连写，所表示的数等于这些数字相加得到的数，如：Ⅲ = 3；
+2、小的数字在大的数字的右边，所表示的数等于这些数字相加得到的数， 如：Ⅷ = 8；Ⅻ = 12；
+3、小的数字，（限于Ⅰ、X 和C）在大的数字的左边，所表示的数等于大数减小数得到的数，如：Ⅳ= 4；Ⅸ= 9；
+ */
+
+// 使用map，将罗马数字字母转换为对应的整数值
+func romanToInt2(s string) int {
+	var res int
+	roman := map[uint8]int {
+		'I':			1,
+		'V':            5,
+		'X':            10,
+		'L':            50,
+		'C':            100,
+		'D':            500,
+		'M':            1000,
+	}
+
+	length := len(s)
+	var val int
+	for i := 0; i< length;i++ {
+		val = roman[s[i]]
+		if i == length-1 || roman[s[i]] >= roman[s[i+1]] {
+			res += val
+		} else {
+			res -= val
+		}
+	}
+
+	return res
+}
+
 func romanToInt(s string) int {
 	var res int
 	roman := map[uint8]int {

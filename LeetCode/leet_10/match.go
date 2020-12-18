@@ -27,7 +27,8 @@ func recMatch(t,p string) bool {
 
 }
 
-
+// TAG NFA
+// TAG DP
 // 递归的方法中存在很多的重复计算，所以可以采用带备忘录的方法进行优化
 func matchWithMemo() {
 /*

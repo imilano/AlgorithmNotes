@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -26,15 +29,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_2/add_two_numbers_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/tags.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/template/merge linked list.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/~$tags.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoToLeetCode/.gitmodules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GoToLeetCode/themes/techdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/lab/lab5/knapsack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/lab/lab5/knapsack_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_9/palindrome_number_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroductionToAlgorithm/16_greedy/task_scheduling.go" beforeDir="false" afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/16_greedy/task_scheduling.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroductionToAlgorithm/16_greedy/task_scheduling_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/16_greedy/task_scheduling_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroductionToAlgorithm/ch13_red_black_tree/red_balck_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/ch13_red_black_tree/red_balck_tree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroductionToAlgorithm/ch13_red_black_tree/red_black_tree_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/ch13_red_black_tree/red_black_tree_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroductionToAlgorithm/ch15_dynamic_programming/cut_rod.go" beforeDir="false" afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/ch15_dynamic_programming/cut_rod.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroductionToAlgorithm/ch6_heap_sort/head_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/ch6_heap_sort/head_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroductionToAlgorithm/ch6_heap_sort/priority_queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/ch6_heap_sort/priority_queue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroductionToAlgorithm/ch7_quick_sort/quick_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/ch7_quick_sort/quick_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroductionToAlgorithm/ch7_quick_sort/quick_sort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/ch7_quick_sort/quick_sort_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroductionToAlgorithm/ch8_linear_sort/counting_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/ch8_linear_sort/counting_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroductionToAlgorithm/ch8_linear_sort/counting_sort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/ch8_linear_sort/counting_sort_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroductionToAlgorithm/ch8_linear_sort/radix_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/IntroductionToAlgorithm/ch8_linear_sort/radix_sort.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeetCode/Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/Notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/leet_1/two_sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_1/two_sum.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/leet_2/add_two_numbers.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_2/add_two_numbers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/leet_3/longest_substring_without_repeated_characters.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_3/longest_substring_without_repeated_characters.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_10/match.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_10/match.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_11/container_with_most_water.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_11/container_with_most_water.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_12/integer_to_roman.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_12/integer_to_roman.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_13/roam_to_integer.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_13/roam_to_integer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_5/longest_palindromic_substring.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_5/longest_palindromic_substring.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_6/ZigZag Conversion.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_6/zigzag_conv.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_6/zigzag_conv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_7/recover_integer.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_7/recover_integer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_8/string_to_integer.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_8/string_to_integer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_9/palindrome_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_9/palindrome_number.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/tags.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/tags.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/leet_14/longest_common_prefix.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/leet_14/longest_common_prefix.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法笔记/0-算法-动态规划.md" beforeDir="false" afterPath="$PROJECT_DIR$/算法笔记/0-算法-动态规划.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +78,7 @@
   <component name="GOROOT" path="/usr/local/Cellar/go/1.15.5/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -69,7 +97,7 @@
     <option name="namespace" value="default" />
   </component>
   <component name="ProjectId" id="1kxmQnnmIKOnE3rVY8I0XJeHGvM" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -93,7 +121,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestNillPointer in lightsinger.life/algorithm/leetcode/leet_2">
+  <component name="RunManager" selected="Go Test.TestIsPalindrome in lightsinger.life/algorithm/leetcode/leet_9">
     <configuration name="TestCountPrime in lightsinger.life/algorithm/leetcode/leet_204" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <working_directory value="$PROJECT_DIR$/leetcode/leet_204" />
@@ -103,6 +131,17 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestCountPrime\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestIsPalindrome in lightsinger.life/algorithm/leetcode/leet_9" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <working_directory value="$PROJECT_DIR$/leetcode/leet_9" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_9" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestIsPalindrome\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestIsomorphic in lightsinger.life/algorithm/leetcode/leet_205" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -116,15 +155,15 @@
       <pattern value="^\QTestIsomorphic\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestLargestNumber in lightsinger.life/algorithm/leetcode/leet_179" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestKnapsackGreedy in lightsinger.life/algorithm/IntroductionToAlgorithm/lab/lab5" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/leetcode/leet_179" />
+      <working_directory value="$PROJECT_DIR$/IntroductionToAlgorithm/lab/lab5" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_179" />
+      <package value="lightsinger.life/algorithm/IntroductionToAlgorithm/lab/lab5" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestLargestNumber\E$" />
+      <pattern value="^\QTestKnapsackGreedy\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestNillPointer in lightsinger.life/algorithm/leetcode/leet_2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -138,24 +177,13 @@
       <pattern value="^\QTestNillPointer\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestScheduling in lightsinger.life/algorithm/IntroductionToAlgorithm/16_greedy" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/IntroductionToAlgorithm/16_greedy" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/IntroductionToAlgorithm/16_greedy" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestScheduling\E$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestIsPalindrome in lightsinger.life/algorithm/leetcode/leet_9" />
+        <item itemvalue="Go Test.TestKnapsackGreedy in lightsinger.life/algorithm/IntroductionToAlgorithm/lab/lab5" />
         <item itemvalue="Go Test.TestNillPointer in lightsinger.life/algorithm/leetcode/leet_2" />
         <item itemvalue="Go Test.TestIsomorphic in lightsinger.life/algorithm/leetcode/leet_205" />
         <item itemvalue="Go Test.TestCountPrime in lightsinger.life/algorithm/leetcode/leet_204" />
-        <item itemvalue="Go Test.TestScheduling in lightsinger.life/algorithm/IntroductionToAlgorithm/16_greedy" />
-        <item itemvalue="Go Test.TestLargestNumber in lightsinger.life/algorithm/leetcode/leet_179" />
       </list>
     </recent_temporary>
   </component>

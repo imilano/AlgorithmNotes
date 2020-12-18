@@ -79,10 +79,19 @@ func isPalindrome(s string, l, r int) bool {
 	return true
 }
 
+//#TODO 对于长度为1的字符会出错
 func bruteForce(s string) string {
 	var res string
 	l := len(s)
-	for i := 0; i < l-1; i++ { // Warning!!!!! LENGTH -1 !!!!!!
+	//if l <= 1  {
+	//	return s
+	//}
+
+	// Warning!!!!! LENGTH -1 !!!!!
+	//for i := 0; i < l-1; i++ {
+	//	for j := i + 1; j < l; j++ {
+	// 改成下面这样的循环方式，可以处理控制符以及只有单个字符的情况
+	for i := 0; i < l-1; i++ {
 		for j := i + 1; j < l; j++ {
 			if s[i] == s[j] && isPalindrome(s, i, j) {
 				if len(res) < j-i+1 {
@@ -96,12 +105,11 @@ func bruteForce(s string) string {
 }
 
 // Solution 3, dynamic programming
+// #TODO 对于长度为2的字符会出错。
 func dynamicProgramming(s string) string {
 	// 空串或长度为1，必然为回文串
-	start, maxLen, n := 0, 0, len(s)
-	if n < 2 {
-		return s
-	}
+	// 非空串必然会有大小至少为1的回文串
+	start, maxLen, n := 0, 1, len(s)
 
 	// TODO 优化空间复杂度
 	dp := make([][]bool, n)
@@ -109,25 +117,24 @@ func dynamicProgramming(s string) string {
 		dp[i] = make([]bool, n)
 	}
 
-	// 初始条件
-	for i := 0; i < n; i++ {
-		dp[i][i] = true
-	}
-
 	// 注意，在状态转移方程中，我们是从长度较短的字符串向长度较长的字符串进行转移的，因此一定要注意动态规划的循环顺序。
 	// 动态规划中，注意状态方程的转移方向
-	for j := 1; j < n; j++ {
+	for j := 0; j < n; j++ {
+		// base case
+		dp[j][j] = true
 		for i := 0; i < j; i++ {
-			if s[i] != s[j] {
-				dp[i][j] = false
-			} else {
-				if j-i < 3 {
-					dp[i][j] = true
-				} else {
-					dp[i][j] = dp[i+1][j-1]
-				}
-			}
+			//if s[i] != s[j] {
+			//	dp[i][j] = false
+			//} else {
+			//	if j-i < 3 {
+			//		dp[i][j] = true
+			//	} else {
+			//		dp[i][j] = dp[i+1][j-1]
+			//	}
+			//}
 
+			// 以上表达式的更加简练的写法
+			dp[i][j] = s[i] == s[j] && (j - i <2 || dp[i+1][j-1])
 			if dp[i][j] && j-i+1 > maxLen {
 				start = i
 				maxLen = j - i + 1
