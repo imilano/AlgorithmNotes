@@ -2,6 +2,7 @@ package leet_15
 
 import (
 	"sort"
+	"strconv"
 )
 
 /*
@@ -11,7 +12,7 @@ import (
  */
 
 // brutal force
-func brutalForce(nums []int) [][]int {
+func threeSum1(nums []int) [][]int {
 	var res [][]int
 	if len(nums) <= 2 {
 		return res
@@ -46,9 +47,41 @@ func contains(i,j,k int,res [][]int) bool {
 
 	return false
 }
+//-------------------------------------------------
+// using  map to reduce duplication
+func threeSum2(nums []int) [][]int {
+	var res [][]int
+	sort.Ints(nums)
+	m := make(map[string]int)
 
-// optimized
-func threeSumOpt(nums []int) [][]int {
+	length := len(nums)
+	for i := 0; i< length-2;i++ {
+		start,end := i+1,length-1
+		for start < end {
+			sum := nums[start] + nums[end]
+			if sum == -nums[i] {
+				t := strconv.Itoa(nums[start])+strconv.Itoa(nums[end])
+				if m[t] == 1 {
+					start++
+					continue
+				}
+
+				res = append(res,[]int{nums[i],nums[start],nums[end]})
+				m[t] = 1
+				start++
+			} else if sum > - nums[i] {
+				end--
+			} else {
+				start++
+			}
+		}
+	}
+
+	return res
+}
+
+//----------------------------------
+func threeSum3(nums []int) [][]int {
 	var res [][]int
 	if len(nums) <=2 {
 		return res
@@ -85,11 +118,4 @@ func threeSumOpt(nums []int) [][]int {
 	}
 
 	return res
-}
-
-func threeSum(nums []int) [][]int {
-	// brutal force
-	// return brutalForce(nums)
-
-	return threeSumOpt(nums)
 }

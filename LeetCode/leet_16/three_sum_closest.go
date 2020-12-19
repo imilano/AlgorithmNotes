@@ -55,31 +55,39 @@ func threeSumClosestOriginal(nums []int, target int) int {
 
 // optimized
 func threeSumClosest(nums []int, target int) int {
-	res := math.MaxInt16
-	if len(nums) <= 2 {
-		return 0
-	}
+	res := math.MaxInt16   // 初始值不能为0，应该尽量大
 
 	sort.Ints(nums)
 	for i := 0 ; i< len(nums)-2;i++ {
+		// 因为数组已经有序了，所以如果当前nums[i]的三倍都已经比target要大的话，没必要在用比nums[i]还要大的数字继续进行比较了
+		if nums[i] *  3 > target {
+			return min(res,nums[i]+ nums[i+1]+nums[i+2])
+		}
 		left,right := i+1,len(nums)-1
 		for left < right {
 			sum := nums[i] + nums[left] + nums[right]
 			if sum == target {
 				return target
 			}
-
+			if abs(target-sum) < abs(target-res) {
+				res = sum
+			}
 			if sum > target {
 				right--
 			} else {
 				left++
 			}
-
-			if abs(target-sum) < abs(target-res) {
-				res = sum
-			}
 		}
 	}
 
 	return res
+}
+
+
+func min(a,b int) int {
+	if a > b {
+		return b
+	}
+
+	return a
 }
