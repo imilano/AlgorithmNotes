@@ -13,16 +13,13 @@ type ListNode struct {
     Next *ListNode
 }
 
-// time complexity: O(1)
+
+// --------------------------------
+// iterative solution
+// time complexity: O(n)
 // space complexity: O(1)
 func removeNthFromEnd(head *ListNode, n int) *ListNode {
-    var fast,slow *ListNode
-    if head == nil {
-        return nil
-    }
-
-
-    fast,slow = head,head
+    fast,slow := head,head
     for i := 0; i< n;i++ {
         fast = fast.Next
     }
@@ -31,7 +28,7 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
     }
 
     for fast.Next != nil {
-        fast=fast.Next
+        fast = fast.Next
         slow = slow.Next
     }
 
@@ -39,6 +36,7 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
     return head
 }
 
+//------------------------------------------------------
 // time complexity: O(n)
 // space complexity: O(n)
 func helperRec(root *ListNode, depth *int,n int) *ListNode {
@@ -57,11 +55,21 @@ func helperRec(root *ListNode, depth *int,n int) *ListNode {
 }
 
 
-func removeNthFromEndRec(head *ListNode,n int) *ListNode {
-    if head == nil {
-        return nil
-    }
-
+func removeNthFromEnd2(head *ListNode,n int) *ListNode {
     var depth int
     return helperRec(head,&depth,n)
+}
+
+//----------------------------------------
+var cnt int
+func removeNthFromEnd3(head *ListNode, n int) *ListNode {
+    if head == nil {
+        return head
+    }
+    head.Next = removeNthFromEnd3(head.Next,n)
+    cnt++
+    if cnt == n {
+        return head.Next
+    }
+    return head
 }
