@@ -103,6 +103,33 @@ func longestPalindrome(s string) string {
 }
 ```
    
+## Divide
+1. MergerKSortedLists
+
+```go
+//-----------------------------------------------
+// 方法2：使用分治法
+// time complexity: O(Nlgk), N 是所有的元素数量，k是数组长度
+// space complexity: O(1)
+func mergeKListsDivide(lists []*ListNode) *ListNode {
+    if lists == nil {
+        return nil
+    }
+
+    n := len(lists)
+    for n > 1{
+        // 加1是为了处理奇数个数的情况，加一保证仍然能从尾部开始向前进行合并
+        // 如果个数是偶数，那么加1无影响
+        k := (n+1)/2
+        for i := 0; i< n/2;i++ {
+            lists[i] = mergeTwoLists(lists[i],lists[i+k])
+        }
+        n = k
+    }
+
+    return lists[0]
+}
+```
 
 
 ## Puzzles

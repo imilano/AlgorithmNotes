@@ -12,6 +12,8 @@ type ListNode struct {
     Next *ListNode
 }
 
+//---------------------
+// 方法1：复用mergeTwoSortedList，逐一合并，效率较低
 func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
     var head,dummy *ListNode
 
@@ -54,9 +56,6 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 }
 
 
-// 方法一：朴素方法，逐一合并即可，效率较低
-// 方法二： 使用最小堆，每次将k个元素人堆，然后不断取出一个元素即可
-// 方法三：使用分治法
 func mergeKLists(lists []*ListNode) *ListNode {
     length := len(lists)
     if length == 0 {
@@ -71,7 +70,9 @@ func mergeKLists(lists []*ListNode) *ListNode {
     return head
 }
 
-// 分治法
+
+//-----------------------------------------------
+// 方法2：使用分治法
 // time complexity: O(Nlgk), N 是所有的元素数量，k是数组长度
 // space complexity: O(1)
 func mergeKListsDivide(lists []*ListNode) *ListNode {
@@ -81,7 +82,7 @@ func mergeKListsDivide(lists []*ListNode) *ListNode {
 
     n := len(lists)
     for n > 1{
-        // 加1是为了处理奇数个数的情况，加一保证任然能从尾部开始向前进行合并
+        // 加1是为了处理奇数个数的情况，加一保证仍然能从尾部开始向前进行合并
         // 如果个数是偶数，那么加1无影响
         k := (n+1)/2
         for i := 0; i< n/2;i++ {
@@ -92,3 +93,6 @@ func mergeKListsDivide(lists []*ListNode) *ListNode {
 
     return lists[0]
 }
+
+//--------------------------------
+// 方法3：use min-heap

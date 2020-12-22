@@ -29,10 +29,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_678/valid_parenthesis_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_856/score_of_parentheses.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/leet_19/remove_kth_node_from_end_of_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_19/remove_kth_node_from_end_of_list.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/~$tags.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/leet_22/generate _parentheses.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/leet_22/generate _parentheses.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/Notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_23/merge_k_sorted_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_23/merge_k_sorted_list.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,10 +152,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Test.TestLetterCombination in lightsinger.life/algorithm/leetcode/leet_17" />
-        <item itemvalue="Go Test.TestIsPalindrome in lightsinger.life/algorithm/leetcode/leet_9" />
-        <item itemvalue="Go Test.TestKnapsackGreedy in lightsinger.life/algorithm/IntroductionToAlgorithm/lab/lab5" />
         <item itemvalue="Go Test.TestNillPointer in lightsinger.life/algorithm/leetcode/leet_2" />
+        <item itemvalue="Go Test.TestKnapsackGreedy in lightsinger.life/algorithm/IntroductionToAlgorithm/lab/lab5" />
         <item itemvalue="Go Test.TestIsomorphic in lightsinger.life/algorithm/leetcode/leet_205" />
+        <item itemvalue="Go Test.TestIsPalindrome in lightsinger.life/algorithm/leetcode/leet_9" />
       </list>
     </recent_temporary>
   </component>
