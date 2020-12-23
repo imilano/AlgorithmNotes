@@ -1,7 +1,10 @@
 package leet_9
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestIsPalindrome(t *testing.T) {
-	isPalindrome3(121)
+	fmt.Println(IsPalindrome(123))
 }

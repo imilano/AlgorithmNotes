@@ -83,11 +83,15 @@ func max(a,b int) int {
 	Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
 */
 
+//-------------------------------
+// For test
 func LongestValidParentheses(s string) int {
 	return longestValidParentheses(s)
 }
 
 
+
+//-------------------------------------
 // brutal force
 // time complexity: O(n^2)
 // space complexity: O(1)
