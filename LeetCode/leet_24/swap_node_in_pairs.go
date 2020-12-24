@@ -14,16 +14,68 @@ type ListNode struct {
 func swapPairs(head *ListNode) *ListNode {
     dummy := new(ListNode)
     dummy.Next = head
-    current := dummy
-    for current.Next != nil && current.Next.Next != nil {
-        first := current.Next
-        second := current.Next.Next
+    cur := dummy
+    for cur.Next != nil && cur.Next.Next != nil {
+        first := cur.Next
+        second := cur.Next.Next
 
-        current.Next  = second
+        cur.Next  = second
         first.Next = second.Next
         second.Next = first
-        current = current.Next.Next
+        cur = cur.Next.Next
     }
 
+    return dummy.Next
+}
+
+//----------------------
+func swapPairs2(head *ListNode) *ListNode {
+    var arr []int
+    cur := head
+    for cur != nil {
+        arr = append(arr, cur.Val)
+        cur = cur.Next
+    }
+
+    for i := 0; i < len(arr)-1; i+=2 {
+        arr[i],arr[i+1] = arr[i+1],arr[i]
+    }
+
+    cur = head
+    for _,v := range arr {
+        cur.Val = v
+        cur = cur.Next
+    }
+
+
+    return head
+}
+
+//-----------------
+func swapPairs3(head *ListNode) *ListNode {
+    if head == nil {
+        return nil
+    }
+
+    cur := new(ListNode)
+    dummy := cur
+    first,second := head,head.Next
+    for first != nil && second != nil{
+        t := second.Next
+
+        cur.Next = second
+        cur.Next.Next = first
+        cur = cur.Next.Next
+
+        first = t
+        if t != nil {
+            second = t.Next
+        } else {
+            second = nil
+        }
+    }
+
+    // deal with odd length
+    cur.Next = first
     return dummy.Next
 }

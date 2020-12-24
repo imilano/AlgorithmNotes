@@ -30,10 +30,6 @@ type TreeNode struct {
 
 // Path Sum using DFS
 func dfs(root *TreeNode,sum int,path []int,res *[][]int) {
-	//if root == nil {
-	//	return
-	//}
-
 	path = append(path,root.Val)
 	if root.Left == nil && root.Right == nil && sum == root.Val {
 		tmp := make([]int, len(path))
@@ -56,7 +52,26 @@ func pathSum(root *TreeNode, sum int) [][]int {
 		return res
 	}
 
-	dfs(root,sum,[]int{},&res)
+	dfs(root,sum,nil,&res)
 
 	return res
+}
+
+//--------------------------------
+func helper(root *TreeNode, sum int, cur []int, res *[][]int) {
+	cur = append(cur,root.Val)
+	sum -= root.Val
+	if root.Left == nil && root.Right == nil && sum == 0 {
+		t := make([]int,len(cur))
+		copy(t,cur)
+		*res = append(*res, t)
+		return
+	}
+
+	if root.Left != nil {
+		helper(root.Left,sum, cur,res)
+	}
+	if root.Right != nil {
+		helper(root.Right, sum, cur,res)
+	}
 }

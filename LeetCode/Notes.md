@@ -18,6 +18,38 @@
 很多的单调栈的题目并不是存储实际的数字，而是存储表示该数字的坐标。
 
 
+## DFS
+- 113
+```go
+func pathSum(root *TreeNode, sum int) [][]int {
+	var res [][]int
+	if root == nil {
+		return res
+	}
+
+	helper(root,sum,nil,&res)
+
+	return res
+}
+
+func helper(root *TreeNode, sum int, cur []int, res *[][]int) {
+	cur = append(cur,root.Val)
+	sum -= root.Val
+	if root.Left == nil && root.Right == nil && sum == 0 {
+		t := make([]int,len(cur))
+		copy(t,cur)
+		*res = append(*res, t)
+		return
+	}
+
+	if root.Left != nil {
+		helper(root.Left,sum, cur,res)
+	}
+	if root.Right != nil {
+		helper(root.Right, sum, cur,res)
+	}
+}
+```
 ## BFS
 BFS 调用的时候需要注意，由于我们会删除队列中的元素，所以队列的长度经常会在变化，故而不能直接在for循环的条件判断中直接使用len(nums)，而应该提前将其计算好，作为一个常数来使用（代表当前层的节点数量）。
 
