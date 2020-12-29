@@ -34,3 +34,35 @@ func removeDuplicates(nums []int) int {
 
 	return left +1
 }
+
+func removeDuplicates2(nums []int) int {
+	var pre,cur int
+	n := len(nums)
+	if n == 0 {
+		return 0
+	}
+
+	for cur < n {
+		if nums[cur] != nums[pre] {
+			pre++
+			nums[pre] = nums[cur]
+		}
+
+		cur++
+	}
+	return pre+1
+}
+
+
+func removeDuplicates3(nums []int) int {
+	var i int
+	for _,num := range nums {
+		if i < 1 || num > nums[i-1] {
+			nums[i] = num
+			i++
+		}
+	}
+
+
+	return i
+}

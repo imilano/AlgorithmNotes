@@ -29,10 +29,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/~$tags.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/leet_113/path_sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_113/path_sum.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/leet_24/swap_node_in_pairs.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/leet_24/swap_node_in_pairs.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
