@@ -30,3 +30,29 @@ func strStr(haystack string, needle string) int {
 	return -1
 }
 
+//------------------------------------------------------
+func strStr2(haystack string, needle string) int {
+	if needle == "" {
+		return 0
+	}
+
+	n := len(needle)
+	for i := 0; i<= len(haystack)-n;i++ {
+		if haystack[i] == needle[0] && equal(needle,haystack[i:i+n]) {
+			return i
+		}
+	}
+
+	return -1
+}
+
+func equal(s1,s2 string) bool {
+	for i := range s1 {
+		if s1[i] != s2[i] {
+			return false
+		}
+	}
+
+
+	return true
+}
