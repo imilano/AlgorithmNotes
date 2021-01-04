@@ -29,10 +29,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_207/course_scheduler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_208/implement_trie.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_209/minimum_size_subarray_sum.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_209/minimum_size_subarray_sum_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/leet_28/implement_strstr.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_28/implement_strstr.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestDiffWaysToCompute in lightsinger.life/algorithm/leetcode/leet_241">
+  <component name="RunManager" selected="Go Test.TestMinSubarrayLen in lightsinger.life/algorithm/leetcode/leet_209">
     <configuration name="TestDiffWaysToCompute in lightsinger.life/algorithm/leetcode/leet_241" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <working_directory value="$PROJECT_DIR$/leetcode/leet_241" />
@@ -102,17 +102,6 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestDiffWaysToCompute\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestIsomorphic in lightsinger.life/algorithm/leetcode/leet_205" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/leetcode/leet_205" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_205" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestIsomorphic\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestKnapsackGreedy in lightsinger.life/algorithm/IntroductionToAlgorithm/lab/lab5" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -137,6 +126,17 @@
       <pattern value="^\QTestLetterCombination\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestMinSubarrayLen in lightsinger.life/algorithm/leetcode/leet_209" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <working_directory value="$PROJECT_DIR$/leetcode/leet_209" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_209" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestMinSubarrayLen\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestNillPointer in lightsinger.life/algorithm/leetcode/leet_2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <working_directory value="$PROJECT_DIR$/leetcode/leet_2" />
@@ -150,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestMinSubarrayLen in lightsinger.life/algorithm/leetcode/leet_209" />
         <item itemvalue="Go Test.TestDiffWaysToCompute in lightsinger.life/algorithm/leetcode/leet_241" />
         <item itemvalue="Go Test.TestLetterCombination in lightsinger.life/algorithm/leetcode/leet_17" />
         <item itemvalue="Go Test.TestNillPointer in lightsinger.life/algorithm/leetcode/leet_2" />
         <item itemvalue="Go Test.TestKnapsackGreedy in lightsinger.life/algorithm/IntroductionToAlgorithm/lab/lab5" />
-        <item itemvalue="Go Test.TestIsomorphic in lightsinger.life/algorithm/leetcode/leet_205" />
       </list>
     </recent_temporary>
   </component>
@@ -244,6 +244,11 @@
           <url>file://$PROJECT_DIR$/leetcode/leet_17/letter_combination_of_phone_number_test.go</url>
           <line>8</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leetcode/leet_209/minimum_size_subarray_sum_test.go</url>
+          <line>10</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
