@@ -63,6 +63,31 @@ func minSubArrayLen(s int, nums []int) int {
 	return res
 }
 
+func minSubArrayLen2(s int, nums []int) int {
+	var left,right,sum int
+	n := len(nums)
+	res := n+1
+
+	for right < n {
+		for sum < s && right < n {
+			sum += nums[right]
+			right++
+		}
+
+		for sum >= s {
+			res = min(res,right-left)
+			sum -= nums[left]
+			left++
+		}
+	}
+
+	if res == n +1 {
+		return 0
+	}
+
+	return res
+}
+
 func min(a,b int) int {
 	if a < b {
 		return a

@@ -5,7 +5,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc4889ae-92dd-4161-9539-6d2a041d6a57" name="Default Changelist" comment="" />
+    <list default="true" id="bc4889ae-92dd-4161-9539-6d2a041d6a57" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +21,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.15.5/libexec" />
+  <component name="GOROOT" url="file:///usr/local/Cellar/go/1.15.6/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -158,48 +161,6 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1396" height="330" key="GridCell.Tab.0.bottom" timestamp="1606650602199">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="330" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606650602199" />
-    <state width="1396" height="330" key="GridCell.Tab.0.center" timestamp="1606650602199">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="330" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1606650602199" />
-    <state width="1396" height="330" key="GridCell.Tab.0.left" timestamp="1606650602198">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="330" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1606650602198" />
-    <state width="1396" height="330" key="GridCell.Tab.0.right" timestamp="1606650602199">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="330" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1606650602199" />
-    <state width="1396" height="425" key="GridCell.Tab.1.bottom" timestamp="1606650602195">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="425" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606650602195" />
-    <state width="1396" height="425" key="GridCell.Tab.1.center" timestamp="1606650602195">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="425" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1606650602195" />
-    <state width="1396" height="425" key="GridCell.Tab.1.left" timestamp="1606650602195">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="425" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1606650602195" />
-    <state width="1396" height="425" key="GridCell.Tab.1.right" timestamp="1606650602195">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="425" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1606650602195" />
-    <state x="518" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606440922441">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="518" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1606440922441" />
-    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup" timestamp="1606650567744">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1606650567744" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
