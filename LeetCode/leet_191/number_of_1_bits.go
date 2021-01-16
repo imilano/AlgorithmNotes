@@ -10,7 +10,6 @@ In Java, the compiler represents the signed integers using 2's complement notati
 Follow up: If this function is called many times, how would you optimize it?
 */
 
-
 func hammingWeight(num uint32) int {
 	var res int
 	for num != 0 {

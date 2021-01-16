@@ -12,7 +12,7 @@ Note:
 */
 
 func abs(a int) int {
-	if a  < 0 {
+	if a < 0 {
 		return -a
 	}
 
@@ -26,17 +26,17 @@ func divide(dividend int, divisor int) int {
 	}
 
 	var negative bool
-	if (dividend < 0) == (divisor <0) {
+	if (dividend < 0) == (divisor < 0) {
 		negative = false
 	} else {
 		negative = true
 	}
 
-	dvd,dvs := int64(abs(dividend)),int64(abs(divisor))
-	for dvd >= dvs{
+	dvd, dvs := int64(abs(dividend)), int64(abs(divisor))
+	for dvd >= dvs {
 		tmp := dvs
 		mul := 1
-		for tmp << 1 <= dvd {
+		for tmp<<1 <= dvd {
 			tmp <<= 1
 			mul <<= 1
 		}

@@ -11,7 +11,6 @@ Your returned answers (both index1 and index2) are not zero-based.
 You may assume that each input would have exactly one solution and you may not use the same element twice.
 */
 
-
 func twoSum(numbers []int, target int) []int {
 	var res []int
 	length := len(numbers)
@@ -19,13 +18,13 @@ func twoSum(numbers []int, target int) []int {
 		return res
 	}
 
-	left,right := 0,length-1
+	left, right := 0, length-1
 	for left < right {
-		num :=  numbers[left] + numbers[right]
+		num := numbers[left] + numbers[right]
 		if num == target {
-			res = append(res,left+1,right+1)
+			res = append(res, left+1, right+1)
 			return res
-		}else if num < target {
+		} else if num < target {
 			left++
 		} else {
 			right--

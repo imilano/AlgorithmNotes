@@ -6,15 +6,15 @@ package leet_11
 	which, together with the x-axis forms a container, such that the container contains the most water.
 	Notice that you may not slant the container.
 */
-func max(a,b int) int {
-	if a > b{
+func max(a, b int) int {
+	if a > b {
 		return a
 	}
 
 	return b
 }
 
-func min(a,b int) int {
+func min(a, b int) int {
 	if a > b {
 		return b
 	}
@@ -26,9 +26,9 @@ func min(a,b int) int {
 // space complexity: O(1)
 func brutalForce(height []int) int {
 	var maxArea int
-	for i:= 0; i< len(height); i++ {
-		for j:= i+1; j<len(height);j++ {
-			maxArea = max(maxArea, min(height[i],height[j]) * (j-i))
+	for i := 0; i < len(height); i++ {
+		for j := i + 1; j < len(height); j++ {
+			maxArea = max(maxArea, min(height[i], height[j])*(j-i))
 		}
 	}
 
@@ -42,14 +42,14 @@ func brutalForce(height []int) int {
 // 时间复杂度: O(n)
 // 空间复杂度: O(1)
 func maxAreaWithTwoPointer(height []int) int {
-	maxArea,right,left := 0,len(height)-1,0
+	maxArea, right, left := 0, len(height)-1, 0
 
 	for left < right {
-		maxArea = max(maxArea,min(height[left],height[right]) * (right-left))
+		maxArea = max(maxArea, min(height[left], height[right])*(right-left))
 		if height[left] < height[right] {
 			left++
 		} else {
-			right --
+			right--
 		}
 	}
 

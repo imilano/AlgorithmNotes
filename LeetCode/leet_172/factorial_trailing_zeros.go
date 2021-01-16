@@ -16,15 +16,15 @@ Explanation: 3! = 6, no trailing zero.
 
 // 实际只需要计算一共有几个5，其个数就是0的个数
 
-func trailingZeroesConcise(n int)int {
+func trailingZeroesConcise(n int) int {
 	var res int
-	for i := 1; i <= n;i++ {
+	for i := 1; i <= n; i++ {
 		num := i
-		if num % 5 != 0 {
+		if num%5 != 0 {
 			continue
 		}
 
-		for num % 5 == 0 {
+		for num%5 == 0 {
 			res += 1
 			num /= 5
 		}
@@ -38,7 +38,7 @@ func trailingZeroes(n int) int {
 	if n < 5 {
 		return res
 	}
-	for i := 5; i <= n;i++ {
+	for i := 5; i <= n; i++ {
 		res += countFive(i)
 	}
 
@@ -46,13 +46,13 @@ func trailingZeroes(n int) int {
 }
 
 func countFive(num int) int {
-	if num % 5 != 0 {
+	if num%5 != 0 {
 		return 0
 	}
 
 	var count int
-	for num % 5 == 0 {
-		count+= 1
+	for num%5 == 0 {
+		count += 1
 		num /= 5
 	}
 

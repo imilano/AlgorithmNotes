@@ -55,8 +55,8 @@ func lengthOfLongestSubstring(s string) int {
 */
 
 func lengthOfLongestSubstringOptimized(s string) int {
-	var left, right, ans, index,gap int
-	m := make([]int,128)
+	var left, right, ans, index, gap int
+	m := make([]int, 128)
 	length := len(s)
 
 	for ; right < length; right++ {

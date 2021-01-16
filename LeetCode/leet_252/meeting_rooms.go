@@ -7,11 +7,11 @@ import "sort"
 	determine if a person could attend all meetings.
 */
 
-func max (i,j int) int {
+func max(i, j int) int {
 	if i > j {
 		return i
-		}
- 	return j
+	}
+	return j
 }
 
 func canAttend(nums [][]int) bool {
@@ -24,7 +24,7 @@ func canAttend(nums [][]int) bool {
 		return nums[i][0] < nums[j][0]
 	})
 
-	for i := 1; i < length; i++  {
+	for i := 1; i < length; i++ {
 		if nums[i-1][1] > nums[i][0] {
 			return false
 		}

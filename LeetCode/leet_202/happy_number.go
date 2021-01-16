@@ -44,25 +44,24 @@ func isHappy(n int) bool {
 func getDigits(n int) []int {
 	var res []int
 	for n != 0 {
-		res = append(res,n % 10)
+		res = append(res, n%10)
 		n /= 10
 	}
 
 	return res
 }
 
-
 // 非快乐数在循环的最后总会出现4(以11为例)，并且会一直循环出现。根据这个特点，可以简化代码
 func isHappy2(n int) bool {
 	if n <= 0 {
-		return  false
+		return false
 	}
 
 	for n != 1 && n != 4 {
 		var sum int
 		for n != 0 {
-			sum += (n%10)*(n%10)
-			n/= 10
+			sum += (n % 10) * (n % 10)
+			n /= 10
 		}
 
 		n = sum
@@ -71,14 +70,13 @@ func isHappy2(n int) bool {
 	return n == 1
 }
 
-
 // 因为非快乐数最后都会循环出现，故而也可以利用map来记录数字出现的次数，如果出现的次数大于1，并且该数字不是1，那么就说明不是快乐数，否则就是快乐数
-func isHappy3(n int)bool {
+func isHappy3(n int) bool {
 	m := make(map[int]int)
 	for n != 1 {
 		var sum int
 		for n != 0 {
-			sum += (n % 10) * ( n %10)
+			sum += (n % 10) * (n % 10)
 			n /= 10
 		}
 

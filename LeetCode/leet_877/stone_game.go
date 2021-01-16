@@ -21,7 +21,7 @@ func stoneGame(piles []int) bool {
 		dp[i][i].second = 0
 	}
 
-	var j,left,right int
+	var j, left, right int
 	for l := 2; l <= length; l++ {
 		for i := 0; i <= length-l; i++ {
 			j = l + i - 1

@@ -10,20 +10,20 @@ package leet_62
 // time complexity: O(m*n)
 // space complexity: O(m*n)
 func uniquePathsV1(m int, n int) int {
-	dp := make([][]int,m)
+	dp := make([][]int, m)
 	for i := range dp {
-		dp[i] = make([]int,n)
+		dp[i] = make([]int, n)
 	}
 	//base case,dp[0][j] = dp[i][0] = 1
-	for i := 0; i< m ;i++ {
+	for i := 0; i < m; i++ {
 		dp[i][0] = 1
 	}
-	for i := 0; i< n;i++{
+	for i := 0; i < n; i++ {
 		dp[0][i] = 1
 	}
 
-	for i := 1; i< m;i++ {
-		for j := 1; j<n;j++ {
+	for i := 1; i < m; i++ {
+		for j := 1; j < n; j++ {
 			dp[i][j] = dp[i-1][j] + dp[i][j-1]
 		}
 	}
@@ -36,45 +36,45 @@ func uniquePathsV1(m int, n int) int {
 // time complexity: O(m*n)
 // space complexity: O(n)
 func uniquePathsV2(m int, n int) int {
-	pre := make([]int,m)
+	pre := make([]int, m)
 	for i := range pre {
-		pre[i]  =1
+		pre[i] = 1
 	}
 
-	cur := make([]int,n)
+	cur := make([]int, n)
 	for i := range cur {
 		cur[i] = 1
 	}
 
 	//TODO  figure out how to optimize this code, also check the discussion in leetcode
-	for i :=1; i< m;i++{
-		for j := 1; j< n;j++ {
+	for i := 1; i < m; i++ {
+		for j := 1; j < n; j++ {
 			cur[j] = pre[j] + cur[i-1]
 		}
-		swap(&pre,&cur)
+		swap(&pre, &cur)
 	}
 
 	return cur[n-1]
 }
 
-func swap(a,b *[]int) {
-	a,b = b,a
+func swap(a, b *[]int) {
+	a, b = b, a
 }
 
 // 使用排列组合的方法。 假设一个m行n列的数组，一个点要从（0，0）移动到（m-1，n-1），意味着他需要向下走m-1步，向右走n-1步，一共需要走m+n-2步。
 // 也就是所我们只需要从m+n-2步中选出m-1步向下走和n-1步向右走的方法并且进行一个排列组合即可
 func uniquePathsWithPermutation(m int, n int) int {
-	 N := m+n -2
-	 k := m-1
-	  res := 1
-	  for i := 1;  i <= k; i++ {
-	  	res = res * (N-k+i)/i
-	  }
+	N := m + n - 2
+	k := m - 1
+	res := 1
+	for i := 1; i <= k; i++ {
+		res = res * (N - k + i) / i
+	}
 
-	  return res
+	return res
 }
 
 func uniquePaths(m int, n int) int {
 	//return uniquePathsV2(m,n)
-	return uniquePathsWithPermutation(m,n)
+	return uniquePathsWithPermutation(m, n)
 }

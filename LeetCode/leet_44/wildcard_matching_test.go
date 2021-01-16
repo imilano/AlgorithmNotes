@@ -5,8 +5,8 @@ import (
 	"testing"
 )
 
-func TestIsMatch( t *testing.T) {
+func TestIsMatch(t *testing.T) {
 	s := "adceb"
 	p := "*a*b"
-	fmt.Printf("%v",isMatch(s,p))
+	fmt.Printf("%v", isMatch(s, p))
 }

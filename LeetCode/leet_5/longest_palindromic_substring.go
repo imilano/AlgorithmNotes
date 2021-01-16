@@ -134,7 +134,7 @@ func dynamicProgramming(s string) string {
 			//}
 
 			// 以上表达式的更加简练的写法
-			dp[i][j] = s[i] == s[j] && (j - i <2 || dp[i+1][j-1])
+			dp[i][j] = s[i] == s[j] && (j-i < 2 || dp[i+1][j-1])
 			if dp[i][j] && j-i+1 > maxLen {
 				start = i
 				maxLen = j - i + 1

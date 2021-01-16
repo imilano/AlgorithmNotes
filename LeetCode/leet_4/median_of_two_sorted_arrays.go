@@ -9,9 +9,9 @@ import "math"
 
 /*
 	题解见同文件夹markdown。
- */
+*/
 
-func getMax(x,y int) int {
+func getMax(x, y int) int {
 	if x > y {
 		return x
 	}
@@ -19,7 +19,7 @@ func getMax(x,y int) int {
 	return y
 }
 
-func getMin(x,y int) int {
+func getMin(x, y int) int {
 	if x > y {
 		return y
 	}
@@ -32,16 +32,16 @@ func getMin(x,y int) int {
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	// 始终保证nums1是长度更小的数组
 	if len(nums1) > len(nums2) {
-		return findMedianSortedArrays(nums2,nums1)
+		return findMedianSortedArrays(nums2, nums1)
 	}
 
-	x,y := len(nums1),len(nums2)
-	low,high := 0,x
-	var maxLeftX,maxLeftY,minRightX,minRightY int
-	for low <= high {  // 为什么是小于等于而不是小于？
+	x, y := len(nums1), len(nums2)
+	low, high := 0, x
+	var maxLeftX, maxLeftY, minRightX, minRightY int
+	for low <= high { // 为什么是小于等于而不是小于？
 		// partitionX = (low+high)/2
 		// partitionX + partitionY = (x+y+1)/2
-		partitionX := (low+high)/2
+		partitionX := (low + high) / 2
 		partitionY := (x+y+1)/2 - partitionX
 
 		// edge condition
@@ -71,20 +71,18 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 		// If the total length is odd number, then we choose the  bigger one between maxLeftX and maxLeftY
 		// If the total length is even number, then we choose the the average between the max of maxLeft* and minRight*
 		if maxLeftX <= minRightY && maxLeftY <= minRightX {
-			if (x+y)%2 == 0{
-				return (float64(getMax(maxLeftY,maxLeftX)) + float64(getMin(minRightY,minRightX)))/2
+			if (x+y)%2 == 0 {
+				return (float64(getMax(maxLeftY, maxLeftX)) + float64(getMin(minRightY, minRightX))) / 2
 			} else {
-				return float64(getMax(maxLeftX,maxLeftY))
+				return float64(getMax(maxLeftX, maxLeftY))
 			}
 		} else if maxLeftX > minRightY {
 			// We go far right, we need move left
-			high = partitionX -1   // 为什么要减1 #TODO figure it out
-		} else  {
+			high = partitionX - 1 // 为什么要减1 #TODO figure it out
+		} else {
 			// We go far left, we need move right
 			low = partitionX + 1
 		}
 	}
 	return 0.0
 }
-
-

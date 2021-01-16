@@ -60,8 +60,8 @@ func checkValidString(s string) bool {
 
 //-------------------------------
 //递归，遇到星号时，分别将星号视为左括号和右括号以及空，只要三者中有一个为true，就可以视为true。详见代码
-func checkValidString2(s string)  bool {
-	return helper(s,0,0)
+func checkValidString2(s string) bool {
+	return helper(s, 0, 0)
 }
 
 func helper(s string, start int, cnt int) bool {
@@ -69,7 +69,7 @@ func helper(s string, start int, cnt int) bool {
 		return false
 	}
 
-	for i := start; i< len(s);i++ {
+	for i := start; i < len(s); i++ {
 		if s[i] == '(' {
 			cnt++
 		} else if s[i] == ')' {
@@ -79,11 +79,11 @@ func helper(s string, start int, cnt int) bool {
 
 			cnt--
 		} else {
-			return helper(s,i+1,cnt) || // 将星号视为空
-				helper(s,i+1,cnt+1) || // 将星号视为左括号
-				helper(s,i+1,cnt-1)  // 将星号视为右括号
+			return helper(s, i+1, cnt) || // 将星号视为空
+				helper(s, i+1, cnt+1) || // 将星号视为左括号
+				helper(s, i+1, cnt-1) // 将星号视为右括号
 		}
 	}
 
-	return cnt == 0  // 循环退出后，如果cnt为0，则返回true
+	return cnt == 0 // 循环退出后，如果cnt为0，则返回true
 }

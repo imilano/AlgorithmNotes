@@ -21,19 +21,18 @@ func solve(chess [][]string, res map[string]int, row int) {
 	// 直接进入下一格，也就是j+1，然后继对当前的i和j进行检测；如果不冲突，那么我们就将当前的chess[i][j]设置为Q，然后检测下一行，继续递归；
 	// 在递归返回后，我们已经知道了如果放置在当前位置的结果，那么我们需要恢复当前位置为.，然后继续进行下一格的匹配
 	// The essence of backtrace
-	for col := 0; col < len(chess);col++ {
-		if isValid(chess,row,col) {
+	for col := 0; col < len(chess); col++ {
+		if isValid(chess, row, col) {
 			chess[row][col] = "Q"
-			solve(chess,res,row+1)
+			solve(chess, res, row+1)
 			chess[row][col] = "."
 		}
 	}
 }
 
-
 func construct(chess [][]string) string {
 	var path string
-	for i := 0; i< len(chess);i++ {
+	for i := 0; i < len(chess); i++ {
 		var s string
 		for j := range chess[i] {
 			s += chess[i][j]
@@ -44,16 +43,16 @@ func construct(chess [][]string) string {
 	return path
 }
 
-func isValid(chess [][]string, row int ,col int) bool {
+func isValid(chess [][]string, row int, col int) bool {
 	// check col
-	for i := 0; i< row;i++ {
+	for i := 0; i < row; i++ {
 		if chess[i][col] == "Q" {
 			return false
 		}
 	}
 
 	// check 45°
-	for i,j := row-1,col+1;i>=0 && j < len(chess); {
+	for i, j := row-1, col+1; i >= 0 && j < len(chess); {
 		if chess[i][j] == "Q" {
 			return false
 		}
@@ -62,8 +61,8 @@ func isValid(chess [][]string, row int ,col int) bool {
 	}
 
 	// check 135°
-	for i,j := row-1,col-1; i >=0 && j>= 0; {
-		if chess[i][j]  == "Q" {
+	for i, j := row-1, col-1; i >= 0 && j >= 0; {
+		if chess[i][j] == "Q" {
 			return false
 		}
 
@@ -71,23 +70,23 @@ func isValid(chess [][]string, row int ,col int) bool {
 		j--
 	}
 
-	return  true
+	return true
 }
 
 func totalNQueens(n int) int {
 	// initialize chess all to .
-	chess := make([][]string,n)
+	chess := make([][]string, n)
 	for i := range chess {
 		chess[i] = make([]string, n)
 	}
 
-	for i := 0; i < n;i++ {
-		for j := 0; j< n;j++ {
+	for i := 0; i < n; i++ {
+		for j := 0; j < n; j++ {
 			chess[i][j] = "."
 		}
 	}
 
 	res := make(map[string]int)
-	solve(chess,res,0)
+	solve(chess, res, 0)
 	return len(res)
 }

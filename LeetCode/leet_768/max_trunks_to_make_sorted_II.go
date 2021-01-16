@@ -23,23 +23,23 @@ Explanation:
 We can split into two chunks, such as [2, 1], [3, 4, 4].
 However, splitting into [2, 1], [3], [4], [4] is the highest number of chunks possible.
 
- */
+*/
 
 type (
 	Stack struct {
-		top *Node
+		top    *Node
 		length int
-		lock *sync.RWMutex
+		lock   *sync.RWMutex
 	}
 
 	Node struct {
 		value interface{}
-		pre *Node
+		pre   *Node
 	}
 )
 
 // Create new stack
-func NewStack() *Stack{
+func NewStack() *Stack {
 	return &Stack{
 		top:    nil,
 		length: 0,
@@ -48,13 +48,13 @@ func NewStack() *Stack{
 }
 
 // Length of stack
-func (s *Stack) Len() int{
+func (s *Stack) Len() int {
 	return s.length
 }
 
 // Top element  of stack
-func (s *Stack) Top()  interface{} {
-	if s.length ==0 {
+func (s *Stack) Top() interface{} {
+	if s.length == 0 {
 		return nil
 	}
 
@@ -88,7 +88,7 @@ func (s *Stack) Push(value interface{}) {
 }
 
 // Empty check if it is an empty stack
-func (s *Stack) Empty()  bool{
+func (s *Stack) Empty() bool {
 	return s.Len() == 0
 }
 
@@ -96,16 +96,16 @@ func (s *Stack) Empty()  bool{
 // 单调栈
 func maxChunksToSorted(arr []int) int {
 	if len(arr) == 0 {
-		return  0
+		return 0
 	}
 	stack := NewStack()
-	for i :=0; i < len(arr);i++ {
+	for i := 0; i < len(arr); i++ {
 		if stack.Empty() || arr[i] >= stack.Top().(int) {
 			stack.Push(arr[i])
 		} else {
 			// 这里我们单调栈的元素个数实际上是遍历到当前数字之前可以拆分成的块儿的个数，我们遇到一个大于栈顶的元素，就将其压入栈，
 			// suppose其是一个新块儿的开头，但是一旦后面遇到小的数字了，我们就要反过来检查前面的数字，有可能我们之前认为的可以拆分成块儿的地方，现在就不能拆了
-			cur :=  stack.Top().(int)
+			cur := stack.Top().(int)
 			stack.Pop()
 			for !stack.Empty() && stack.Top().(int) > arr[i] {
 				stack.Pop()

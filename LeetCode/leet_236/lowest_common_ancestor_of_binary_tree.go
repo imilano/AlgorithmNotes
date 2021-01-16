@@ -14,14 +14,13 @@ package leet_236
 
 // Definition for TreeNode.
 type TreeNode struct {
-    Val int
-    Left *TreeNode
-    Right *TreeNode
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
 }
 
 // add myself
 type ListNode struct {
-
 }
 
 // https://www.youtube.com/watch?v=13m9ZCB8gjw&feature=emb_logo
@@ -32,28 +31,28 @@ type ListNode struct {
 // if left and right both are not nil, then we just find the two node, root node will be the lca, we just need to return root;
 // else either left or right is nil, if left is not nil, we return left, else ,we return right.
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
-    if root == nil  {
-        return nil
-    }
+	if root == nil {
+		return nil
+	}
 
-    if root.Val == p.Val || root.Val == q.Val {
-        return root
-    }
+	if root.Val == p.Val || root.Val == q.Val {
+		return root
+	}
 
-    left := lowestCommonAncestor(root.Left,p,q)
-    right := lowestCommonAncestor(root.Right,p,q)
+	left := lowestCommonAncestor(root.Left, p, q)
+	right := lowestCommonAncestor(root.Right, p, q)
 
-    if left != nil && right != nil {
-        return root
-    }
+	if left != nil && right != nil {
+		return root
+	}
 
-    if left == nil && right == nil {
-        return nil
-    }
+	if left == nil && right == nil {
+		return nil
+	}
 
-    if left != nil  {
-        return left
-    }
+	if left != nil {
+		return left
+	}
 
-    return right
+	return right
 }

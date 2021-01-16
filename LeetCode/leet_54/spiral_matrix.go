@@ -15,22 +15,22 @@ func spiralOrder(matrix [][]int) []int {
 		return res
 	}
 
-	m,n := len(matrix),len(matrix[0])
-	length := m *n
-	r0,r1 :=0,m-1
-	c0,c1 := 0,n-1
+	m, n := len(matrix), len(matrix[0])
+	length := m * n
+	r0, r1 := 0, m-1
+	c0, c1 := 0, n-1
 
 	//for r0 <= r1 && c0 <= c1 {
 	// use m*n for interview friendly
 	for len(res) < length {
 		// Add top. 从左走到右
-		for top := c0; top <= c1 && len(res) < length ;top++ {
-			res = append(res,matrix[r0][top])
+		for top := c0; top <= c1 && len(res) < length; top++ {
+			res = append(res, matrix[r0][top])
 		}
 
 		// Add right. 从最后一列的第二行走到最后一行
-		for right := r0 +1; right <= r1 && len(res) < length; right++ {
-			res = append(res,matrix[right][c1])
+		for right := r0 + 1; right <= r1 && len(res) < length; right++ {
+			res = append(res, matrix[right][c1])
 		}
 
 		// If we are not left only two row or only two col
@@ -46,15 +46,14 @@ func spiralOrder(matrix [][]int) []int {
 		//	}
 		//}
 		// Add bottom. 在最后一行从倒数第二列走到第一列
-		for bottom := c1-1; bottom >= c0 && len(res) < length; bottom-- {
+		for bottom := c1 - 1; bottom >= c0 && len(res) < length; bottom-- {
 			res = append(res, matrix[r1][bottom])
 		}
 
 		// Add left. 在第一列，从倒数第二行走到正数第二行。
-		for left := r1-1;left > r0 && len(res) < length; left-- {
+		for left := r1 - 1; left > r0 && len(res) < length; left-- {
 			res = append(res, matrix[left][c0])
 		}
-
 
 		r0++
 		c0++

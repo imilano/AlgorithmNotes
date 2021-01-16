@@ -14,11 +14,11 @@ If this function is called many times, how would you optimize it?
 
 func reverseBits(num uint32) uint32 {
 	var res uint32
-	for i := 1; i<= 32;i++ {
-		bit := (num >> (i-1)) & 0x1
-		res += bit<<(32-i)
+	for i := 1; i <= 32; i++ {
+		bit := (num >> (i - 1)) & 0x1
+		res += bit << (32 - i)
 		//res += ((num >>(i-1)) & 1) << (32-i)
 	}
 
-	return  res
+	return res
 }

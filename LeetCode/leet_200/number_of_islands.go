@@ -27,18 +27,18 @@ func numIslands(grid [][]byte) int {
 		return res
 	}
 
-	row,col := len(grid),len(grid[0])
-	visited := make([][]bool,row)
+	row, col := len(grid), len(grid[0])
+	visited := make([][]bool, row)
 	for i := range visited {
-		visited[i] = make([]bool,col)
+		visited[i] = make([]bool, col)
 	}
 
-	for i := 0; i< row;i++ {
-		for j := 0; j<col;j++ {
+	for i := 0; i < row; i++ {
+		for j := 0; j < col; j++ {
 			if grid[i][j] == '0' || visited[i][j] {
 				continue
 			}
-			helper(grid,visited,i,j)
+			helper(grid, visited, i, j)
 			res++
 		}
 	}
@@ -46,19 +46,18 @@ func numIslands(grid [][]byte) int {
 	return res
 }
 
-func helper(g [][]byte, v [][]bool,i,j int) {
+func helper(g [][]byte, v [][]bool, i, j int) {
 	// 注意，row >= len(grid)就停止遍历，而不是row > len(grid)。此外，如果gid[row][col]为0也直接返回。
 	if i < 0 || i >= len(g) || j < 0 || j >= len(g[0]) || v[i][j] || g[i][j] == '0' {
 		return
 	}
 
 	v[i][j] = true
-	helper(g,v,i+1,j)
-	helper(g,v,i-1,j)
-	helper(g,v,i,j+1)
-	helper(g,v,i,j-1)
+	helper(g, v, i+1, j)
+	helper(g, v, i-1, j)
+	helper(g, v, i, j+1)
+	helper(g, v, i, j-1)
 }
-
 
 // BFS。BFS与DFS真就孪生兄弟，形影不离。
 func numIslandsBFS(grid [][]byte) int {
@@ -67,16 +66,15 @@ func numIslandsBFS(grid [][]byte) int {
 		return res
 	}
 
-	row,col := len(grid),len(grid[0])
+	row, col := len(grid), len(grid[0])
 	visited := make([][]bool, row)
 	for i := range visited {
-		visited[i] = make([]bool,col)
+		visited[i] = make([]bool, col)
 	}
 
-
-	dirX,dirY := []int{0,0,1,-1},[]int{1,-1,0,0}
-	for i := 0; i<row;i++ {
-		for j := 0; j < col;j++ {
+	dirX, dirY := []int{0, 0, 1, -1}, []int{1, -1, 0, 0}
+	for i := 0; i < row; i++ {
+		for j := 0; j < col; j++ {
 			if visited[i][j] || grid[i][j] == '0' {
 				continue
 			}
@@ -84,19 +82,19 @@ func numIslandsBFS(grid [][]byte) int {
 			res++
 
 			// 注意，是col，不是row
-			que := []int{i*col+j}
+			que := []int{i*col + j}
 			//que := []int{i*row+j}
 			for len(que) != 0 {
 				num := que[0]
 				que = que[1:]
-				for k := 0; k<4;k++ {
-					x,y := num/col + dirX[k],num%col + dirY[k]
+				for k := 0; k < 4; k++ {
+					x, y := num/col+dirX[k], num%col+dirY[k]
 					if x < 0 || x >= row || y < 0 || y >= col || visited[x][y] || grid[x][y] == '0' {
 						continue
 					}
 					visited[x][y] = true
 					// que = append(que,x*row+y
-					que = append(que,x*col+y)
+					que = append(que, x*col+y)
 				}
 			}
 		}

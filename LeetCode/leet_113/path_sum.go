@@ -23,26 +23,26 @@ package leet_113
 */
 
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
 // Path Sum using DFS
-func dfs(root *TreeNode,sum int,path []int,res *[][]int) {
-	path = append(path,root.Val)
+func dfs(root *TreeNode, sum int, path []int, res *[][]int) {
+	path = append(path, root.Val)
 	if root.Left == nil && root.Right == nil && sum == root.Val {
 		tmp := make([]int, len(path))
-		copy(tmp,path)
+		copy(tmp, path)
 		*res = append(*res, tmp)
 	}
 
 	if root.Left != nil {
-		dfs(root.Left,sum-root.Val,path,res)
+		dfs(root.Left, sum-root.Val, path, res)
 	}
 
 	if root.Right != nil {
-		dfs(root.Right,sum-root.Val,path,res)
+		dfs(root.Right, sum-root.Val, path, res)
 	}
 }
 
@@ -52,26 +52,26 @@ func pathSum(root *TreeNode, sum int) [][]int {
 		return res
 	}
 
-	dfs(root,sum,nil,&res)
+	dfs(root, sum, nil, &res)
 
 	return res
 }
 
 //--------------------------------
 func helper(root *TreeNode, sum int, cur []int, res *[][]int) {
-	cur = append(cur,root.Val)
+	cur = append(cur, root.Val)
 	sum -= root.Val
 	if root.Left == nil && root.Right == nil && sum == 0 {
-		t := make([]int,len(cur))
-		copy(t,cur)
+		t := make([]int, len(cur))
+		copy(t, cur)
 		*res = append(*res, t)
 		return
 	}
 
 	if root.Left != nil {
-		helper(root.Left,sum, cur,res)
+		helper(root.Left, sum, cur, res)
 	}
 	if root.Right != nil {
-		helper(root.Right, sum, cur,res)
+		helper(root.Right, sum, cur, res)
 	}
 }

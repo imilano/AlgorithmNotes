@@ -22,9 +22,9 @@ func TestAddTwoNumbers(t *testing.T) {
 
 	n1.Next = n2
 
-	r := addTwoNumbers(n1,n3)
+	r := addTwoNumbers(n1, n3)
 
-	for ;r != nil; {
+	for r != nil {
 		fmt.Print(r.Val)
 		r = r.Next
 	}

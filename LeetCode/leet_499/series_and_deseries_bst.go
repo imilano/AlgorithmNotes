@@ -7,35 +7,32 @@ package leet_499
 	algorithm should work. You need to ensure that a binary search tree can be serialized to a string, and this string can be deserialized to the original tree structure.
 
 	The encoded string should be as compact as possible.
- */
-
+*/
 
 // Definition for a binary tree node.
 type TreeNode struct {
-    Val int
-    Left *TreeNode
-    Right *TreeNode
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
 }
 
 // TODO figure it out
 type Codec struct {
-
 }
 
 func Constructor() Codec {
-    return Codec{}
+	return Codec{}
 }
 
 // Serializes a tree to a single string.
 func (this *Codec) serialize(root *TreeNode) string {
-    return ""
+	return ""
 }
 
 // Deserializes your encoded data to tree.
 func (this *Codec) deserialize(data string) *TreeNode {
-    return nil
+	return nil
 }
-
 
 /**
  * Your Codec object will be instantiated and called as such:

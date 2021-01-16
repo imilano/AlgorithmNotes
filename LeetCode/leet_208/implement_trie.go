@@ -27,21 +27,19 @@ All inputs are guaranteed to be non-empty strings.
 //如何表示每个节点的子节点有哪些呢？可以在每个节点上开一个数组，用于表示该字符指向的子节点；或者在每个节点上开一个链表，按一定顺序存储与子节点的对应关系。
 type Trie struct {
 	isWord bool
-	next [26]*Trie
+	next   [26]*Trie
 }
-
 
 /** Initialize your data structure here. */
 func Constructor() Trie {
 	return Trie{
 		isWord: false,
-		next: [26]*Trie{},
+		next:   [26]*Trie{},
 	}
 }
 
-
 /** Inserts a word into the trie. */
-func (this *Trie) Insert(word string)  {
+func (this *Trie) Insert(word string) {
 	p := this
 	for i := range word {
 		idx := word[i] - 'a'
@@ -55,14 +53,13 @@ func (this *Trie) Insert(word string)  {
 	p.isWord = true
 }
 
-
 /** Returns if the word is in the trie. */
 func (this *Trie) Search(word string) bool {
 	p := this
 	for i := range word {
 		idx := word[i] - 'a'
 		if p.next[idx] == nil {
-			return  false
+			return false
 		}
 
 		p = p.next[idx]
@@ -70,7 +67,6 @@ func (this *Trie) Search(word string) bool {
 
 	return p.isWord
 }
-
 
 /** Returns if there is any word in the trie that starts with the given prefix. */
 func (this *Trie) StartsWith(prefix string) bool {
@@ -86,7 +82,6 @@ func (this *Trie) StartsWith(prefix string) bool {
 
 	return true
 }
-
 
 /**
  * Your Trie object will be instantiated and called as such:

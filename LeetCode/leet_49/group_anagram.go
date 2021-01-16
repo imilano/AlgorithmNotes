@@ -15,8 +15,7 @@ Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 
 
 将字母异位词组合在一起。字母异位词指字母相同，但排列不同的字符串。
- */
-
+*/
 
 // NOTE golang is definitely lack of data structure
 // time complexity: O(N KlogK), where N is the number of input string, K is maximum length of all the strings
@@ -29,23 +28,24 @@ func groupAnagrams(strs []string) [][]string {
 
 	m := make(map[string][]string)
 	for i := range strs {
-		tmp := strings.Split(strs[i],"")
+		tmp := strings.Split(strs[i], "")
 		// can use counting sort to reduce time complexity from O(KlgK) to O(K)
 		sort.Strings(tmp)
-		s := strings.Join(tmp,"")
+		s := strings.Join(tmp, "")
 
-		if _,ok := m[s];!ok {
-			m[s] = make([]string,0)
+		if _, ok := m[s]; !ok {
+			m[s] = make([]string, 0)
 		}
-		m[s] = append(m[s],strs[i])
+		m[s] = append(m[s], strs[i])
 	}
 
-	for _,v := range m {
-		res =  append(res,v)
+	for _, v := range m {
+		res = append(res, v)
 	}
 
 	return res
 }
+
 // Original wrong ans
 //func groupAnagrams(strs []string) [][]string {
 //	var res [][]string

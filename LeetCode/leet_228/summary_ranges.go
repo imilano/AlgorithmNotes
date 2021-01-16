@@ -35,18 +35,17 @@ func summaryRanges(nums []int) []string {
 	index := 0
 	for index < length {
 		n := 1
-		for index + n < length && nums[index + n] - nums[index] == n {
+		for index+n < length && nums[index+n]-nums[index] == n {
 			n++
 		}
 
 		if n == 1 {
-			res = append(res,strconv.Itoa(nums[index]))
+			res = append(res, strconv.Itoa(nums[index]))
 		} else {
-			res = append(res,strconv.Itoa(nums[index]) + "->" + strconv.Itoa(nums[index + n-1]))
+			res = append(res, strconv.Itoa(nums[index])+"->"+strconv.Itoa(nums[index+n-1]))
 		}
 		index = index + n
 	}
-
 
 	return res
 }

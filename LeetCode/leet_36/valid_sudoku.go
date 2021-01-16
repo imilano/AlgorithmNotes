@@ -18,17 +18,17 @@ func IsValidSudoku(board [][]byte) bool {
 // You have misunderstand the problem
 // TODO rewrite answer use set data structure
 func isValidSudoku(board [][]byte) bool {
-	row := len(board)/3
+	row := len(board) / 3
 	if row == 0 {
 		return false
 	}
 
-	for i := 0; i< row; i++ {
-		for j := 0; j< row; j++ {
+	for i := 0; i < row; i++ {
+		for j := 0; j < row; j++ {
 			midX := i*3 + 1
 			midY := j*3 + 1
 
-			if !isUnique(board,midX,midY) {
+			if !isUnique(board, midX, midY) {
 				return false
 			}
 		}
@@ -37,17 +37,16 @@ func isValidSudoku(board [][]byte) bool {
 	return true
 }
 
-
 func isUnique(board [][]byte, x int, y int) bool {
 	m := make(map[byte]int)
-	for i := x-1;i <= x+1; i++ {
-		for j := y-1; j <= y+1; j++ {
+	for i := x - 1; i <= x+1; i++ {
+		for j := y - 1; j <= y+1; j++ {
 			m[board[i][j]]++
 		}
 	}
 
-	for i,v := range m {
-		if v == 9 && i == '.' || v >1 && i != '.' {
+	for i, v := range m {
+		if v == 9 && i == '.' || v > 1 && i != '.' {
 			return false
 		}
 

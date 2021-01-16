@@ -13,16 +13,16 @@ Note: The result may be very large, so you need to return a string instead of an
 func largestNumber(nums []int) string {
 	var res string
 	var tmp []string
-	for _,v := range nums {
-		tmp = append(tmp,strconv.Itoa(v))
+	for _, v := range nums {
+		tmp = append(tmp, strconv.Itoa(v))
 	}
 
 	//sort.Strings(tmp)
 	// 需要自定义排序
-	sort.Slice(tmp,func(i,j int) bool {
-		return tmp[i] + tmp[j] > tmp[j] + tmp[i]
+	sort.Slice(tmp, func(i, j int) bool {
+		return tmp[i]+tmp[j] > tmp[j]+tmp[i]
 	})
-	for _,v := range tmp {
+	for _, v := range tmp {
 		res += v
 	}
 

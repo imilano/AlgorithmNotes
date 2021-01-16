@@ -10,14 +10,13 @@ func findMinArrowShots(points [][]int) int {
 
 	// 根据每个区间的end进行排序
 	sort.Slice(points, func(i, j int) bool {
-		return  points[i][1] < points[j][1]
+		return points[i][1] < points[j][1]
 	})
 
-
 	// 最少有一个不重叠区间
-	start,end,count := 0,points[0][1],1
+	start, end, count := 0, points[0][1], 1
 
-	for i := 0; i< length ; i++ {
+	for i := 0; i < length; i++ {
 		start = points[i][0]
 		if start > end { // 注意此处无等号
 			count++

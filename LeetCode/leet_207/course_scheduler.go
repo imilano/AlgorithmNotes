@@ -38,24 +38,24 @@ You may assume that there are no duplicate edges in the input prerequisites.
 // 直到遍历完队列中所有的值，若此时还有节点的入度不为0，则说明环存在，返回 false，反之则返回 true
 func canFinish(numCourses int, prerequisites [][]int) bool {
 	graph := make([][]int, numCourses) // 建立邻接表
-	in := make([]int,numCourses)
-	for _,v := range prerequisites {
-		graph[v[1]] = append(graph[v[1]],v[0])
+	in := make([]int, numCourses)
+	for _, v := range prerequisites {
+		graph[v[1]] = append(graph[v[1]], v[0])
 		in[v[0]]++
 	}
 
-	var que []int   // 如果一个节点的入度为0， 则该节点没有依赖，可以作为起始节点，将该节点入队
-	for i := 0; i< numCourses;i++ {
-		if in[i] ==  0 {
+	var que []int // 如果一个节点的入度为0， 则该节点没有依赖，可以作为起始节点，将该节点入队
+	for i := 0; i < numCourses; i++ {
+		if in[i] == 0 {
 			que = append(que, i)
 		}
 	}
 
-	for len(que) != 0 {  // 取出队中的起始节点
+	for len(que) != 0 { // 取出队中的起始节点
 		top := que[0]
 		que = que[1:]
 
-		for _,v := range graph[top] {
+		for _, v := range graph[top] {
 			in[v]--
 			if in[v] == 0 {
 				que = append(que, v)
@@ -63,7 +63,7 @@ func canFinish(numCourses int, prerequisites [][]int) bool {
 		}
 	}
 
-	for i := 0; i< numCourses;i++ {
+	for i := 0; i < numCourses; i++ {
 		if in[i] != 0 {
 			return false
 		}

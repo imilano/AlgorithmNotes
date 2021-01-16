@@ -23,8 +23,8 @@ Output: return the root of the binary tree [4,5,2,#,#,3,1]
 */
 //  Definition for a binary tree node.
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
@@ -36,7 +36,7 @@ func upsideDownBinaryTree(root *TreeNode) *TreeNode {
 		return root
 	}
 
-	left,right := root.Left,root.Right
+	left, right := root.Left, root.Right
 	res := upsideDownBinaryTree(left)
 	left.Left = right
 	left.Right = root
@@ -53,7 +53,7 @@ func upsideDownBinaryTreeIte(root *TreeNode) *TreeNode {
 	}
 
 	cur := root
-	var pre,next,tmp *TreeNode
+	var pre, next, tmp *TreeNode
 	for cur != nil {
 		next = cur.Left
 		cur.Left = tmp

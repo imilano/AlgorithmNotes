@@ -19,9 +19,9 @@ Each element in the input arrays is a non-negative integer.
 //为什么从i+1开始遍历呢？如果从start走到i点时，debt刚好小于0的话，从start到start+1，debt肯定是大于0的，debt加上一个大于0的数之后还比0小，说明从start+1肯定到不了i，同理对其他点可得。
 //故而应该从i+1开始进行遍历。另外，很明显，如果从开始遍历到结束，计算的总数小于0的话，整个环的净余量都是小于0的，肯定不能走完。
 func canCompleteCircuit(gas []int, cost []int) int {
-	var total,debt int
+	var total, debt int
 	var start int
-	for i := 0; i<len(gas);i++ {
+	for i := 0; i < len(gas); i++ {
 		debt += gas[i] - cost[i]
 		total += gas[i] - cost[i]
 		if debt < 0 {

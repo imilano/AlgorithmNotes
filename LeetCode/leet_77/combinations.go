@@ -3,7 +3,7 @@ package leet_77
 /*
 Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
 You may return the answer in any order.
- */
+*/
 
 //--------------------------------------
 // backtracing
@@ -13,21 +13,21 @@ func combine(n int, k int) [][]int {
 		return res
 	}
 
-	getCombination(nil,1,n,k,&res)
-	return  res
+	getCombination(nil, 1, n, k, &res)
+	return res
 }
 
 func getCombination(nums []int, start int, n int, k int, res *[][]int) {
 	if k == 0 {
-		*res = append(*res,nums)
+		*res = append(*res, nums)
 		return
 	}
 
-	for i := start; i<= n-k+1;i++ {
-		nums = append(nums,i)
+	for i := start; i <= n-k+1; i++ {
+		nums = append(nums, i)
 		tmp := make([]int, len(nums))
-		copy(tmp,nums)
-		getCombination(tmp,i+1,n,k-1,res)
+		copy(tmp, nums)
+		getCombination(tmp, i+1, n, k-1, res)
 		nums = nums[:len(nums)-1]
 	}
 }
@@ -41,7 +41,7 @@ func getCombination(nums []int, start int, n int, k int, res *[][]int) {
 func getCombinationRec(n int, k int) [][]int {
 	if k == n || k == 0 {
 		var row []int
-		for i := 1; i<= k; i++ {
+		for i := 1; i <= k; i++ {
 			row = append(row, i)
 		}
 
@@ -49,14 +49,14 @@ func getCombinationRec(n int, k int) [][]int {
 	}
 
 	// 从n-1个数里面选k-1个数
-	res := getCombinationRec(n-1,k-1)
+	res := getCombinationRec(n-1, k-1)
 	// 加上n
 	for i := range res {
-		res[i] = append(res[i],n)
+		res[i] = append(res[i], n)
 	}
 
 	// 结果再加上不包括n的选择
-	res = append(res,combine(n-1,k)...)
+	res = append(res, combine(n-1, k)...)
 	return res
 }
 
@@ -68,21 +68,20 @@ func combineDFS(n int, k int) [][]int {
 		return res
 	}
 
-	dfs(1,n,k,nil,&res)
+	dfs(1, n, k, nil, &res)
 	return res
 }
 
 func dfs(start int, n int, k int, current []int, res *[][]int) {
 	if k == 0 {
-		tmp  := make([]int, len(current))
-		copy(tmp,current)
-		*res = append(*res,tmp)
+		tmp := make([]int, len(current))
+		copy(tmp, current)
+		*res = append(*res, tmp)
 		return
 	}
 
-
 	for i := start; i <= n-k+1; i++ {
-		dfs(i+1,n,k-1,append(current,i),res)
+		dfs(i+1, n, k-1, append(current, i), res)
 	}
 }
 

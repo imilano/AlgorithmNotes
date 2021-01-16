@@ -20,20 +20,17 @@ import "math"
 
 */
 
-
-
-
 func MyAtoI(s string) int {
 	return myAtoi(s)
 }
 
 func myAtoi(s string) int {
-	if len(s) == 0   {
+	if len(s) == 0 {
 		return 0
 	}
 
-	var space,res int
-	var negative,overflow bool
+	var space, res int
+	var negative, overflow bool
 	length := len(s)
 	for space < length && s[space] == ' ' {
 		space++
@@ -52,12 +49,12 @@ func myAtoi(s string) int {
 		return 0
 	}
 
-	if   s[space] >= 'a' && s[space] <= 'z' || s[space] == '+' || s[space] == '-'{
+	if s[space] >= 'a' && s[space] <= 'z' || s[space] == '+' || s[space] == '-' {
 		return 0
 	}
 
 	for space < length && s[space] >= '0' && s[space] <= '9' {
-		res = res * 10 +  int(s[space] - '0')
+		res = res*10 + int(s[space]-'0')
 		space++
 
 		if res > math.MaxInt32 || res < math.MinInt32 {

@@ -25,19 +25,19 @@ import (
 
 type (
 	Stack struct {
-		top *Node
+		top    *Node
 		length int
-		lock *sync.RWMutex
+		lock   *sync.RWMutex
 	}
 
 	Node struct {
 		value interface{}
-		pre *Node
+		pre   *Node
 	}
 )
 
 // Create new stack
-func NewStack() *Stack{
+func NewStack() *Stack {
 	return &Stack{
 		top:    nil,
 		length: 0,
@@ -46,13 +46,13 @@ func NewStack() *Stack{
 }
 
 // Length of stack
-func (s *Stack) Len() int{
+func (s *Stack) Len() int {
 	return s.length
 }
 
 // Top element  of stack
-func (s *Stack) Top()  interface{} {
-	if s.length ==0 {
+func (s *Stack) Top() interface{} {
+	if s.length == 0 {
 		return nil
 	}
 
@@ -86,11 +86,9 @@ func (s *Stack) Push(value interface{}) {
 }
 
 // Empty check if it is an empty stack
-func (s *Stack) Empty()  bool{
+func (s *Stack) Empty() bool {
 	return s.Len() == 0
 }
-
-
 
 //-------------------------------------
 func evalRPN(tokens []string) int {
@@ -100,7 +98,7 @@ func evalRPN(tokens []string) int {
 		cur := tokens[0]
 		tokens = tokens[1:]
 
-		token,err := strconv.Atoi(cur)
+		token, err := strconv.Atoi(cur)
 		if err == nil {
 			stack.Push(token)
 		} else {
@@ -113,11 +111,11 @@ func evalRPN(tokens []string) int {
 			if cur == "+" {
 				stack.Push(num2 + num1)
 			} else if cur == "-" {
-				stack.Push(num2-num1)
-			}else if cur == "*" {
+				stack.Push(num2 - num1)
+			} else if cur == "*" {
 				stack.Push(num2 * num1)
 			} else if cur == "/" {
-				stack.Push(num2/num1)
+				stack.Push(num2 / num1)
 			}
 		}
 	}

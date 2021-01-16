@@ -7,7 +7,7 @@ package leet_26
 	Clarification:
 		Confused why the returned value is an integer but your answer is an array?
 		Note that the input array is passed in by reference, which means a modification to the input array will be known to the caller as well.
- */
+*/
 
 // two pointer
 // use left and right, right runs faster than left, when arr[left] != arr[right], then copy right to left and increase both left and right;
@@ -32,11 +32,11 @@ func removeDuplicates(nums []int) int {
 		right++
 	}
 
-	return left +1
+	return left + 1
 }
 
 func removeDuplicates2(nums []int) int {
-	var pre,cur int
+	var pre, cur int
 	n := len(nums)
 	if n == 0 {
 		return 0
@@ -50,19 +50,17 @@ func removeDuplicates2(nums []int) int {
 
 		cur++
 	}
-	return pre+1
+	return pre + 1
 }
-
 
 func removeDuplicates3(nums []int) int {
 	var i int
-	for _,num := range nums {
+	for _, num := range nums {
 		if i < 1 || num > nums[i-1] {
 			nums[i] = num
 			i++
 		}
 	}
-
 
 	return i
 }

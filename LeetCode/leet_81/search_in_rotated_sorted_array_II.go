@@ -5,7 +5,7 @@ package leet_81
 	(i.e., [0,0,1,2,2,5,6] might become [2,5,6,0,0,1,2]).
 
 	You are given a target value to search. If found in the array return true, otherwise return false.
- */
+*/
 
 // passed solution
 func search(nums []int, target int) bool {
@@ -13,7 +13,7 @@ func search(nums []int, target int) bool {
 		return false
 	}
 
-	left,right := 0,len(nums)-1
+	left, right := 0, len(nums)-1
 	for left < right {
 		mid := left + (right-left)/2
 		// 及时返回
@@ -22,9 +22,9 @@ func search(nums []int, target int) bool {
 		}
 		if nums[left] < nums[mid] {
 			if target >= nums[left] && nums[mid] > target {
-				right = mid-1
+				right = mid - 1
 			} else {
-				left = mid +1
+				left = mid + 1
 			}
 		} else if nums[mid] < nums[right] {
 			if target > nums[mid] && target <= nums[right] {
@@ -32,7 +32,7 @@ func search(nums []int, target int) bool {
 			} else {
 				right = mid - 1
 			}
-		}else {
+		} else {
 			// 以防出现[3,1,2,3,3,3,3]这样的情况。在这样的情况下，该数并不等于我们
 			// 所需要的target，故而可以直接跳过，缩小搜寻范围，从而继续使用二分查找
 			if nums[mid] == nums[left] {
@@ -51,10 +51,9 @@ func search(nums []int, target int) bool {
 	return false
 }
 
-
 // TODO can't figure out the solution, redo this problem.
 func searchWrong(nums []int, target int) bool {
-	left,right := 0,len(nums)-1
+	left, right := 0, len(nums)-1
 	for left <= right {
 		mid := left + (right-left)/2
 		if nums[mid] == target {
@@ -63,21 +62,21 @@ func searchWrong(nums []int, target int) bool {
 
 		// 右侧有序
 		if nums[mid] == nums[left] && nums[mid] == nums[right] {
-			left ++
-			right --
+			left++
+			right--
 		}
 		if nums[mid] < nums[right] {
 			if nums[mid] < target && nums[right] >= target {
-				left = mid +1
+				left = mid + 1
 			} else {
-				right = mid-1  // why subtract 1
+				right = mid - 1 // why subtract 1
 			}
 		} else {
 			// 左侧有序
 			if nums[mid] > target && target >= nums[left] {
-				right = mid -1
+				right = mid - 1
 			} else {
-				left = mid +1
+				left = mid + 1
 			}
 		}
 	}

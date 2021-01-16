@@ -13,10 +13,10 @@ func searchMatrix(matrix [][]int, target int) bool {
 		return false
 	}
 
-	row,col := len(matrix),len(matrix[0])
-	curRow,curCol := row-1,0
+	row, col := len(matrix), len(matrix[0])
+	curRow, curCol := row-1, 0
 
-	for curRow >=0 && curCol <= col-1 {
+	for curRow >= 0 && curCol <= col-1 {
 		cur := matrix[curRow][curCol]
 		if cur == target {
 			return true
@@ -37,16 +37,16 @@ func searchMatrixBinary(matrix [][]int, target int) bool {
 	if matrix == nil || len(matrix) == 0 {
 		return false
 	}
-	m,n := len(matrix),len(matrix[0])
-	low,high := 0,m*n
+	m, n := len(matrix), len(matrix[0])
+	low, high := 0, m*n
 	for low < high {
 		mid := low + (high-low)/2
 		cur := matrix[mid/n][mid%n]
 
-		if  cur == target {
+		if cur == target {
 			return true
 		} else if cur < target {
-			low = mid +1
+			low = mid + 1
 		} else {
 			high = mid
 		}

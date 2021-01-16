@@ -10,12 +10,12 @@ func TestIsomorphic(t *testing.T) {
 		s string
 		t string
 	}{
-		{"egg","add"},
-		{"foo","bar"},
-		{"paper","title"},
+		{"egg", "add"},
+		{"foo", "bar"},
+		{"paper", "title"},
 	}
 
-	for _,v := range arr {
-		fmt.Println(v.s," ",v.t," ",isIsomorphic(v.s,v.t))
+	for _, v := range arr {
+		fmt.Println(v.s, " ", v.t, " ", isIsomorphic(v.s, v.t))
 	}
 }

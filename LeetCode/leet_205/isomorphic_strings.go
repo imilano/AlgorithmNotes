@@ -20,17 +20,17 @@ Output: false
 
 // wrong
 func isIsomorphic(s string, t string) bool {
-	len1,len2 := len(s),len(t)
+	len1, len2 := len(s), len(t)
 	if len1 != len2 {
 		return false
 	}
 	m := make(map[uint8]uint8)
 
-	for i := 0; i< len1;i++ {
-		v,ok := m[t[i]]
-		if ok && v == t[i] -s[i] {
+	for i := 0; i < len1; i++ {
+		v, ok := m[t[i]]
+		if ok && v == t[i]-s[i] {
 			continue
-		} else if ok && v != t[i] - s[i] {
+		} else if ok && v != t[i]-s[i] {
 			return false
 		} else if !ok {
 			m[t[i]] = t[i] - s[i]
@@ -40,20 +40,18 @@ func isIsomorphic(s string, t string) bool {
 	return true
 }
 
-
 // 采用定长数组
 func isIsomorphic2(s string, t string) bool {
 	length := len(s)
-	m1,m2 := make([]int,256),make([]int,256)
-	for i := 0; i < length;i++ {
+	m1, m2 := make([]int, 256), make([]int, 256)
+	for i := 0; i < length; i++ {
 		if m1[s[i]] != m2[t[i]] {
 			return false
 		}
 
-		m1[s[i]] = i+1
-		m2[t[i]] = i+1
+		m1[s[i]] = i + 1
+		m2[t[i]] = i + 1
 	}
-
 
 	return true
 }

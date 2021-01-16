@@ -12,17 +12,16 @@ func brutalForce(nums []int, target int) []int {
 		return nil
 	}
 
-	for i := 0;i<len(nums);i++ {
+	for i := 0; i < len(nums); i++ {
 		adds := target - nums[i]
-		for j := i+1; j<len(nums) ;j++ {
+		for j := i + 1; j < len(nums); j++ {
 			if nums[j] == adds {
-				return []int{i,j}
+				return []int{i, j}
 			}
 		}
 	}
 	return nil
 }
-
 
 // 使用map，从前向后遍历nums，对于nums中每个num，检查map中key为num的记录是否存在，如果不存在，则map[target-num]=indexOfNum，记录当前的下标值；
 // 否则如果存在，则找到了一个结果，直接返回即可。
@@ -30,21 +29,20 @@ func brutalForce(nums []int, target int) []int {
 // space complexity: O(n)
 func Pri(nums []int, target int) []int {
 	m := make(map[int]int)
-	for k,v := range nums {
-		_,ok := m[v]
+	for k, v := range nums {
+		_, ok := m[v]
 		if !ok {
 			m[target-v] = k
 		} else {
-			return []int{m[v],k}
+			return []int{m[v], k}
 		}
 	}
 
 	return nil
 }
 
-
 func twoSum(nums []int, target int) []int {
-	return Pri(nums,target)
+	return Pri(nums, target)
 }
 
 // 双指针法

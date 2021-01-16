@@ -12,11 +12,11 @@ func myPowRec(x float64, n int) float64 {
 		negative = true
 	}
 
-	res := power(x,n/2) * power(x,n/2) * power(x,n%2)
+	res := power(x, n/2) * power(x, n/2) * power(x, n%2)
 	if negative {
-		res = 1/res
+		res = 1 / res
 	}
-	return  res
+	return res
 }
 
 func power(x float64, n int) float64 {
@@ -28,9 +28,8 @@ func power(x float64, n int) float64 {
 		return 1
 	}
 
-	return power(x,n/2) * power(x,n/2) * power(x,n%2)
+	return power(x, n/2) * power(x, n/2) * power(x, n%2)
 }
-
 
 //---------------------------------
 // iterative way
@@ -39,7 +38,7 @@ func myPow(x float64, n int) float64 {
 	var negative bool
 	if n < 0 {
 		n = -n
-		negative  = true
+		negative = true
 	}
 
 	if n == 0 {
@@ -48,7 +47,7 @@ func myPow(x float64, n int) float64 {
 
 	res = 1
 	remaining := n
-	for remaining > 0{
+	for remaining > 0 {
 		i := 1
 		tmp := x
 		for i <= remaining {
@@ -60,30 +59,28 @@ func myPow(x float64, n int) float64 {
 		remaining -= i
 	}
 
-
 	if negative {
-		res = 1/res
+		res = 1 / res
 	}
 
 	return res
 }
 
-
 // ------------------------
 // divide and conquer
 func myPowDC(x float64, n int) float64 {
-	if n==0 {
+	if n == 0 {
 		return 1
 	}
-	t := myPow(x,n/2)
-	if n%2 != 0  {
+	t := myPow(x, n/2)
+	if n%2 != 0 {
 		if n < 0 {
-			return 1/x*t*t
-		}else {
-			return x*t*t
+			return 1 / x * t * t
+		} else {
+			return x * t * t
 		}
 	} else {
-		return t*t
+		return t * t
 	}
 }
 
@@ -95,15 +92,15 @@ func myPowConcise(x float64, n int) float64 {
 		return 1
 	}
 
-	if n <0 {
+	if n < 0 {
 		n = -n
-		x = 1/x
+		x = 1 / x
 	}
 
 	ans = 1
 	for n != 0 {
-		if n & 1 == 1 {
-			ans  *= x
+		if n&1 == 1 {
+			ans *= x
 		}
 
 		x *= x

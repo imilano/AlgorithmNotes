@@ -6,8 +6,8 @@ import (
 )
 
 func TestCombinationSum(t *testing.T) {
-	nums := []int{2,3,6,7}
+	nums := []int{2, 3, 6, 7}
 	target := 7
-	res := combinationSum(nums,target)
+	res := combinationSum(nums, target)
 	fmt.Println(res)
 }

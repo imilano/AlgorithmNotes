@@ -46,12 +46,12 @@ If you have figured out the O(n) solution, try coding another solution of which 
 
 func minSubArrayLen(s int, nums []int) int {
 	res := math.MaxInt32
-	var left,sum int
+	var left, sum int
 
-	for i := 0; i< len(nums);i++ {
+	for i := 0; i < len(nums); i++ {
 		sum += nums[i]
 		for left <= i && sum >= s {
-			res = min(res,i-left+1)
+			res = min(res, i-left+1)
 			sum -= nums[left]
 			left++
 		}
@@ -64,9 +64,9 @@ func minSubArrayLen(s int, nums []int) int {
 }
 
 func minSubArrayLen2(s int, nums []int) int {
-	var left,right,sum int
+	var left, right, sum int
 	n := len(nums)
-	res := n+1
+	res := n + 1
 
 	for right < n {
 		for sum < s && right < n {
@@ -75,20 +75,20 @@ func minSubArrayLen2(s int, nums []int) int {
 		}
 
 		for sum >= s {
-			res = min(res,right-left)
+			res = min(res, right-left)
 			sum -= nums[left]
 			left++
 		}
 	}
 
-	if res == n +1 {
+	if res == n+1 {
 		return 0
 	}
 
 	return res
 }
 
-func min(a,b int) int {
+func min(a, b int) int {
 	if a < b {
 		return a
 	}

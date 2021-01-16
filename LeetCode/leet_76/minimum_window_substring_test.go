@@ -6,5 +6,5 @@ func TestMinWindow(t *testing.T) {
 	s := "cabwefgewcwaefgcf"
 	ss := "cae"
 
-	minWindow(s,ss)
+	minWindow(s, ss)
 }

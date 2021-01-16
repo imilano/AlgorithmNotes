@@ -9,9 +9,9 @@ Follow up: Could you implement a solution with a linear runtime complexity and w
 // solution 1: set
 func singleNumber(nums []int) int {
 	set := make(map[int]int)
-	for i,v := range nums {
-		if _,ok := set[v]; ok {
-			delete(set,v)
+	for i, v := range nums {
+		if _, ok := set[v]; ok {
+			delete(set, v)
 		} else {
 			set[v] = i
 		}
@@ -27,9 +27,9 @@ func singleNumber(nums []int) int {
 }
 
 // bitwise, xor
-func singleNumber2(num []int)int {
+func singleNumber2(num []int) int {
 	var res int // 初始值为0，而不能为1,为0能够很好的维持最后一个数的值
-	for _,v := range num {
+	for _, v := range num {
 		res ^= v
 	}
 

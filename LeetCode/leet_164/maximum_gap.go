@@ -25,14 +25,14 @@ func maximumGap(nums []int) int {
 
 	sort.Ints(nums)
 	var res int
-	for i := 1; i<length;i++ {
-		res = max(res,nums[i]-nums[i-1])
+	for i := 1; i < length; i++ {
+		res = max(res, nums[i]-nums[i-1])
 	}
 
 	return res
 }
 
-func max(a,b int) int{
+func max(a, b int) int {
 	if a > b {
 		return a
 	}
@@ -59,6 +59,3 @@ func max(a,b int) int{
 //接下来，如何保证至少有一个空箱子呢？
 //鸽巢原理的变形，如果有n个数字，但是箱子数大于n，那么一定会出现空箱子。总范围是max-min，那么interval=（max-min）/箱子数，为使interval最大，箱子数取最小即可，也就是n+1。
 //所以interval = （max-min）/(n+1)，除不尽的话，对interval向上取整即可，取整对gap无影响。
-
-
-

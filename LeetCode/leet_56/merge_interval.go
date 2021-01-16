@@ -32,7 +32,7 @@ import "sort"
 // Then we insert  interval to res, we do  described as follows:
 // IF the current interval start after the previous interval ends, then we just insert it to res;
 // else if current interval start before the previous interval ends, then we update the previous interval ends to the max value of end.
-func max(i,j int)  int {
+func max(i, j int) int {
 	if i > j {
 		return i
 	}
@@ -43,10 +43,10 @@ func max(i,j int)  int {
 func merge(intervals [][]int) [][]int {
 	var res [][]int
 	sort.Slice(intervals, func(i, j int) bool {
-		return intervals[i][0]  < intervals[j][0]
+		return intervals[i][0] < intervals[j][0]
 	})
 
-	for _,interval := range intervals {
+	for _, interval := range intervals {
 		if res == nil {
 			res = append(res, interval)
 			continue

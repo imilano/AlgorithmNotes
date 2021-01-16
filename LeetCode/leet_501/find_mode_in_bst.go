@@ -11,15 +11,14 @@ package leet_501
     Follow up: Could you do that without using any extra space? (Assume that the implicit stack space incurred due to recursion does not count).
 */
 
-
 // Definition for a binary tree node.
 type TreeNode struct {
-    Val int
-    Left *TreeNode
-    Right *TreeNode
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
 }
 
 // TODO figure it out
 func findMode(root *TreeNode) []int {
-    return nil
+	return nil
 }

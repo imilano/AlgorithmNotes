@@ -4,27 +4,25 @@ import "time"
 
 // 一个Cell
 type Cell struct {
-	Key int
-	Value int
+	Key       int
+	Value     int
 	RecentUse int64
 }
 
 // 一个LRU cache队列，通过map中的key快速映射到Data中相应节点的index
 type LRUCache struct {
-	Cap int
+	Cap  int
 	Data []*Cell
-	Map map[int]int
+	Map  map[int]int
 }
-
 
 func Constructor(capacity int) LRUCache {
 	return LRUCache{
-		Cap: capacity,
-		Data: make([]*Cell,0),
-		Map:	make(map[int]int),
+		Cap:  capacity,
+		Data: make([]*Cell, 0),
+		Map:  make(map[int]int),
 	}
 }
-
 
 //func (this *LRUCache) Get(key int) int {
 //	value := -1
@@ -40,7 +38,7 @@ func Constructor(capacity int) LRUCache {
 func (this *LRUCache) Get(key int) int {
 	value := -1
 
-	if v,ok := this.Map[key]; ok && v != -1  {   // Check -1 to avoid Data[-1]
+	if v, ok := this.Map[key]; ok && v != -1 { // Check -1 to avoid Data[-1]
 		value = this.Data[v].Value
 		this.Data[v].RecentUse = time.Now().UnixNano()
 	}
@@ -48,27 +46,25 @@ func (this *LRUCache) Get(key int) int {
 	return value
 }
 
-
-func (this *LRUCache) Put(key int, value int)  {
+func (this *LRUCache) Put(key int, value int) {
 	// If already exist, modify value and time
-	if index, ok := this.Map[key]; ok && index != -1 {			// Check -1 to avoid Data[-1]
+	if index, ok := this.Map[key]; ok && index != -1 { // Check -1 to avoid Data[-1]
 		this.Data[index].Value = value
 		this.Data[index].RecentUse = time.Now().UnixNano()
 	} else {
 		// If the value  doesn't exist, then insert new node or replace with new one
 		cell := &Cell{
-			Key: key,
-			Value: value,
+			Key:       key,
+			Value:     value,
 			RecentUse: time.Now().UnixNano(),
 		}
-
 
 		// If  reach out its capacity, then replace the oldest one
 		if this.Cap == len(this.Data) {
 			min := time.Now().UnixNano()
 			var idx int
 
-			for i,v := range this.Data {
+			for i, v := range this.Data {
 				if v.RecentUse < min {
 					min = v.RecentUse
 					idx = i
@@ -81,7 +77,7 @@ func (this *LRUCache) Put(key int, value int)  {
 		} else {
 			// It is not full, so we insert a node
 			this.Data = append(this.Data, cell)
-			this.Map[key] = len(this.Data) -1
+			this.Map[key] = len(this.Data) - 1
 		}
 	}
 
@@ -123,7 +119,6 @@ func (this *LRUCache) Put(key int, value int)  {
 	//	}
 	//}
 }
-
 
 /**
  * Your LRUCache object will be instantiated and called as such:

@@ -2,11 +2,9 @@ package leet_22
 
 /*
 	Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
- */
-
+*/
 
 //核心要点就在于，尽量先放置左括号，任意时刻，左括号的数量一定要大于等于右括号的数量，不然不可能形成合法字符
-
 
 //-------------------------
 // time limit exceeded
@@ -17,7 +15,7 @@ func generateParenthesis(n int) []string {
 		return res
 	}
 
-	generate("",n*2,&res)
+	generate("", n*2, &res)
 	return res
 }
 
@@ -25,20 +23,20 @@ func generateParenthesis(n int) []string {
 func generate(cur string, num int, res *[]string) {
 	if len(cur) == num {
 		if isValidate(cur) {
-			*res = append(*res,cur)
+			*res = append(*res, cur)
 		}
 	} else {
 		cur += "("
-		generate(cur, num,res)
+		generate(cur, num, res)
 		cur += ")"
-		generate(cur, num,res)
+		generate(cur, num, res)
 	}
 }
 
 // 一个括号序列是合理的，可以通过这个方法进行验证：把"（"看做+1，"）"看做-1，任一时刻，括号序列的前缀和应该大于0，如果不大于0，那么当前序列就不是合法序列
 func isValidate(s string) bool {
 	var count int
-	for _,c := range s {
+	for _, c := range s {
 		if c == rune('(') {
 			count++
 		} else {
@@ -64,11 +62,11 @@ func generateParenthesis2(n int) []string {
 		return res
 	}
 
-	backtrace("",0,0,n,&res)
+	backtrace("", 0, 0, n, &res)
 	return res
 }
 
-func backtrace(cur string, open int, close int, max int,res *[]string) {
+func backtrace(cur string, open int, close int, max int, res *[]string) {
 	if len(cur) == max*2 {
 		*res = append(*res, cur)
 		return
@@ -76,11 +74,11 @@ func backtrace(cur string, open int, close int, max int,res *[]string) {
 
 	// 优先添加左括号
 	if open < max {
-		backtrace(cur+"(",open+1,close,max,res)
+		backtrace(cur+"(", open+1, close, max, res)
 	}
 
-	if close < open{
-		backtrace(cur+")",open,close+1,max, res)
+	if close < open {
+		backtrace(cur+")", open, close+1, max, res)
 	}
 }
 
@@ -88,7 +86,7 @@ func backtrace(cur string, open int, close int, max int,res *[]string) {
 // dfs
 func generateParenthesis3(n int) []string {
 	var res []string
-	dfs(n,n,"",&res)
+	dfs(n, n, "", &res)
 	return res
 }
 
@@ -101,14 +99,14 @@ func dfs(left int, right int, cur string, res *[]string) {
 	}
 
 	if left == 0 && right == 0 {
-		*res = append(*res,cur)
+		*res = append(*res, cur)
 	}
 
 	if left > 0 {
-		dfs(left-1,right,cur+"(",res)
+		dfs(left-1, right, cur+"(", res)
 	}
 
 	if right > 0 {
-		dfs(left,right-1,cur+")",res)
+		dfs(left, right-1, cur+")", res)
 	}
 }

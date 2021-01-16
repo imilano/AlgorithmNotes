@@ -32,7 +32,7 @@ func diffWaysToCompute(input string) []int {
 	var res []int
 	for i := 0; i < len(input); i++ {
 		if input[i] == '+' || input[i] == '-' || input[i] == '*' {
-			left := diffWaysToCompute(input[:i])// 相当于从操作符开始进行划分，left和right分别代表左右子串中采取不同的划分方式时可以得到的值。从而在计算本次的值时，只需要在左右子串的不同值中选择一种来与当前运算符进行组合即可。
+			left := diffWaysToCompute(input[:i]) // 相当于从操作符开始进行划分，left和right分别代表左右子串中采取不同的划分方式时可以得到的值。从而在计算本次的值时，只需要在左右子串的不同值中选择一种来与当前运算符进行组合即可。
 			right := diffWaysToCompute(input[i+1:])
 
 			for j := 0; j < len(left); j++ {
@@ -58,15 +58,16 @@ func diffWaysToCompute(input string) []int {
 }
 
 //仍然是上面的方法，只是使用hashmap进行优化
-var m  = make(map[string][]int)
+var m = make(map[string][]int)
+
 func diffWaysToCompute2(input string) []int {
-	if v,ok := m[input]; ok {
+	if v, ok := m[input]; ok {
 		return v
 	}
 	var res []int
 	for i := 0; i < len(input); i++ {
 		if input[i] == '+' || input[i] == '-' || input[i] == '*' {
-			left := diffWaysToCompute(input[:i])// 相当于从操作符开始进行划分，left和right分别代表左右子串中采取不同的划分方式时可以得到的值。从而在计算本次的值时，只需要在左右子串的不同值中选择一种来与当前运算符进行组合即可。
+			left := diffWaysToCompute(input[:i]) // 相当于从操作符开始进行划分，left和right分别代表左右子串中采取不同的划分方式时可以得到的值。从而在计算本次的值时，只需要在左右子串的不同值中选择一种来与当前运算符进行组合即可。
 			right := diffWaysToCompute(input[i+1:])
 
 			for j := 0; j < len(left); j++ {

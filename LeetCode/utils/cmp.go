@@ -1,6 +1,6 @@
 package utils
 
-func Max(a,b int) int {
+func Max(a, b int) int {
 	if a > b {
 		return a
 	}
@@ -8,7 +8,7 @@ func Max(a,b int) int {
 	return b
 }
 
-func Min(a,b int) int {
+func Min(a, b int) int {
 	if a < b {
 		return a
 	}

@@ -6,6 +6,6 @@ import (
 )
 
 func TestMedian(t *testing.T) {
-	sum := 4 + 5;
-	fmt.Print(sum/2)
+	sum := 4 + 5
+	fmt.Print(sum / 2)
 }

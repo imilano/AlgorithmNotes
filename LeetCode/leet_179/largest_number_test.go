@@ -11,7 +11,7 @@ func TestLargestNumber(t *testing.T) {
 		[]int{3, 30, 34, 59},
 	}
 
-	for _,v := range a {
+	for _, v := range a {
 		fmt.Println(largestNumber(v))
 	}
 

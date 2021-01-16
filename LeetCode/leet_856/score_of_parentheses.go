@@ -35,19 +35,19 @@ S is a balanced parentheses string, containing only ( and ).
 // util function
 type (
 	Stack struct {
-		top *Node
+		top    *Node
 		length int
-		lock *sync.RWMutex
+		lock   *sync.RWMutex
 	}
 
 	Node struct {
 		value interface{}
-		pre *Node
+		pre   *Node
 	}
 )
 
 // Create new stack
-func NewStack() *Stack{
+func NewStack() *Stack {
 	return &Stack{
 		top:    nil,
 		length: 0,
@@ -56,13 +56,13 @@ func NewStack() *Stack{
 }
 
 // Length of stack
-func (s *Stack) Len() int{
+func (s *Stack) Len() int {
 	return s.length
 }
 
 // Top element  of stack
-func (s *Stack) Top()  interface{} {
-	if s.length ==0 {
+func (s *Stack) Top() interface{} {
+	if s.length == 0 {
 		return nil
 	}
 
@@ -96,11 +96,11 @@ func (s *Stack) Push(value interface{}) {
 }
 
 // Empty check if it is an empty stack
-func (s *Stack) Empty()  bool{
+func (s *Stack) Empty() bool {
 	return s.Len() == 0
 }
 
-func max(a,b int) int {
+func max(a, b int) int {
 	if a > b {
 		return a
 	}
@@ -115,13 +115,13 @@ func scoreOfParentheses(S string) int {
 	var res int
 	length := len(S)
 
-	for i := 0; i < length;i++ {
+	for i := 0; i < length; i++ {
 		if S[i] == ')' {
 			continue
 		}
 
 		// 找到内括号的合法括号范围,只有当cnt为0时，才找到一串合法的内（）的范围
-		pos,cnt := i+1,1
+		pos, cnt := i+1, 1
 		for cnt != 0 {
 			if S[pos] == '(' {
 				cnt++
@@ -132,14 +132,13 @@ func scoreOfParentheses(S string) int {
 			pos++
 		}
 
-		innerScore := scoreOfParentheses(S[i+1:pos])
-		res += max(1,2*innerScore)  // 对于()这样的单独的完整括号而言，递归得分为0，而最少得分应该是1，故而应该至少为1
+		innerScore := scoreOfParentheses(S[i+1 : pos])
+		res += max(1, 2*innerScore) // 对于()这样的单独的完整括号而言，递归得分为0，而最少得分应该是1，故而应该至少为1
 		i = pos - 1
 	}
 
 	return res
 }
-
 
 //------------------------------
 // iterative using stack
@@ -147,12 +146,12 @@ func scoreOfParentheses2(S string) int {
 	var res int
 	stack := NewStack()
 	length := len(S)
-	for i := 0; i < length;i++ {
+	for i := 0; i < length; i++ {
 		if S[i] == '(' {
 			stack.Push(res)
 			res = 0
 		} else {
-			res = stack.Top().(int) + max(res*2,1)   // top是并列的括号的分数值，而top是当前子字符串的值
+			res = stack.Top().(int) + max(res*2, 1) // top是并列的括号的分数值，而top是当前子字符串的值
 			stack.Pop()
 		}
 	}

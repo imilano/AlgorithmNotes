@@ -19,19 +19,19 @@ rotate 2 steps to the right: [6,7,1,2,3,4,5]
 rotate 3 steps to the right: [5,6,7,1,2,3,4]
 */
 
-func rotate(nums []int, k int)  {
+func rotate(nums []int, k int) {
 	length := len(nums)
-	swap(0,length-1,nums)
+	swap(0, length-1, nums)
 
 	k = k % length
-	swap(0,k-1,nums)
-	swap(k,length-1,nums)
+	swap(0, k-1, nums)
+	swap(k, length-1, nums)
 
 }
 
-func swap(i,j int, arr []int) {
+func swap(i, j int, arr []int) {
 	for i < j {
-		arr[i],arr[j] = arr[j],arr[i]
+		arr[i], arr[j] = arr[j], arr[i]
 		i++
 		j--
 	}

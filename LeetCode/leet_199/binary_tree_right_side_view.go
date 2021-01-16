@@ -13,42 +13,41 @@ package leet_199
 		  5     4       <---
 */
 
-
 // Definition for a binary tree node.
 type TreeNode struct {
-    Val int
-    Left *TreeNode
-    Right *TreeNode
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
 }
 
 func rightSideView(root *TreeNode) []int {
-    var res []int
-    var cnt int
-    var cur *TreeNode
-    var que []*TreeNode
+	var res []int
+	var cnt int
+	var cur *TreeNode
+	var que []*TreeNode
 
-    if root == nil {
-        return res
-    }
-    cur = root
-    que = append(que,root)
-    for len(que) != 0 {
-        cnt = len(que)
-        for i := 0; i <cnt; i++ {
-            cur = que[0]
-            que = que[1:]
-            if i == 0 {
-                res = append(res,cur.Val)
-            }
+	if root == nil {
+		return res
+	}
+	cur = root
+	que = append(que, root)
+	for len(que) != 0 {
+		cnt = len(que)
+		for i := 0; i < cnt; i++ {
+			cur = que[0]
+			que = que[1:]
+			if i == 0 {
+				res = append(res, cur.Val)
+			}
 
-            if cur.Right != nil {
-                que = append(que,cur.Right)
-            }
+			if cur.Right != nil {
+				que = append(que, cur.Right)
+			}
 
-            if cur.Left != nil {
-                que = append(que, cur.Left)
-            }
-        }
-    }
-    return res
+			if cur.Left != nil {
+				que = append(que, cur.Left)
+			}
+		}
+	}
+	return res
 }

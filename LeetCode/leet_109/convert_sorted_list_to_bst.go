@@ -7,22 +7,18 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
 every node never differ by more than 1.
 */
 
-
-
 //Definition for singly-linked list.
 type ListNode struct {
-    Val int
-    Next *ListNode
+	Val  int
+	Next *ListNode
 }
-
 
 // Definition for a binary tree node.
 type TreeNode struct {
-    Val int
-    Left *TreeNode
-    Right *TreeNode
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
 }
-
 
 // --------------------------------------------------------------------------------------------------
 // recursive way
@@ -32,43 +28,42 @@ type TreeNode struct {
 // Time complexity: O(nlogn)
 // Space complexity: O(logn)  ，递归调用空间复杂度永远不可能是O(1)
 func findMiddle(head *ListNode) *ListNode {
-    var pre *ListNode
-    fast,slow := head,head
+	var pre *ListNode
+	fast, slow := head, head
 
-    for fast != nil && fast.Next != nil {
-        pre = slow
-        slow = slow.Next
-        fast = fast.Next.Next
-    }
+	for fast != nil && fast.Next != nil {
+		pre = slow
+		slow = slow.Next
+		fast = fast.Next.Next
+	}
 
-    // 断开pre和middle之间的链接
-    if pre != nil {
-        pre.Next = nil
-    }
+	// 断开pre和middle之间的链接
+	if pre != nil {
+		pre.Next = nil
+	}
 
-    return slow
+	return slow
 }
 
 func sortedListToBST(head *ListNode) *TreeNode {
-    if head == nil {
-        return nil
-    }
+	if head == nil {
+		return nil
+	}
 
-    mid := findMiddle(head)
-    root := &TreeNode{Val: mid.Val}
+	mid := findMiddle(head)
+	root := &TreeNode{Val: mid.Val}
 
-    // If there is only one element
-    if head == mid {
-        return root
-    }
+	// If there is only one element
+	if head == mid {
+		return root
+	}
 
-    // mid和之前的节点已经断开，所以我们只需要将头结点传进去，就可以计算左子树
-    root.Left = sortedListToBST(head)
-    // mid 节点的下一节点就是右子树，因此也是一个递归的过程
-    root.Right = sortedListToBST(mid.Next)
-    return root
+	// mid和之前的节点已经断开，所以我们只需要将头结点传进去，就可以计算左子树
+	root.Left = sortedListToBST(head)
+	// mid 节点的下一节点就是右子树，因此也是一个递归的过程
+	root.Right = sortedListToBST(mid.Next)
+	return root
 }
-
 
 //-----------------------------------------------------
 // time-space tradeoff
@@ -76,68 +71,67 @@ func sortedListToBST(head *ListNode) *TreeNode {
 // 从而降低时间复杂度
 // Time complexity: O(n), 每次找mid的时间降为了O(1)，而我们一共需要找n次
 // Space complexity: O(n)
-func convert(val []int,left int, right int) *TreeNode {
-    if left > right {
-        return nil
-    }
+func convert(val []int, left int, right int) *TreeNode {
+	if left > right {
+		return nil
+	}
 
-    mid := left + (right - left) /2
-    root := &TreeNode{Val: val[mid]}
+	mid := left + (right-left)/2
+	root := &TreeNode{Val: val[mid]}
 
-    // If there is only one element , then just return
-    if left == right {
-        return root
-    }
+	// If there is only one element , then just return
+	if left == right {
+		return root
+	}
 
-    root.Left = convert(val,left,mid-1)
-    root.Right = convert(val,mid+1,right)
-    return root
+	root.Left = convert(val, left, mid-1)
+	root.Right = convert(val, mid+1, right)
+	return root
 }
 
 func sortedListToBST2(head *ListNode) *TreeNode {
-    if head == nil {
-        return nil
-    }
+	if head == nil {
+		return nil
+	}
 
-    var val []int
-    for head != nil {
-        val = append(val,head.Val)
-        head = head.Next
-    }
+	var val []int
+	for head != nil {
+		val = append(val, head.Val)
+		head = head.Next
+	}
 
-
-    return convert(val,0,len(val)-1)
+	return convert(val, 0, len(val)-1)
 }
-
 
 // ----------------------------------------------------
 // Inorder simulation
 var tmp *ListNode
-func sortedListToBST3(head *ListNode) *TreeNode {
-    if head == nil {
-        return nil
-    }
-    var size int
-    tmp = head
-    for head != nil {
-        size++
-        head = head.Next
-    }
 
-    return  convertToBST(0,size-1)
+func sortedListToBST3(head *ListNode) *TreeNode {
+	if head == nil {
+		return nil
+	}
+	var size int
+	tmp = head
+	for head != nil {
+		size++
+		head = head.Next
+	}
+
+	return convertToBST(0, size-1)
 }
 
 func convertToBST(start int, end int) *TreeNode {
-    if start > end {
-        return nil
-    }
+	if start > end {
+		return nil
+	}
 
-    mid := start + (end - start)/2
-    left := convertToBST(start,mid-1)
-    node := &TreeNode{Val: tmp.Val}
-    node.Left = left
+	mid := start + (end-start)/2
+	left := convertToBST(start, mid-1)
+	node := &TreeNode{Val: tmp.Val}
+	node.Left = left
 
-    tmp = tmp.Next
-    node.Right = convertToBST(mid+1,end)
-    return node
+	tmp = tmp.Next
+	node.Right = convertToBST(mid+1, end)
+	return node
 }
