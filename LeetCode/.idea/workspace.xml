@@ -6,248 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc4889ae-92dd-4161-9539-6d2a041d6a57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leet_210/course_schedule_II.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_210/course_schedule_II_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_211/design_add_and_search_words_structure.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_212/word_search_II.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_212/word_search_II_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_214/shortest_palindrome.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_214/shortest_palindrome_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_215/kth_largest_element_in_an_array.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_215/kth_largest_element_in_an_array_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_216/combination_sum_III.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_216/combination_sum_III_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_217/contains_duplicate.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_1/copy_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_1/copy_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_1/two_sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_1/two_sum.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_10/match.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_10/match.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_10/match_nfa.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_10/match_nfa.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_10/match_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_10/match_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_100/same_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_100/same_tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_101/symmetric_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_101/symmetric_tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_102/binary_tree_level_traversal.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_102/binary_tree_level_traversal.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_103/zigzag_level_traversal.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_103/zigzag_level_traversal.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_104/max_length.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_104/max_length.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_105/construct_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_105/construct_tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_106/construct_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_106/construct_tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_107/binary_tree_level_traversal.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_107/binary_tree_level_traversal.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_108/converty_tree_to_bst.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_108/converty_tree_to_bst.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_109/convert_sorted_list_to_bst.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_109/convert_sorted_list_to_bst.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_11/container_with_most_water.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_11/container_with_most_water.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_110/binary_balanced_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_110/binary_balanced_tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_111/minimum_depth_of_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_111/minimum_depth_of_tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_112/path_sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_112/path_sum.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_113/path_sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_113/path_sum.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_1143/lcs.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_1143/lcs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_115/distinct_subsequence.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_115/distinct_subsequence.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_116/populating_next_right_pointer_in_each_node.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_116/populating_next_right_pointer_in_each_node.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_118/pascal_triangle.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_118/pascal_triangle.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_118/pascal_triangle_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_118/pascal_triangle_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_119/pascal_triangle_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_119/pascal_triangle_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_12/integer_to_roman.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_12/integer_to_roman.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_120/triangle.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_120/triangle.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_121/best_time_to_buy_and_sell_stock.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_121/best_time_to_buy_and_sell_stock.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_121/best_time_to_buy_and_sell_stock_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_121/best_time_to_buy_and_sell_stock_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_123/stock_problem.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_123/stock_problem.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_124/binary_tree_maximum_path_sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_124/binary_tree_maximum_path_sum.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_125/valid_palindrome.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_125/valid_palindrome.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_127/word_ladder.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_127/word_ladder.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_128/longest_consecutive_sequence.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_128/longest_consecutive_sequence.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_128/longest_consecutive_sequence_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_128/longest_consecutive_sequence_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_13/roam_to_integer.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_13/roam_to_integer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_130/surrounded_regions.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_130/surrounded_regions.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_131/palindrome_partitioning.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_131/palindrome_partitioning.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_133/clone_group.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_133/clone_group.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_134/gas_station.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_134/gas_station.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_135/candy.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_135/candy.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_136/single_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_136/single_number.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_138/copy_list_with_random_pointer.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_138/copy_list_with_random_pointer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_139/break_word.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_139/break_word.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_14/longest_common_prefix.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_14/longest_common_prefix.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_140/word_break_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_140/word_break_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_140/word_break_II_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_140/word_break_II_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_141/linked_list_circle.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_141/linked_list_circle.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_142/linked_list_circle_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_142/linked_list_circle_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_143/reorder_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_143/reorder_list.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_143/reorder_list_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_143/reorder_list_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_144/preorder_binary_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_144/preorder_binary_tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_145/post_order_binary_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_145/post_order_binary_tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_146/LRU.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_146/LRU.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_147/insert_sort_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_147/insert_sort_list.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_148/sort_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_148/sort_list.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_15/3sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_15/3sum.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_150/evaluate_reverse_polish_notation.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_150/evaluate_reverse_polish_notation.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_150/evaluate_reverse_polish_notation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_150/evaluate_reverse_polish_notation_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_151/reverse_words_in_a_string.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_151/reverse_words_in_a_string.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_152/maximum_product_subarray.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_152/maximum_product_subarray.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_153/find_minimum_in_rotated_sorted_array.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_153/find_minimum_in_rotated_sorted_array.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_154/find_minimum_in_rotated_sorted_array_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_154/find_minimum_in_rotated_sorted_array_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_156/binary_tree_upside_down.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_156/binary_tree_upside_down.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_159/longest_substring_with_at_most_two_distinct_characters.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_159/longest_substring_with_at_most_two_distinct_characters.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_159/longest_substring_with_at_most_two_distinct_characters_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_159/longest_substring_with_at_most_two_distinct_characters_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_16/three_sum_closest.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_16/three_sum_closest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_160/intersection_of_two_linked_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_160/intersection_of_two_linked_list.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_162/find_peek_element.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_162/find_peek_element.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_163/missing_ranges.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_163/missing_ranges.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_164/maximum_gap.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_164/maximum_gap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_167/two_sum_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_167/two_sum_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_169/majority_element.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_169/majority_element.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_17/letter_combination_of_phone_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_17/letter_combination_of_phone_number.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_170/two_sum_III.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_170/two_sum_III.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_171/excel_sheet_column_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_171/excel_sheet_column_number.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_172/factorial_trailing_zeros.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_172/factorial_trailing_zeros.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_173/bst_iterator_stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_173/bst_iterator_stack.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_173/inorder/bst_iterator_inorder.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_173/inorder/bst_iterator_inorder.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_179/largest_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_179/largest_number.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_179/largest_number_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_179/largest_number_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_18/4sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_18/4sum.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_189/rotate_array.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_189/rotate_array.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_19/remove_kth_node_from_end_of_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_19/remove_kth_node_from_end_of_list.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_190/reverse_bits.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_190/reverse_bits.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_191/number_of_1_bits.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_191/number_of_1_bits.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_198/house_robber.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_198/house_robber.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_199/binary_tree_right_side_view.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_199/binary_tree_right_side_view.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_2/add_two_numbers.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_2/add_two_numbers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_2/add_two_numbers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_2/add_two_numbers_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_200/number_of_islands.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_200/number_of_islands.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_201/bitwaise_and_of_numbers_range.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_201/bitwaise_and_of_numbers_range.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_202/happy_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_202/happy_number.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_203/remove_linked_list_element.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_203/remove_linked_list_element.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_204/count_prime_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_204/count_prime_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_204/count_primes.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_204/count_primes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_205/isomorphic_strings.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_205/isomorphic_strings.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_205/isomorphic_strings_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_205/isomorphic_strings_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_206/reverse_linked_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_206/reverse_linked_list.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_207/course_scheduler.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_207/course_scheduler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_208/implement_trie.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_208/implement_trie.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_209/minimum_size_subarray_sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_209/minimum_size_subarray_sum.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_209/minimum_size_subarray_sum_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_209/minimum_size_subarray_sum_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_21/merge_two_sorted_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_21/merge_two_sorted_list.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_213/house_robber.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_213/house_robber.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_22/generate _parentheses.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_22/generate _parentheses.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_222/count_complete_tree_nodes.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_222/count_complete_tree_nodes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_226/invert_binary_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_226/invert_binary_tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_228/summary_ranges.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_228/summary_ranges.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_23/merge_k_sorted_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_23/merge_k_sorted_list.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_230/small_in_bst.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_230/small_in_bst.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_235/lowest_common_ancestor_of_bst.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_235/lowest_common_ancestor_of_bst.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_236/lowest_common_ancestor_of_binary_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_236/lowest_common_ancestor_of_binary_tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_24/swap_node_in_pairs.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_24/swap_node_in_pairs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_241/different_ways_to_add_parenthses.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_241/different_ways_to_add_parenthses.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_25/reverse_nodes_in_k_group.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_25/reverse_nodes_in_k_group.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_252/meeting_rooms.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_252/meeting_rooms.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_253/meeting_room_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_253/meeting_room_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_257/binary_tree_path.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_257/binary_tree_path.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_26/remove_duplicate_from_sorted_array.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_26/remove_duplicate_from_sorted_array.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_27/remove_element.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_27/remove_element.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_28/implement_strstr.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_28/implement_strstr.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_29/divide_two_integers.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_29/divide_two_integers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_3/longest_substring_without_repeated_characters.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_3/longest_substring_without_repeated_characters.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_3/longest_substring_without_repeated_characters_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_3/longest_substring_without_repeated_characters_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_30/count_and_say.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_30/count_and_say.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_301/remove_invalid_parentheses.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_301/remove_invalid_parentheses.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_309/stock_problem.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_309/stock_problem.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_31/next_permuattion.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_31/next_permuattion.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_32/longest_valid_parentheses.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_32/longest_valid_parentheses.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_322/coin_change.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_322/coin_change.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_33/search_in_rotated_sorted_array.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_33/search_in_rotated_sorted_array.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_34/find_first_and_last_position_of_element.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_34/find_first_and_last_position_of_element.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_35/search_insert_position.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_35/search_insert_position.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_36/valid_sudoku.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_36/valid_sudoku.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_36/valid_sudoku_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_36/valid_sudoku_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_37/sudoku_solver.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_37/sudoku_solver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_39/combinationSum_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_39/combinationSum_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_39/combination_sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_39/combination_sum.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_4/median_of_two_sorted_arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_4/median_of_two_sorted_arrays.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_4/median_of_two_sorted_arrays_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_4/median_of_two_sorted_arrays_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_40/combination_sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_40/combination_sum.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_404/sum_of_left_leaves.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_404/sum_of_left_leaves.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_41/first_missing_positive.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_41/first_missing_positive.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_42/trapping_rain_water.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_42/trapping_rain_water.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_429/n-ary_tree_level_order_traversal.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_429/n-ary_tree_level_order_traversal.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_43/multiply_strings.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_43/multiply_strings.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_43/multiply_strings_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_43/multiply_strings_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_435/non_overlappint_intervals.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_435/non_overlappint_intervals.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_437/path_sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_437/path_sum.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_44/wildcard_matching.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_44/wildcard_matching.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_44/wildcard_matching_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_44/wildcard_matching_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_45/jump_game_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_45/jump_game_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_450/delete_node_in_bst.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_450/delete_node_in_bst.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_452/minimun_arrows_to_burst_balloons.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_452/minimun_arrows_to_burst_balloons.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_46/permutation.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_46/permutation.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_47/permutation_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_47/permutation_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_47/permutation_II_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_47/permutation_II_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_48/rotate_image.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_48/rotate_image.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_49/group_anagram.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_49/group_anagram.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_499/series_and_deseries_bst.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_499/series_and_deseries_bst.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_5/longest_palindromic_substring.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_5/longest_palindromic_substring.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_50/calculate_power.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_50/calculate_power.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_50/calculate_power_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_50/calculate_power_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_501/find_mode_in_bst.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_501/find_mode_in_bst.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_509/fibonacci_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_509/fibonacci_number.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_51/N_Queens.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_51/N_Queens.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_52/N_Queens_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_52/N_Queens_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_53/maximum_subarray_divide_and_conquer.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_53/maximum_subarray_divide_and_conquer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_53/maxmium_subarray.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_53/maxmium_subarray.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_54/spiral_matrix.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_54/spiral_matrix.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_55/jump_game.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_55/jump_game.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_56/merge_interval.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_56/merge_interval.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_57/insert_interval.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_57/insert_interval.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_58/length_of_last_word.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_58/length_of_last_word.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_59/spiral_matrix_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_59/spiral_matrix_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_60/permutation_sequence.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_60/permutation_sequence.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_61/rotate_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_61/rotate_list.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_62/unique_path.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_62/unique_path.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_63/unique_path_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_63/unique_path_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_637/average_of_levels_in_binary_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_637/average_of_levels_in_binary_tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_64/minimum_path_sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_64/minimum_path_sum.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_647/palindromic_substrings.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_647/palindromic_substrings.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_651/keyboard.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_651/keyboard.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_66/plugOne.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_66/plugOne.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_67/add_binary.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_67/add_binary.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_67/add_binary_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_67/add_binary_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_678/valid_parenthesis_string.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_678/valid_parenthesis_string.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_69/qurt.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_69/qurt.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_7/recover_integer.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_7/recover_integer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_70/climbing_stairs.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_70/climbing_stairs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_714/stock_problem.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_714/stock_problem.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_72/edit_distance.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_72/edit_distance.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_72/edit_distance_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_72/edit_distance_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_73/the_matrix_zeroes.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_73/the_matrix_zeroes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_74/search_a_2D_matrix.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_74/search_a_2D_matrix.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_75/sort_color.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_75/sort_color.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_76/minimum_window_substring.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_76/minimum_window_substring.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_76/minimum_window_substring_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_76/minimum_window_substring_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_768/max_trunks_to_make_sorted_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_768/max_trunks_to_make_sorted_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_77/combinations.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_77/combinations.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_78/subsets.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_78/subsets.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_79/word_search.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_79/word_search.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_8/string_to_integer.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_8/string_to_integer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_8/string_to_integer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_8/string_to_integer_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_80/remove_dumplicated_from_sorted_array_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_80/remove_dumplicated_from_sorted_array_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_81/search_in_rotated_sorted_array_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_81/search_in_rotated_sorted_array_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_82/remove_duplicates_from_sorted_list_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_82/remove_duplicates_from_sorted_list_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_83/remove_duplicates_from_sorted_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_83/remove_duplicates_from_sorted_list.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_84/larget_rectangle_in_histogram.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_84/larget_rectangle_in_histogram.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_85/maximal_rectangle.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_85/maximal_rectangle.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_856/score_of_parentheses.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_856/score_of_parentheses.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_86/partiton_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_86/partiton_list.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_877/stone_game.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_877/stone_game.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_89/gray_code.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_89/gray_code.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_9/palindrome_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_9/palindrome_number.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_90/subset_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_90/subset_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_91/decode_ways.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_91/decode_ways.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_92/reverse_linked_list_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_92/reverse_linked_list_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_93/restore_ip_address.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_93/restore_ip_address.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_94/bianry_tree_inorder.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_94/bianry_tree_inorder.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_95/unq_bst.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_95/unq_bst.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_96/unq_bst.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_96/unq_bst.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_97/intrerleaving_string.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_97/intrerleaving_string.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_98/validate_bst.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_98/validate_bst.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_99/recover_binary_search_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_99/recover_binary_search_tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_xxx_eggdrop/egg_drop.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_xxx_eggdrop/egg_drop.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_xxx_kmp/kmp.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_xxx_kmp/kmp.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/cmp.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/cmp.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/option.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/option.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/queue.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/stack.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,9 +25,17 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file:///usr/local/Cellar/go/1.15.6/libexec" />
+  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.14.7" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -296,27 +68,27 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Go Test.TestReverse in lightsinger.life/algorithm/leetcode/leet_214">
-    <configuration name="TestEvalRPM in lightsinger.life/algorithm/leetcode/leet_150" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestCombinationSum3 in lightsinger.life/algorithm/leetcode/leet_216">
+    <configuration name="TestCombinationSum3 in lightsinger.life/algorithm/leetcode/leet_216" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_150" />
+      <working_directory value="$PROJECT_DIR$/leet_216" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_150" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_216" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestEvalRPM\E$" />
+      <pattern value="^\QTestCombinationSum3\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestFindOrder in lightsinger.life/algorithm/leetcode/leet_210" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFindKthLargest in lightsinger.life/algorithm/leetcode/leet_215" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_210" />
+      <working_directory value="$PROJECT_DIR$/leet_215" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_210" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_215" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestFindOrder\E$" />
+      <pattern value="^\QTestFindKthLargest\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestFindWords in lightsinger.life/algorithm/leetcode/leet_212" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -354,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestCombinationSum3 in lightsinger.life/algorithm/leetcode/leet_216" />
+        <item itemvalue="Go Test.TestFindKthLargest in lightsinger.life/algorithm/leetcode/leet_215" />
+        <item itemvalue="Go Test.TestWordBreak in lightsinger.life/algorithm/leetcode/leet_140" />
         <item itemvalue="Go Test.TestReverse in lightsinger.life/algorithm/leetcode/leet_214" />
         <item itemvalue="Go Test.TestFindWords in lightsinger.life/algorithm/leetcode/leet_212" />
-        <item itemvalue="Go Test.TestFindOrder in lightsinger.life/algorithm/leetcode/leet_210" />
-        <item itemvalue="Go Test.TestEvalRPM in lightsinger.life/algorithm/leetcode/leet_150" />
-        <item itemvalue="Go Test.TestWordBreak in lightsinger.life/algorithm/leetcode/leet_140" />
       </list>
     </recent_temporary>
   </component>
