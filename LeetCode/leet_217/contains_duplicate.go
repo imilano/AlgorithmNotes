@@ -25,8 +25,8 @@ func containsDuplicate(nums []int) bool {
 		return false
 	}
 	sort.Ints(nums)
-	for i := 0; i< n-1;i++{
-		if nums[i] ==nums[i+1] {
+	for i := 0; i < n-1; i++ {
+		if nums[i] == nums[i+1] {
 			return true
 		}
 	}
@@ -34,14 +34,13 @@ func containsDuplicate(nums []int) bool {
 	return false
 }
 
-
 //----------------------------------------
 // 使用map
 func containsDuplicate2(nums []int) bool {
 	m := make(map[int]bool)
 
-	for _,v := range nums {
-		if _,ok := m[v]; ok {
+	for _, v := range nums {
+		if _, ok := m[v]; ok {
 			return true
 		}
 		m[v] = true

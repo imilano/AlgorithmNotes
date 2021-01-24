@@ -23,6 +23,8 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+//----------------------------------------------
+// recursive way
 func left(root *TreeNode) int {
 	if root == nil {
 		return 0
@@ -61,4 +63,20 @@ func countNodes(root *TreeNode) int {
 	} else {
 		return count(root)
 	}
+}
+
+
+//------------------------------------------
+// iterative way
+func countNodes2(root *TreeNode) int {
+	return countChild(root)
+}
+
+func countChild(root *TreeNode) int {
+	if root == nil {
+		return 0
+	}
+
+	left,right := countChild(root.Left),countChild(root.Right)
+	return left+right+1
 }

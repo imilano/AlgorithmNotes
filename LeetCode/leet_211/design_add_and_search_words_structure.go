@@ -72,7 +72,7 @@ func search(dic *WordDictionary, word string, idx int) bool {
 		return dic.isChild
 	}
 
-	if word[idx] == '.' {   // 出现的每个字符都是匹配的
+	if word[idx] == '.' { // 出现的每个字符都是匹配的
 		for i := range dic.next {
 			if dic.next[i] != nil && search(dic.next[i], word, idx+1) {
 				return true

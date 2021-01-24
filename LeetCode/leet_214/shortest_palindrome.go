@@ -25,8 +25,8 @@ func reverse(s string) string {
 	r := []rune(s)
 	n := len(r)
 
-	for i,j := 0, n-1;i<j;i,j = i+1,j-1 {
-		r[i],r[j] = r[j],r[i]
+	for i, j := 0, n-1; i < j; i, j = i+1, j-1 {
+		r[i], r[j] = r[j], r[i]
 	}
 
 	return string(r)
@@ -39,7 +39,7 @@ func shortestPalindrome2(s string) string {
 	n := len(s)
 
 	var i int
-	for i = n;i >= 0;i-- {
+	for i = n; i >= 0; i-- {
 		if s[:i] == r[n-i:] {
 			break
 		}

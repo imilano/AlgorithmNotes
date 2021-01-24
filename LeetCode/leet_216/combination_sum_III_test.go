@@ -6,5 +6,5 @@ import (
 )
 
 func TestCombinationSum3(t *testing.T) {
-	fmt.Println(combinationSum3(9,45))
+	fmt.Println(combinationSum3(9, 45))
 }

@@ -6,8 +6,8 @@ import (
 )
 
 func TestReverse(t *testing.T) {
-	strs := []string{"abc","aa","abca"}
+	strs := []string{"abc", "aa", "abca"}
 	for _, s := range strs {
-		fmt.Println(s," : ",shortestPalindrome2(s))
+		fmt.Println(s, " : ", shortestPalindrome2(s))
 	}
 }
