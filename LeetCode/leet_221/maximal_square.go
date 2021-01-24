@@ -12,10 +12,10 @@ func maximalSquare(matrix [][]byte) int {
 	if matrix == nil {
 		return 0
 	}
-	m,n := len(matrix),len(matrix[0])
+	m, n := len(matrix), len(matrix[0])
 
-	for i := 0; i<m;i++ {
-		v := make([]int,n)
+	for i := 0; i < m; i++ {
+		v := make([]int, n)
 		for j := i; j < m; j++ {
 			for k := 0; k < n; k++ {
 				if matrix[j][k] == '1' {
@@ -23,21 +23,21 @@ func maximalSquare(matrix [][]byte) int {
 				}
 			}
 
-			res = max(res, getSquareArea(v,j-i+1))
+			res = max(res, getSquareArea(v, j-i+1))
 		}
 	}
 
 	return res
 }
 
-func getSquareArea(v []int, k int)  int{
+func getSquareArea(v []int, k int) int {
 	n := len(v)
 	if n < k {
 		return 0
 	}
 
 	var count int
-	for i := 0; i < n;i++ {
+	for i := 0; i < n; i++ {
 		if v[i] != k {
 			count = 0
 		} else {
@@ -45,13 +45,12 @@ func getSquareArea(v []int, k int)  int{
 		}
 
 		if count == k {
-			return k*k
+			return k * k
 		}
 	}
 
 	return 0
 }
-
 
 //---------------------------------------
 // dynamic programming
@@ -65,28 +64,29 @@ func maximalSquare2(matrix [][]byte) int {
 	}
 
 	var res int
-	m,n := len(matrix),len(matrix[0])
-	dp := make([][]int,m)
+	m, n := len(matrix), len(matrix[0])
+	dp := make([][]int, m)
 	for i := range dp {
-		dp[i] = make([]int,n)
+		dp[i] = make([]int, n)
 	}
-	for i := 0; i< m;i++ {
-		for j := 0; j <n ;j++ {
+	for i := 0; i < m; i++ {
+		for j := 0; j < n; j++ {
 			if i == 0 || j == 0 {
 				dp[i][j] = int(matrix[i][j] - '0')
 			} else if matrix[i][j] == '1' {
-				dp[i][j] = min(dp[i-1][j-1],min(dp[i][j-1],dp[i-1][j])) + 1  // core step
+				dp[i][j] = min(dp[i-1][j-1], min(dp[i][j-1], dp[i-1][j])) + 1 // core step
 			}
 
-			res = max(res,dp[i][j])
+			res = max(res, dp[i][j])
 		}
 	}
 
-	return res*res
+	return res * res
 }
+
 //---------------------------------------
 // util func
-func max(a,b int) int {
+func max(a, b int) int {
 	if a > b {
 		return a
 	}
@@ -94,7 +94,7 @@ func max(a,b int) int {
 	return b
 }
 
-func min(a,b int) int {
+func min(a, b int) int {
 	if a < b {
 		return a
 	}

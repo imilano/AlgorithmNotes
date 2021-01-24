@@ -65,7 +65,6 @@ func countNodes(root *TreeNode) int {
 	}
 }
 
-
 //------------------------------------------
 // iterative way
 func countNodes2(root *TreeNode) int {
@@ -77,6 +76,6 @@ func countChild(root *TreeNode) int {
 		return 0
 	}
 
-	left,right := countChild(root.Left),countChild(root.Right)
-	return left+right+1
+	left, right := countChild(root.Left), countChild(root.Right)
+	return left + right + 1
 }

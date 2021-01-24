@@ -22,7 +22,7 @@ func containsNearbyDuplicate(nums []int, k int) bool {
 	n := len(nums)
 
 	for gap := k; gap > 0; gap-- {
-		for i := gap; i < n;i++ {
+		for i := gap; i < n; i++ {
 			if nums[i] == nums[i-gap] {
 				return true
 			}
