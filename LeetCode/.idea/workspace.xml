@@ -6,27 +6,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc4889ae-92dd-4161-9539-6d2a041d6a57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leet_218/the_skyline_problem.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_219/contains_duplicate_II.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_219/contains_duplicate_II_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_221/maximal_square.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_221/maximal_square_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_223/rectangle_area.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_quicksort/quick_sort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_quicksort/quick_sort_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_224/basic_calculator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_225/implement_stack_using_queues.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_227/basic_calculator_II.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_227/basic_calculator_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_229/majority_eleement_Ii_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_229/majority_element_II.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_231/power_of_two.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_231/power_of_two_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_232/implement_queue_using_stacks.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_233/number_of_digit_one.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_234/palindrome_lindked_list_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_234/palindrome_linked_list.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_211/design_add_and_search_words_structure.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_211/design_add_and_search_words_structure.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_212/word_search_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_212/word_search_II.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_212/word_search_II_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_212/word_search_II_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_213/house_robber.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_213/house_robber.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_214/shortest_palindrome.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_214/shortest_palindrome.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_214/shortest_palindrome_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_214/shortest_palindrome_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_215/kth_largest_element_in_an_array.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_215/kth_largest_element_in_an_array.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_215/kth_largest_element_in_an_array_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_215/kth_largest_element_in_an_array_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_216/combination_sum_III.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_216/combination_sum_III.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_216/combination_sum_III_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_216/combination_sum_III_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_217/contains_duplicate.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_217/contains_duplicate.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_222/count_complete_tree_nodes.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_222/count_complete_tree_nodes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leet_236/lowest_common_ancestor_of_binary_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_236/lowest_common_ancestor_of_binary_tree.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,69 +76,69 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Go Test.TestMaximalSquare in lightsinger.life/algorithm/leetcode/leet_221">
-    <configuration name="TestCombinationSum3 in lightsinger.life/algorithm/leetcode/leet_216" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestIsPalindrome in lightsinger.life/algorithm/leetcode/leet_234">
+    <configuration name="TestIsPalindrome in lightsinger.life/algorithm/leetcode/leet_234" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_216" />
+      <working_directory value="$PROJECT_DIR$/leet_234" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_216" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_234" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestCombinationSum3\E$" />
+      <pattern value="^\QTestIsPalindrome\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestContainsNearbyDuplicate in lightsinger.life/algorithm/leetcode/leet_219" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIsPowerOfTwo in lightsinger.life/algorithm/leetcode/leet_231" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_219" />
+      <working_directory value="$PROJECT_DIR$/leet_231" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_219" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_231" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestContainsNearbyDuplicate\E$" />
+      <pattern value="^\QTestIsPowerOfTwo\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestFindKthLargest in lightsinger.life/algorithm/leetcode/leet_215" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIsPowerOfTwo3 in lightsinger.life/algorithm/leetcode/leet_231" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_215" />
+      <working_directory value="$PROJECT_DIR$/leet_231" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_215" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_231" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestFindKthLargest\E$" />
+      <pattern value="^\QTestIsPowerOfTwo3\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestMaximalSquare in lightsinger.life/algorithm/leetcode/leet_221" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMajorityElement2 in lightsinger.life/algorithm/leetcode/leet_229" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_221" />
+      <working_directory value="$PROJECT_DIR$/leet_229" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_221" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_229" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestMaximalSquare\E$" />
+      <pattern value="^\QTestMajorityElement2\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestQuickSort in lightsinger.life/algorithm/leetcode/leet_quicksort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTrimSpace in lightsinger.life/algorithm/leetcode/leet_227" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_quicksort" />
+      <working_directory value="$PROJECT_DIR$/leet_227" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_quicksort" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_227" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestQuickSort\E$" />
+      <pattern value="^\QTestTrimSpace\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestMaximalSquare in lightsinger.life/algorithm/leetcode/leet_221" />
-        <item itemvalue="Go Test.TestContainsNearbyDuplicate in lightsinger.life/algorithm/leetcode/leet_219" />
-        <item itemvalue="Go Test.TestQuickSort in lightsinger.life/algorithm/leetcode/leet_quicksort" />
-        <item itemvalue="Go Test.TestCombinationSum3 in lightsinger.life/algorithm/leetcode/leet_216" />
-        <item itemvalue="Go Test.TestFindKthLargest in lightsinger.life/algorithm/leetcode/leet_215" />
+        <item itemvalue="Go Test.TestIsPalindrome in lightsinger.life/algorithm/leetcode/leet_234" />
+        <item itemvalue="Go Test.TestIsPowerOfTwo3 in lightsinger.life/algorithm/leetcode/leet_231" />
+        <item itemvalue="Go Test.TestIsPowerOfTwo in lightsinger.life/algorithm/leetcode/leet_231" />
+        <item itemvalue="Go Test.TestMajorityElement2 in lightsinger.life/algorithm/leetcode/leet_229" />
+        <item itemvalue="Go Test.TestTrimSpace in lightsinger.life/algorithm/leetcode/leet_227" />
       </list>
     </recent_temporary>
   </component>
@@ -228,6 +221,16 @@
           <url>file://$PROJECT_DIR$/leet_221/maximal_square_test.go</url>
           <line>15</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leet_229/majority_eleement_Ii_test.go</url>
+          <line>9</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leet_234/palindrome_lindked_list_test.go</url>
+          <line>34</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

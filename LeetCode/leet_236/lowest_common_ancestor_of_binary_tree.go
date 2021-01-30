@@ -56,3 +56,26 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 
 	return right
 }
+
+
+// --------------------------
+// 与上述相同p和q的分布只会有三种情况，要么是在root的左子树中，要么是在root的右子树中，要么左右子树都存在。分类讨论：
+// 	- 如果根节点为空或者根节点等于p或q，那么直接返回根节点；否则对根节点的左右节点分别进行遍历；
+//	- 如果如果子树返回非空，右子树也返回非空，那么直接返回根节点
+//	- 如果左子树为空，右子树非空，那么返回右子树。（右子树非空包含两种情况，一种情况是返回的结果是p和q二者中的较高者，一种是返回q和p的最小公共祖先）
+//	- 如果右子树为空，左子树非空，那么直接返回左子树。（左子树非空包含两种情况，一种是返回的结果是p和q二者中的较高者，一种是返回p和q的最小公共祖先）
+func lowestCommonAncestor2(root,p,q *TreeNode) *TreeNode {
+	if root == nil || root == p || root == q {
+		return root
+	}
+	left := lowestCommonAncestor2(root.Left,p,q)
+	right := lowestCommonAncestor2(root.Right,p,q)
+	if left != nil && right != nil {
+		return root
+	}
+	if left != nil {
+		return left
+	} else {
+		return right
+	}
+}

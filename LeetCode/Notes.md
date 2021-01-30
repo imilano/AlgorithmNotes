@@ -163,6 +163,31 @@ func mergeKListsDivide(lists []*ListNode) *ListNode {
 }
 ```
 
+## LinkedList
+1. reverse linkedList
+```go
+func reverseList(head *ListNode) *ListNode {
+	if head == nil || head.Next == nil {
+		return head
+	}
+
+	newHead := reverseList(head.Next)
+	head.Next.Next = head
+	head.Next = nil
+	return newHead
+}
+
+```
+
+## Fast and Slow Pointer
+```go
+	slow,fast := head,head
+	for fast.Next != nil && fast.Next.Next != nil{
+		slow = slow.Next
+		fast = fast.Next.Next
+	}
+```
+
 
 ## Puzzles
 1. Nil Pointer Reference
