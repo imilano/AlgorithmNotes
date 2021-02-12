@@ -19,17 +19,16 @@ Follow up:
 Could you do it in O(n) time and O(1) space?
 */
 
-
 // Definition for singly-linked list.
 type ListNode struct {
-    Val int
-    Next *ListNode
+	Val  int
+	Next *ListNode
 }
 
 //------------------------------------------------------------
 // 使用栈
 func isPalindrome(head *ListNode) bool {
-	if head == nil || head.Next ==  nil {
+	if head == nil || head.Next == nil {
 		return true
 	}
 
@@ -59,18 +58,18 @@ func isPalindrome(head *ListNode) bool {
 //---------------------------------------------------------------------------
 // 先遍历得到元素数量，然后对链表后半部分进行翻转，然后使用双指针方法，从原头部和后半部分的头部进行一一比较
 func isPalindrome2(head *ListNode) bool {
-	if head == nil || head.Next == nil{
+	if head == nil || head.Next == nil {
 		return true
 	}
 
-	slow,fast := head,head
-	for fast.Next != nil && fast.Next.Next != nil{
+	slow, fast := head, head
+	for fast.Next != nil && fast.Next.Next != nil {
 		slow = slow.Next
 		fast = fast.Next.Next
 	}
 
 	newHead := reverseList(slow.Next)
-	s,l := head,newHead
+	s, l := head, newHead
 	for l != nil {
 		if s.Val != l.Val {
 			return false
@@ -79,10 +78,8 @@ func isPalindrome2(head *ListNode) bool {
 		l = l.Next
 	}
 
-
 	return true
 }
-
 
 func reverseList(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
@@ -94,6 +91,3 @@ func reverseList(head *ListNode) *ListNode {
 	head.Next = nil
 	return newHead
 }
-
-
-

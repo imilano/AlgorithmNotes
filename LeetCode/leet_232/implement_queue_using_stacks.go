@@ -111,7 +111,6 @@ type MyQueue struct {
 	s2 *Stack
 }
 
-
 /** Initialize your data structure here. */
 func Constructor() MyQueue {
 	return MyQueue{
@@ -120,12 +119,10 @@ func Constructor() MyQueue {
 	}
 }
 
-
 /** Push element x to the back of queue. */
-func (this *MyQueue) Push(x int)  {
+func (this *MyQueue) Push(x int) {
 	this.s1.Push(x)
 }
-
 
 /** Removes the element from in front of queue and returns that element. */
 func (this *MyQueue) Pop() int {
@@ -140,23 +137,20 @@ func (this *MyQueue) Pop() int {
 	return this.s2.Pop().(int)
 }
 
-
 /** Get the front element. */
 func (this *MyQueue) Peek() int {
 	if this.s2.Empty() {
-		for !this.s1.Empty(){
+		for !this.s1.Empty() {
 			this.s2.Push(this.s1.Pop().(int))
 		}
 	}
 	return this.s2.Top().(int)
 }
 
-
 /** Returns whether the queue is empty. */
 func (this *MyQueue) Empty() bool {
-	return this.s1.Empty() &&  this.s2.Empty()
+	return this.s1.Empty() && this.s2.Empty()
 }
-
 
 /**
  * Your MyQueue object will be instantiated and called as such:

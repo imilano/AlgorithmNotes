@@ -7,9 +7,9 @@ import (
 
 func TestIsPalindrome(t *testing.T) {
 	l1 := &ListNode{
-		Val:  1,
+		Val: 1,
 		Next: &ListNode{
-			Val:  2,
+			Val: 2,
 			Next: &ListNode{
 				Val:  3,
 				Next: nil,
@@ -23,9 +23,8 @@ func TestIsPalindrome(t *testing.T) {
 		l = l.Next
 	}
 
-
 	l2 := &ListNode{
-		Val:  0,
+		Val: 0,
 		Next: &ListNode{
 			Val:  0,
 			Next: nil,

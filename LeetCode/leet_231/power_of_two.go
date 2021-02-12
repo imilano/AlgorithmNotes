@@ -19,11 +19,11 @@ func isPowerOfTwo(n int) bool {
 		return true
 	}
 
-	if n % 2 == 1 {
+	if n%2 == 1 {
 		return false
 	}
 
-	return isPowerOfTwo(n/2)
+	return isPowerOfTwo(n / 2)
 }
 
 // 2的幂，写成二进制都有一个特点，就是最高位都是1，其他位都是0.利用这个特点，只需要计算数字的二进制中1的个数，如果1的个数是1，那么就是幂，否则不是
@@ -39,5 +39,5 @@ func isPowerOfTwo2(n int) bool {
 
 // 如上所述，如果一个数的为2的幂，那么最高位为1，其余位都为0；那么，如果将这样的一个数减去1，那么最高位变为0，其余位变为1，将这个数与原数做与运算，如果结果是0，那么就是2的幂，否则不是
 func isPowerOfTwo3(n int) bool {
-	return n > 0 && ((n -1) & n) == 0   // 减1的方法对负数不适用
+	return n > 0 && ((n-1)&n) == 0 // 减1的方法对负数不适用
 }

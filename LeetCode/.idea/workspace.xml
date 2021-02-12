@@ -6,20 +6,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc4889ae-92dd-4161-9539-6d2a041d6a57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leet_224/basic_calculator.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_225/implement_stack_using_queues.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_227/basic_calculator_II.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_227/basic_calculator_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_229/majority_eleement_Ii_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_229/majority_element_II.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_231/power_of_two.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_231/power_of_two_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_232/implement_queue_using_stacks.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_233/number_of_digit_one.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_234/palindrome_lindked_list_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_234/palindrome_linked_list.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_237/delete_node_in_a_linked_list.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_238/product_of_array_except_self.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_239/sliding_window_maximum.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_239/sliding_window_maximum_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_240/search_a_2D_matrix_II.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_242/valid_anagram.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_243/shortest_word_distance.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_244/shortest_word_distance_II.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_245/shortest_word_distance_iii.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_246/strobogrammatic_number.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_246/strobogrammatic_number_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_247/sstrobogrammatic_number_ii_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_247/strobogrammatic_number_ii.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_248/strobogrammatic_number_iii.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_249/group_shifted_strings.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_250/count_unival_subtrees.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_250/count_unival_subtrees_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_250/count_univalue_subtrees.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_251/flatten_2D_vector.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_254/factor_combinations.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_254/factor_combinations_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_255/verify_preorder_sequence _in_bst.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_256/paint_house.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_256/paint_house_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_257/binary_tree_path_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_258/add_digits.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_259/3sum_smaller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leet_259/3sum_smaller_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_236/lowest_common_ancestor_of_binary_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_236/lowest_common_ancestor_of_binary_tree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leet_253/meeting_room_II.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_253/meeting_room_II.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leet_257/binary_tree_path.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_257/binary_tree_path.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,69 +93,66 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Go Test.TestIsPalindrome in lightsinger.life/algorithm/leetcode/leet_234">
-    <configuration name="TestIsPalindrome in lightsinger.life/algorithm/leetcode/leet_234" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.3sum_smaller_test.go">
+    <configuration name="3sum_smaller_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_234" />
+      <working_directory value="$PROJECT_DIR$/leet_259" />
       <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_234" />
+      <kind value="FILE" />
+      <package value="lightsinger.life/algorithm/leetcode" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestIsPalindrome\E$" />
+      <filePath value="$PROJECT_DIR$/leet_259/3sum_smaller_test.go" />
       <method v="2" />
     </configuration>
-    <configuration name="TestIsPowerOfTwo in lightsinger.life/algorithm/leetcode/leet_231" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMinCost in lightsinger.life/algorithm/leetcode/leet_256" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_231" />
+      <working_directory value="$PROJECT_DIR$/leet_256" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_231" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_256" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestIsPowerOfTwo\E$" />
+      <pattern value="^\QTestMinCost\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestIsPowerOfTwo3 in lightsinger.life/algorithm/leetcode/leet_231" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestVerifyPreorder in lightsinger.life/algorithm/leetcode/leet_255" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_231" />
+      <working_directory value="$PROJECT_DIR$/leet_255" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_231" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_255" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestIsPowerOfTwo3\E$" />
+      <pattern value="^\QTestVerifyPreorder\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestMajorityElement2 in lightsinger.life/algorithm/leetcode/leet_229" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="paint_house_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_229" />
+      <working_directory value="$PROJECT_DIR$/leet_256" />
       <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_229" />
+      <kind value="FILE" />
+      <package value="lightsinger.life/algorithm/leetcode" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestMajorityElement2\E$" />
+      <filePath value="$PROJECT_DIR$/leet_256/paint_house_test.go" />
       <method v="2" />
     </configuration>
-    <configuration name="TestTrimSpace in lightsinger.life/algorithm/leetcode/leet_227" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="verify_preorder_sequence_in_bst_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_227" />
+      <working_directory value="$PROJECT_DIR$/leet_255" />
       <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_227" />
+      <kind value="FILE" />
+      <package value="lightsinger.life/algorithm/leetcode" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestTrimSpace\E$" />
+      <filePath value="$PROJECT_DIR$/leet_255/verify_preorder_sequence_in_bst_test.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestIsPalindrome in lightsinger.life/algorithm/leetcode/leet_234" />
-        <item itemvalue="Go Test.TestIsPowerOfTwo3 in lightsinger.life/algorithm/leetcode/leet_231" />
-        <item itemvalue="Go Test.TestIsPowerOfTwo in lightsinger.life/algorithm/leetcode/leet_231" />
-        <item itemvalue="Go Test.TestMajorityElement2 in lightsinger.life/algorithm/leetcode/leet_229" />
-        <item itemvalue="Go Test.TestTrimSpace in lightsinger.life/algorithm/leetcode/leet_227" />
+        <item itemvalue="Go Test.3sum_smaller_test.go" />
+        <item itemvalue="Go Test.paint_house_test.go" />
+        <item itemvalue="Go Test.TestMinCost in lightsinger.life/algorithm/leetcode/leet_256" />
+        <item itemvalue="Go Test.TestVerifyPreorder in lightsinger.life/algorithm/leetcode/leet_255" />
+        <item itemvalue="Go Test.verify_preorder_sequence_in_bst_test.go" />
       </list>
     </recent_temporary>
   </component>

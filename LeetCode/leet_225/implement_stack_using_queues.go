@@ -42,23 +42,19 @@ All the calls to pop and top are valid.
 Follow-up: Can you implement the stack such that each operation is amortized O(1) time complexity? In other words, performing n operations will take overall O(n) time even if one of those operations may take longer. You can use more than two queues.
 */
 
-
 type MyStack struct {
 	que []int
 }
-
 
 /** Initialize your data structure here. */
 func Constructor() MyStack {
 	return MyStack{que: nil}
 }
 
-
 /** Push element x onto stack. */
-func (this *MyStack) Push(x int)  {
-	this.que = append(this.que,x)
+func (this *MyStack) Push(x int) {
+	this.que = append(this.que, x)
 }
-
 
 /** Removes the element on top of the stack and returns that element. */
 func (this *MyStack) Pop() int {
@@ -67,7 +63,6 @@ func (this *MyStack) Pop() int {
 	this.que = this.que[:n-1]
 	return res
 }
-
 
 /** Get the top element. */
 func (this *MyStack) Top() int {
@@ -78,7 +73,6 @@ func (this *MyStack) Top() int {
 	return this.que[len(this.que)-1]
 }
 
-
 /** Returns whether the stack is empty. */
 func (this *MyStack) Empty() bool {
 	if len(this.que) == 0 {
@@ -87,7 +81,6 @@ func (this *MyStack) Empty() bool {
 
 	return false
 }
-
 
 /**
  * Your MyStack object will be instantiated and called as such:

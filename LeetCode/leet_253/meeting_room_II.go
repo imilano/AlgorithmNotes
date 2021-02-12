@@ -1,6 +1,8 @@
 package leet_253
 
-import "sort"
+import (
+	"sort"
+)
 
 /*
 	Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei),
@@ -30,4 +32,34 @@ func minMeetingRooms(nums [][]int) int {
 	}
 
 	return res
+}
+
+// TODO figure it out
+// 每个区间的起始点代表一个区间的开始，会将重叠区域+1，每个区间的结束点代表一个区间的结束，会将重叠区域-1
+// 遇到起始时间，映射是正数，则房间数会增加，如果一个时间是一个会议的结束时间，也是另一个会议的开始时间，则映射值先减后加仍为0，
+// 并不用分配新的房间，而结束时间的映射值为负数更不会增加房间数
+// 将first看做会议的开始时间，m[first\表示first这个时间开始需要的房间数，m[first]++表示这个时间段所需的房间数加1；将second看做会议的结束时间，
+// m[second]--表示在second这个时间段所需的房间数减1；如果一个时间点既是一个会议的开始时间，也是一个会议的结束时间，那么相加相减之后恰好为0，无需再添加房间
+func minMeetingRooms2(nums [][]int) int {
+	m := make(map[int]int)
+	for i := range nums {
+		m[nums[i][0]]++
+		m[nums[i][1]]--
+	}
+
+	var rooms, res int
+	for _, v := range m {
+		rooms += v
+		res = max(res, rooms)
+	}
+
+	return res
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+
+	return b
 }
