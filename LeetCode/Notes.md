@@ -188,6 +188,11 @@ func reverseList(head *ListNode) *ListNode {
 	}
 ```
 
+##Graph
+1. 连通性问题
+ - DFS
+ - BFS
+ - Union Find
 
 ## Puzzles
 1. Nil Pointer Reference
