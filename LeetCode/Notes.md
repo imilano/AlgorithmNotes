@@ -194,6 +194,36 @@ func reverseList(head *ListNode) *ListNode {
  - BFS
  - Union Find
 
+2. Inorder traversal
+- iterative
+- using stack
+```go
+func inorderSuccessor2(root *TreeNode, p *TreeNode) *TreeNode {
+	stack := utils.NewStack()
+	visited := false
+	t := root
+
+	for !stack.Empty() || t != nil {
+		for t != nil {
+			stack.Push(t)
+			t = t.left
+		}
+
+		t = stack.Pop().(*TreeNode)
+		if visited {
+			return t
+		}
+		if reflect.DeepEqual(t, p) {
+			visited = true
+		}
+		t = t.right
+	}
+
+	return nil
+}
+
+```
+
 ## Puzzles
 1. Nil Pointer Reference
 ```go

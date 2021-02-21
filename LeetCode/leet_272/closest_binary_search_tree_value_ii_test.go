@@ -1,16 +1,16 @@
-package leet_270
+package leet_272
 
 import (
 	"fmt"
 	"testing"
 )
 
-func TestClosestValue(t *testing.T) {
+func TestClosestKValue(t *testing.T) {
 	tree := &TreeNode{
-		val:   4,
-		left:  &TreeNode{
-			val:   2,
-			left:  &TreeNode{
+		val: 4,
+		left: &TreeNode{
+			val: 2,
+			left: &TreeNode{
 				val:   1,
 				left:  nil,
 				right: nil,
@@ -28,5 +28,5 @@ func TestClosestValue(t *testing.T) {
 		},
 	}
 
-	fmt.Println(closestValue(tree,3.714286))
+	fmt.Println(closestKValues(tree, 3.714286, 2))
 }
