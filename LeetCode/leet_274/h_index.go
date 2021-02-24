@@ -22,8 +22,8 @@ Note: If there are several possible values for h, the maximum one is taken as th
 func hIndex(citations []int) int {
 	sort.Sort(sort.Reverse(sort.IntSlice(citations)))
 	n := len(citations)
-	for i := 0; i <n; i++  {
-		if i >=  citations[i] {
+	for i := 0; i < n; i++ {
+		if i >= citations[i] {
 			return i
 		}
 	}

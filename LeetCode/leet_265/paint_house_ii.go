@@ -26,18 +26,18 @@ func minCostII(costs [][]int) int {
 		return 0
 	}
 
-	n,k := len(costs),len(costs[0])
-	dp := make([][]int,n)
+	n, k := len(costs), len(costs[0])
+	dp := make([][]int, n)
 	for i := range dp {
-		dp[i] = make([]int,k)
-		copy(dp[i],costs[i])
+		dp[i] = make([]int, k)
+		copy(dp[i], costs[i])
 	}
 
-	min1,min2 := -1,-1
-	for i := 0; i< n;i++ {
-		last1,last2 := min1,min2  // 需要找到当前房子的最小和次小值，故而需要保存历史值
-		min1,min2 = -1,-1
-		for j := 0; j< k;j++ {
+	min1, min2 := -1, -1
+	for i := 0; i < n; i++ {
+		last1, last2 := min1, min2 // 需要找到当前房子的最小和次小值，故而需要保存历史值
+		min1, min2 = -1, -1
+		for j := 0; j < k; j++ {
 			//if (j != last1) {
 			//	dp[i][j] += last1 < 0 ? 0 : dp[i - 1][last1];
 			//} else {
@@ -63,8 +63,8 @@ func minCostII(costs [][]int) int {
 			}
 
 			if min1 < 0 || dp[i][j] < dp[i][min1] {
-				min2=min1
-				min1=j
+				min2 = min1
+				min1 = j
 			} else if min2 < 0 || dp[i][j] < dp[i][min2] {
 				min2 = j
 			}

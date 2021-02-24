@@ -15,7 +15,7 @@ Note: you can assume that no duplicate edges will appear in edges. Since all edg
 */
 
 type pair struct {
-	first,end int
+	first, end int
 }
 
 //---------------------------------------
@@ -28,25 +28,25 @@ func validTree(n int, edges []pair) bool {
 // 并查集一直是解决连通性的有效方法，思想是遍历节点，如果两个节点相连，将其roots值连上，这样可以找到环。初始化roots数组为-1，然后对于一个pair的
 //两个节点分别调用find函数，得到的值如果相同的话，说明环存在，返回false；不同的话，将其roots值union上。
 func validTree2(n int, edges []pair) bool {
-	roots := make([]int,n)
+	roots := make([]int, n)
 	for i := range roots {
 		roots[i] = -1
 	}
 
-	for _,v := range edges {
-		x,y := find(roots,v.first),find(roots,
-			v.end)  // 两个端点刚开始都不会出现在数组中，但是随着我们慢慢的加入和查找，一旦存在环，那么它的两个端点就会在并查集中重复出现，从而查找根时就会找到重复值。
+	for _, v := range edges {
+		x, y := find(roots, v.first), find(roots,
+			v.end) // 两个端点刚开始都不会出现在数组中，但是随着我们慢慢的加入和查找，一旦存在环，那么它的两个端点就会在并查集中重复出现，从而查找根时就会找到重复值。
 		if x == y {
-			return  false
+			return false
 		}
 
-		roots[x]= y
+		roots[x] = y
 	}
 
 	return len(edges) == n-1
 }
 
-func find(roots []int,i int) int {
+func find(roots []int, i int) int {
 	for roots[i] != -1 {
 		i = roots[i]
 	}
@@ -61,18 +61,18 @@ func find(roots []int,i int) int {
 //继续递归遍历。需要注意的是，由于建立邻接表时，a是b的邻接节点，b是a的邻接节点，所以在遍历时，需要一个变量pre来记录上一个节点，以免回到上一个
 //节点。遍历完成后，如果不返回false，说明图无环；然后查看visited，如果每个节点都被访问过，那么说明图联通。
 func validTree3(n int, edges []pair) bool {
-	visited := make([]bool,n)
+	visited := make([]bool, n)
 	t := make([][]int, n)
-	for _,v := range edges {
-		t[v.first] = append(t[v.first],v.end)
-		t[v.end]= append(t[v.end],v.first)
+	for _, v := range edges {
+		t[v.first] = append(t[v.first], v.end)
+		t[v.end] = append(t[v.end], v.first)
 	}
 
-	if !(dfs(0,-1,visited,t)) {  // 如果当前节点有环
+	if !(dfs(0, -1, visited, t)) { // 如果当前节点有环
 		return false
 	}
 
-	for k := range visited {  // 如果当前有节点没有被访问过，说明图不连通
+	for k := range visited { // 如果当前有节点没有被访问过，说明图不连通
 		if !visited[k] {
 			return false
 		}
@@ -81,20 +81,19 @@ func validTree3(n int, edges []pair) bool {
 	return true
 }
 
-func dfs(cur int, pre int, v []bool,t [][]int) bool {
+func dfs(cur int, pre int, v []bool, t [][]int) bool {
 	if v[cur] {
 		return false
 	}
 
 	v[cur] = true
-	for _,n := range t[cur] {
-		if n != pre {   // 当前节点不跟上一个节点重合，避免发生重复访问
-			if !dfs(n,cur,v,t) {
-				return  false
+	for _, n := range t[cur] {
+		if n != pre { // 当前节点不跟上一个节点重合，避免发生重复访问
+			if !dfs(n, cur, v, t) {
+				return false
 			}
 		}
 	}
 
-	return  true
+	return true
 }
-

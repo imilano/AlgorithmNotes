@@ -89,12 +89,11 @@ func permute(start int, front string, mid string, res *map[string]bool) {
 		if start != i && front[start] == front[i] { // 跳过重复字符
 			continue
 		}
-		front = swapString(front,start,i)
+		front = swapString(front, start, i)
 		permute(start+1, front, mid, res)
-		front = swapString(front,start,i)
+		front = swapString(front, start, i)
 	}
 }
-
 
 //-----------------------
 // 同样的思路，只是不是采用交换字符的方法来生成全排列，而是通过添加字符的方式来生成全排列
@@ -107,7 +106,7 @@ func generatePalindromes2(s string) []string {
 		m[s[i]]++
 	}
 
-	var front,mid string
+	var front, mid string
 	f := func(s string, c int) string {
 		var res string
 		for i := 0; i < c; i++ {
@@ -116,19 +115,19 @@ func generatePalindromes2(s string) []string {
 
 		return res
 	}
-	for k,v := range m {
-		if v %2  == 1 {
+	for k, v := range m {
+		if v%2 == 1 {
 			mid += string(k)
 		}
-		m[k] = v/2
-		front += f(string(k),v/2)
+		m[k] = v / 2
+		front += f(string(k), v/2)
 		if len(mid) > 1 {
 			return nil
 		}
 	}
 
-	permute2(front,mid,"",m,&set)
-	for k,v := range set {
+	permute2(front, mid, "", m, &set)
+	for k, v := range set {
 		if v == true {
 			res = append(res, k)
 		}
@@ -137,13 +136,13 @@ func generatePalindromes2(s string) []string {
 	return res
 }
 
-func permute2(front,mid string, out string,m map[uint8]int,set *map[string]bool) {
+func permute2(front, mid string, out string, m map[uint8]int, set *map[string]bool) {
 	if len(out) >= len(front) {
 		s := out + mid + reverseString(out)
-		(*set)[s]=true
+		(*set)[s] = true
 	}
 
-	for k,_ := range m {
+	for k, _ := range m {
 		if m[k] > 0 {
 			m[k]--
 			permute2(front, mid, out+string(k), m, set)

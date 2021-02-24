@@ -40,10 +40,10 @@ func moveZeroes(nums []int) {
 
 func moveZeroes2(nums []int) {
 	n := len(nums)
-	for fast,slow := 0,0; fast < n;fast++{
+	for fast, slow := 0, 0; fast < n; fast++ {
 		//if nums[fast] > 0 {
 		if nums[fast] != 0 {
-			nums[fast],nums[slow] = nums[slow],nums[fast]  // 交换的过程其实就是不断的把0往后移动的过程
+			nums[fast], nums[slow] = nums[slow], nums[fast] // 交换的过程其实就是不断的把0往后移动的过程
 			slow++
 		}
 	}

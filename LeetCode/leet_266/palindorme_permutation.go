@@ -34,8 +34,8 @@ func canPermutePalindrome(s string) bool {
 	}
 	//var even,odd int
 	var odd int
-	for _,v := range m {
-		if v %2 == 1 {
+	for _, v := range m {
+		if v%2 == 1 {
 			odd++
 		}
 		//if v %2 == 0 {
@@ -47,17 +47,17 @@ func canPermutePalindrome(s string) bool {
 
 	// 不用计算偶数的出现次数，既然是偶数次出现，那么有多少字符偶数次出现根本没有关系
 	//return even%2 == 0 && (odd == 0 || len(s) %2 == 1 && odd == 1)
-	return odd ==0 || len(s) % 2 == 1 && odd == 1  // 只会有两种情况，一种是没有奇数出现；另一种是字符串长度为奇数，并且奇数只出现一次。
+	return odd == 0 || len(s)%2 == 1 && odd == 1 // 只会有两种情况，一种是没有奇数出现；另一种是字符串长度为奇数，并且奇数只出现一次。
 }
 
 // 使用set，遍历字符串，如果一个字符不在set中，则加入该字符，否则删除该字符；最后如果set中没有字符，或者只有一个字符，则说明是回文串。原理与上相同
-func canPermutePalindrome2(s string) bool  {
+func canPermutePalindrome2(s string) bool {
 	m := make(map[uint8]bool)
 	for i := range s {
-		if _,ok := m[s[i]]; !ok {
+		if _, ok := m[s[i]]; !ok {
 			m[s[i]] = true
 		} else {
-			delete(m,s[i])
+			delete(m, s[i])
 		}
 	}
 

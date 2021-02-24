@@ -21,11 +21,11 @@ n does not exceed 1690.
 func nthUglyNumber(n int) int {
 	res := []int{1}
 
-	var i2,i3,i5 int
+	var i2, i3, i5 int
 	for len(res) < n {
-		m2,m3,m5 := res[i2]*2,res[i3]*3,res[i5]*5
-		mn := min(m2,min(m3,m5))
-		if mn ==  m2 {
+		m2, m3, m5 := res[i2]*2, res[i3]*3, res[i5]*5
+		mn := min(m2, min(m3, m5))
+		if mn == m2 {
 			i2++
 		}
 		if mn == m3 {
@@ -40,10 +40,10 @@ func nthUglyNumber(n int) int {
 	return res[n-1]
 }
 
-func min(a,b int) int {
+func min(a, b int) int {
 	if a < b {
 		return a
 	}
 
-	return  b
+	return b
 }

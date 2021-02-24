@@ -6,6 +6,6 @@ import (
 )
 
 func TestNumWays(t *testing.T) {
-	fmt.Println(numWays(3,2))
-	fmt.Println(numWays2(3,2))
+	fmt.Println(numWays(3, 2))
+	fmt.Println(numWays2(3, 2))
 }

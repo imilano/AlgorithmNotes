@@ -48,10 +48,10 @@ func (z *zigzag) NewIterator(v1 []int, v2 []int) {
 
 func (z *zigzag) next() int {
 	if z.hasNext() {
-		if z.cur == len(z.nums) {  // 掉头
+		if z.cur == len(z.nums) { // 掉头
 			z.cur = 0
 		}
-		for z.idx[z.cur] >= len(z.nums[z.cur]) {  // 跳过那些idx超过数组长度的数组
+		for z.idx[z.cur] >= len(z.nums[z.cur]) { // 跳过那些idx超过数组长度的数组
 			z.cur++
 		}
 		t := z.nums[z.cur][z.idx[z.cur]]
@@ -59,7 +59,7 @@ func (z *zigzag) next() int {
 		z.cur++
 		return t
 	} else {
-		return math.MinInt32  // how to return none
+		return math.MinInt32 // how to return none
 	}
 }
 

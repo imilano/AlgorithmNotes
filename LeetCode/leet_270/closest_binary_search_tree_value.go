@@ -25,18 +25,18 @@ Output: 4
 */
 
 type TreeNode struct {
-	val int
-	left,right *TreeNode
+	val         int
+	left, right *TreeNode
 }
 
 func closestValue(root *TreeNode, target float32) int {
-	lower,upper := math.MinInt32,math.MaxInt32
+	lower, upper := math.MinInt32, math.MaxInt32
 	for root != nil {
 		if float32(root.val) >= target {
-			upper = min(upper,root.val)
+			upper = min(upper, root.val)
 			root = root.left
 		} else {
-			lower = max(lower,root.val)
+			lower = max(lower, root.val)
 			root = root.right
 		}
 	}
@@ -56,18 +56,18 @@ func abs(a float32) float32 {
 	return a
 }
 
-func max(a,b int) int {
+func max(a, b int) int {
 	if a < b {
-		return  b
+		return b
 	}
 
 	return a
 }
 
-func min(a,b int) int {
+func min(a, b int) int {
 	if a < b {
 		return a
 	}
 
-	return  b
+	return b
 }

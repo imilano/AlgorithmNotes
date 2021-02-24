@@ -1,6 +1,5 @@
 package leet_260
 
-
 /*
 Given an integer array nums, in which exactly two elements appear only once and all the other elements appear exactly twice. Find the two elements that appear only once. You can return the answer in any order.
 
@@ -32,11 +31,11 @@ func singleNumber(nums []int) []int {
 	}
 
 	m := make(map[int]int)
-	for _,v := range nums {
+	for _, v := range nums {
 		m[v]++
 	}
 
-	for k,v := range m {
+	for k, v := range m {
 		if v == 1 {
 			res = append(res, k)
 		}

@@ -30,27 +30,26 @@ Constraints:
 //平方数等于该数除以4的平方数；如果一个数除以8余7的话，那么一定是由四个平方数组成。上述两个性质可以用于化简，化简完成之后，可以将一个数拆为两个
 //平方数之和。
 func numSquares(n int) int {
-	for n % 4 == 0 {
+	for n%4 == 0 {
 		n /= 4
 	}
 
-	if n %8 == 7 {
+	if n%8 == 7 {
 		return 4
 	}
-	for a := 0; a*a <= n;a++{
-		b := int(math.Sqrt(float64(n-a*a)))
-		if a*a + b*b == n {
+	for a := 0; a*a <= n; a++ {
+		b := int(math.Sqrt(float64(n - a*a)))
+		if a*a+b*b == n {
 			if a > 0 && b > 0 { // 如果两个数都是正整数，那么说明拆出了两个正整数，返回2
 				return 2
-			}else  {  // 上述不成立的话，说明只要一个数是正整数，那么返回1
+			} else { // 上述不成立的话，说明只要一个数是正整数，那么返回1
 				return 1
 			}
 		}
 	}
 
-	return 3  // 既不是1也不是2和4，那么只能是3
+	return 3 // 既不是1也不是2和4，那么只能是3
 }
-
 
 func numSquares2(n int) int {
 	dp := []int{0}
@@ -58,16 +57,16 @@ func numSquares2(n int) int {
 		m := len(dp)
 		val := math.MaxInt32
 		for i := 1; i*i <= m; i++ {
-			val = min(val,dp[m-i*i]+1)  // 举例多多领会
+			val = min(val, dp[m-i*i]+1) // 举例多多领会
 		}
 
-		dp = append(dp,val)
+		dp = append(dp, val)
 	}
 
 	return dp[len(dp)-1]
 }
 
-func min(a,b int) int {
+func min(a, b int) int {
 	if a < b {
 		return a
 	}

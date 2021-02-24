@@ -23,8 +23,8 @@ func wiggleSort(nums []int) {
 
 	i := 2
 	for i < n {
-		nums[i],nums[i-1]=nums[i-1],nums[i]
-		i+=2
+		nums[i], nums[i-1] = nums[i-1], nums[i]
+		i += 2
 	}
 
 	return

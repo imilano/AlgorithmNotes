@@ -49,11 +49,11 @@ func isUgly(num int) bool {
 
 func isUgly2(num int) bool {
 	for num >= 2 {
-		if num %2 == 0 {
+		if num%2 == 0 {
 			num /= 2
-		} else if num %3 == 0 {
+		} else if num%3 == 0 {
 			num /= 3
-		}else if num % 5 == 0 {
+		} else if num%5 == 0 {
 			num /= 5
 		} else { // 因子不是2、3、5中的任何一个
 			return false

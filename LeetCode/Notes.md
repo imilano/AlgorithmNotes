@@ -52,7 +52,47 @@ func helper(root *TreeNode, sum int, cur []int, res *[][]int) {
 ```
 ## BFS
 BFS 调用的时候需要注意，由于我们会删除队列中的元素，所以队列的长度经常会在变化，故而不能直接在for循环的条件判断中直接使用len(nums)，而应该提前将其计算好，作为一个常数来使用（代表当前层的节点数量）。
+```go
+func wallsAndGates2(rooms [][]int) {
+	var que []pair
+	row, col := len(rooms), len(rooms[0])
+	for i := 0; i < row; i++ {
+		for j := 0; j < col; j++ {
+			if rooms[i][j] == 0 {
+				que = append(que, pair{
+					i: i,
+					j: j,
+				})
+			}
+		}
+	}
 
+	var cords = []pair{
+		{0, 1},
+		{0, -1},
+		{1, 0},
+		{-1, 0},
+	}
+	for len(que) != 0 {
+		cur := que[0]
+		que = que[1:]
+
+		curI, curJ := cur.i, cur.j
+		for i := 0; i < len(cords); i++ {
+			nextI := curI + cords[i].i
+			nextJ := curJ + cords[i].j
+
+			if nextI < 0 || nextI >= row || nextJ < 0 || nextJ >= col || rooms[nextI][nextJ] < rooms[curI][curJ]+1 {
+				continue
+			}
+			rooms[nextI][nextJ] = rooms[curI][curJ] + 1
+			que = append(que, pair{nextI, nextJ})  // 为什么需要这一步？可以举例说明，假设一整个矩阵中只有中心点是gate，那么
+			//我们如何更新中心点周围的所有点呢？就只能通过更新了周围点之后，将周围点作为新的中心点，然后继续遍历
+		}
+	}
+}
+
+```
 
 ## BS
 

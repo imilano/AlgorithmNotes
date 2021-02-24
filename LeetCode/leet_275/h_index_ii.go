@@ -27,17 +27,17 @@ Could you solve it in logarithmic time complexity?
 //返回这个h即可。题目要求我们优化到对数复杂度，那么我们可以使用二分查找
 func hIndex(citations []int) int {
 	n := len(citations)
-	left,right := 0,n-1
+	left, right := 0, n-1
 	for left <= right {
 		mid := left + (right-left)/2
 		if citations[mid] == n-mid {
-			return n-mid
+			return n - mid
 		}
 		if citations[mid] < n-mid {
 			left = mid + 1
-		}else {
-			right = mid -1
+		} else {
+			right = mid - 1
 		}
 	}
-	return n-left
+	return n - left
 }

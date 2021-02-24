@@ -18,13 +18,13 @@ Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0
 
 func missingNumber(nums []int) int {
 	n := len(nums) + 1
-	m := make([]bool,n)
+	m := make([]bool, n)
 	for i := range nums {
-		m[nums[i]] =true
+		m[nums[i]] = true
 	}
 
-	for  i := 0; i<= n ; i++ {
-		if  m[i] == false {
+	for i := 0; i <= n; i++ {
+		if m[i] == false {
 			return i
 		}
 	}
@@ -35,7 +35,7 @@ func missingNumber(nums []int) int {
 // 利用等差数列求和公式，先求出0到n的和sum，再用sum减去nums中的数字之和，就是结果
 func missingNumber2(nums []int) int {
 	n := len(nums)
-	sum := n*(n+1)/2
+	sum := n * (n + 1) / 2
 	for i := range nums {
 		sum -= nums[i]
 	}
@@ -47,7 +47,7 @@ func missingNumber2(nums []int) int {
 func missingNumber3(nums []int) int {
 	var res int
 	n := len(nums)
-	for i := 1; i<=n; i++ {
+	for i := 1; i <= n; i++ {
 		res ^= i ^ nums[i-1]
 	}
 
@@ -57,13 +57,13 @@ func missingNumber3(nums []int) int {
 // 使用二分查找
 func missingNumber4(nums []int) int {
 	sort.Ints(nums)
-	left,right := 0,len(nums)
+	left, right := 0, len(nums)
 	for left < right {
 		mid := left + (right-left)/2
 		if nums[mid] > mid {
 			right = mid
 		} else {
-			left = mid+1
+			left = mid + 1
 		}
 	}
 
