@@ -6,10 +6,9 @@ package leet_110
    			 a binary tree in which the left and right subtrees of every node differ in height by no more than 1.
 */
 
-
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
@@ -26,11 +25,11 @@ func depth(root *TreeNode) int {
 		return 0
 	}
 
-	return max(depth(root.Right),depth(root.Left)) + 1;
+	return max(depth(root.Right), depth(root.Left)) + 1
 }
 
-func abs(x,y int) bool {
-	diff := x-y
+func abs(x, y int) bool {
+	diff := x - y
 
 	return diff <= 1 && diff >= -1
 }
@@ -40,7 +39,7 @@ func isBalanced(root *TreeNode) bool {
 		return true
 	}
 
-	left,right  := depth(root.Left),depth(root.Right)
+	left, right := depth(root.Left), depth(root.Right)
 
-	return abs(left,right) && isBalanced(root.Left) && isBalanced(root.Right)
+	return abs(left, right) && isBalanced(root.Left) && isBalanced(root.Right)
 }

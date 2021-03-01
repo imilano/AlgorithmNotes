@@ -1,8 +1,8 @@
 package leet_101
 
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
@@ -20,16 +20,16 @@ func isSymmetricRec(left *TreeNode, right *TreeNode) bool {
 		return false
 	}
 
-	return isSymmetricRec(left.Left,right.Right) && isSymmetricRec(left.Right,right.Left)
+	return isSymmetricRec(left.Left, right.Right) && isSymmetricRec(left.Right, right.Left)
 }
 
 // Iterative way, use queue
-func check(p,q *TreeNode) bool {
-	if p== nil && q== nil {
+func check(p, q *TreeNode) bool {
+	if p == nil && q == nil {
 		return true
 	}
 
-	if p == nil || q== nil {
+	if p == nil || q == nil {
 		return false
 	}
 
@@ -40,22 +40,22 @@ func check(p,q *TreeNode) bool {
 	return true
 }
 
-func isSymmetricWithQueue (root *TreeNode) bool {
+func isSymmetricWithQueue(root *TreeNode) bool {
 	var que []*TreeNode
-	var first,second *TreeNode
+	var first, second *TreeNode
 
-	que = append(que,root,root)
+	que = append(que, root, root)
 	for len(que) != 0 {
-		first,second = que[0],que[1]
+		first, second = que[0], que[1]
 		que = que[2:]
 
-		if !check(first,second) {
+		if !check(first, second) {
 			return false
 		}
 
 		if first != nil && second != nil {
-			que = append(que,first.Left,second.Right)
-			que = append(que,first.Right,second.Left)
+			que = append(que, first.Left, second.Right)
+			que = append(que, first.Right, second.Left)
 		}
 	}
 
@@ -67,7 +67,7 @@ func isSymmetric(root *TreeNode) bool {
 		return true
 	}
 	// recursive way
-	return isSymmetricRec(root,root)
+	return isSymmetricRec(root, root)
 
 	// iterative using queue
 	//return isSymmetricWithQueue(root)

@@ -6,6 +6,6 @@ import (
 )
 
 func TestMinDistance(t *testing.T) {
-	s1,s2 := "hello","hel"
-	fmt.Println(minDistance(s1,s2))
+	s1, s2 := "hello", "hel"
+	fmt.Println(minDistance(s1, s2))
 }

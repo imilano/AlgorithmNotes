@@ -2,7 +2,6 @@ package leet_173
 
 import "sync"
 
-
 /*
 	Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.
 	Calling next() will return the next smallest number in the BST.
@@ -11,29 +10,28 @@ Note:
     next() and hasNext() should run in average O(1) time and uses O(h) memory, where h is the height of the tree.
     You may assume that next() call will always be valid, that is, there will be at least a next smallest number in the BST when next() is called.
 
- */
+*/
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
-
 type (
 	Stack struct {
-		top *Node
+		top    *Node
 		length int
-		lock *sync.RWMutex
+		lock   *sync.RWMutex
 	}
 
 	Node struct {
 		value interface{}
-		pre *Node
+		pre   *Node
 	}
 )
 
 // Create new stack
-func NewStack() *Stack{
+func NewStack() *Stack {
 	return &Stack{
 		top:    nil,
 		length: 0,
@@ -42,13 +40,13 @@ func NewStack() *Stack{
 }
 
 // Length of stack
-func (s *Stack) Len() int{
+func (s *Stack) Len() int {
 	return s.length
 }
 
 // Top element  of stack
-func (s *Stack) Top()  interface{} {
-	if s.length ==0 {
+func (s *Stack) Top() interface{} {
+	if s.length == 0 {
 		return nil
 	}
 
@@ -82,7 +80,7 @@ func (s *Stack) Push(value interface{}) {
 }
 
 // Empty check if it is an empty stack
-func (s *Stack) Empty()  bool{
+func (s *Stack) Empty() bool {
 	return s.Len() == 0
 }
 
@@ -94,19 +92,18 @@ type BSTIterator struct {
 	stack *Stack
 }
 
-func (this *BSTIterator)helper(root *TreeNode)  {
+func (this *BSTIterator) helper(root *TreeNode) {
 	var cur *TreeNode
 	if root == nil {
 		return
 	}
 
 	cur = root
-	for cur != nil {  // go to the leftmost
+	for cur != nil { // go to the leftmost
 		this.stack.Push(cur)
 		cur = cur.Left
 	}
 }
-
 
 func Constructor(root *TreeNode) BSTIterator {
 	stack := NewStack()
@@ -115,18 +112,14 @@ func Constructor(root *TreeNode) BSTIterator {
 	return ite
 }
 
-
 /** @return the next smallest number */
 func (this *BSTIterator) Next() int {
-	cur := this.stack.Pop().(*TreeNode)  // return the stack top element, and from its right node, push all the left node all the way to the leftmost node.
+	cur := this.stack.Pop().(*TreeNode) // return the stack top element, and from its right node, push all the left node all the way to the leftmost node.
 	this.helper(cur.Right)
 	return cur.Val
 }
-
-
 
 /** @return whether we have a next smallest number */
 func (this *BSTIterator) HasNext() bool {
 	return this.stack.Empty()
 }
-

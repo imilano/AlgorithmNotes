@@ -18,46 +18,45 @@ Output:
   "cats and dog",
   "cat sand dog"
 ]
- */
+*/
 
 // TLE, WRONG answer
 func wordBreak(s string, wordDict []string) []string {
 	var res []string
 	m := make(map[string]int)
-	for _,v := range wordDict {
+	for _, v := range wordDict {
 		m[v] = 1
 	}
 
-	helper(s,"",&m,0,&res)
+	helper(s, "", &m, 0, &res)
 	return res
 }
 
-func helper(s string, cur string, m *map[string]int,start int, res *[]string) {
+func helper(s string, cur string, m *map[string]int, start int, res *[]string) {
 	if start >= len(s) {
-		*res = append(*res,cur[1:])
+		*res = append(*res, cur[1:])
 		return
 	}
 
-	for i := start;i<len(s);i++ {
-		if _,ok := (*m)[s[start:i+1]]; !ok {
+	for i := start; i < len(s); i++ {
+		if _, ok := (*m)[s[start:i+1]]; !ok {
 			continue
 		}
 		cur += " " + s[start:i+1]
-		helper(s,cur,m,i+1,res)
+		helper(s, cur, m, i+1, res)
 		cur = cur[:len(cur)-(i-start+2)]
 	}
 }
-
 
 //----------------------------------------------
 // 使用memo数组进行优化
 func wordBreak2(s string, wordDict []string) []string {
 	m := make(map[string][]string)
-	return helper2(s,wordDict,&m)
+	return helper2(s, wordDict, &m)
 }
 
 func helper2(s string, dict []string, m *map[string][]string) []string {
-	if _,ok := (*m)[s]; ok {
+	if _, ok := (*m)[s]; ok {
 		return (*m)[s]
 	}
 
@@ -66,13 +65,13 @@ func helper2(s string, dict []string, m *map[string][]string) []string {
 	}
 
 	var res []string
-	for _,d := range dict {
+	for _, d := range dict {
 		if s[0:len(d)] != d {
 			continue
 		}
 
-		rem := helper2(s[len(d):],dict,m)
-		for _,str := range rem {
+		rem := helper2(s[len(d):], dict, m)
+		for _, str := range rem {
 			var t string
 			if str == "" {
 				t = d + "" + str
@@ -80,7 +79,7 @@ func helper2(s string, dict []string, m *map[string][]string) []string {
 				t = d + " " + str
 			}
 
-			res = append(res,t)
+			res = append(res, t)
 		}
 	}
 

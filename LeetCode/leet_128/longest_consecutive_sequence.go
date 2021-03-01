@@ -1,6 +1,5 @@
 package leet_128
 
-
 /*
 Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
 Follow up: Could you implement the O(n) solution?
@@ -26,7 +25,7 @@ func lcsWithSet(nums []int) int {
 	// 那么g-k即为本次查找所得到的最长连续子序列
 	var best int
 	for k := range set {
-		if _,ok := set[k-1]; !ok {
+		if _, ok := set[k-1]; !ok {
 			// 以k为起点，查找k+1，k+2，k+3...k+n是否在集合中
 			y := k + 1
 			_, exist := set[y]
@@ -36,7 +35,7 @@ func lcsWithSet(nums []int) int {
 			}
 
 			// 更新最长子序列的长度
-			best = max(best, y -k)
+			best = max(best, y-k)
 
 		}
 	}
@@ -44,14 +43,13 @@ func lcsWithSet(nums []int) int {
 	return best
 }
 
-func max(a,b int) int {
+func max(a, b int) int {
 	if a > b {
 		return a
 	}
 
 	return b
 }
-
 
 // wrong
 //func lcsWithSort(nums []int) int {
@@ -75,4 +73,3 @@ func max(a,b int) int {
 //	return res
 //}
 //
-

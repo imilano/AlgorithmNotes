@@ -14,21 +14,21 @@ func maxSubArrayWithDC(nums []int) int {
 		return 0
 	}
 
-	return divide(nums,0,len(nums)-1)
+	return divide(nums, 0, len(nums)-1)
 }
 
-func divide(nums []int, left int, right int)int {
+func divide(nums []int, left int, right int) int {
 	if left > right {
 		return math.MinInt64
 	}
 
 	mid := left + (right-left)/2
-	leftMax := divide(nums,left,mid-1)
-	rightMax := divide(nums,mid+1,right)
+	leftMax := divide(nums, left, mid-1)
+	rightMax := divide(nums, mid+1, right)
 
-	var lmax,rmax int
+	var lmax, rmax int
 	sum := 0
-	for i := mid-1; i>= left;i-- {
+	for i := mid - 1; i >= left; i-- {
 		sum += nums[i]
 		if sum > lmax {
 			lmax = sum
@@ -36,17 +36,17 @@ func divide(nums []int, left int, right int)int {
 	}
 
 	sum = 0
-	for i := mid +1; i <= right;i++ {
-		sum +=  nums[i]
+	for i := mid + 1; i <= right; i++ {
+		sum += nums[i]
 		if sum > rmax {
 			rmax = sum
 		}
 	}
 
-	return max(max(leftMax,rightMax),lmax+rmax+nums[mid])
+	return max(max(leftMax, rightMax), lmax+rmax+nums[mid])
 }
 
-func max(a,b int) int {
+func max(a, b int) int {
 	if a > b {
 		return a
 	}

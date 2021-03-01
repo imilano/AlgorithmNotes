@@ -7,7 +7,7 @@ F(0) = 0,   F(1) = 1
 F(N) = F(N - 1) + F(N - 2), for N > 1.
 
 Given N, calculate F(N).
- */
+*/
 
 func fib(N int) int {
 	if N == 0 {
@@ -18,8 +18,8 @@ func fib(N int) int {
 		return 1
 	}
 
-	MinusOne,MinusTwo := 1,0
-	for i := 2; i<=N;i++ {
+	MinusOne, MinusTwo := 1, 0
+	for i := 2; i <= N; i++ {
 		n := MinusOne + MinusTwo
 		MinusTwo = MinusOne
 		MinusOne = n

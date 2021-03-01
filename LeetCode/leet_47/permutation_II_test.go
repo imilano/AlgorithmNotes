@@ -6,7 +6,7 @@ import (
 )
 
 func TestPermutationUnique(t *testing.T) {
-	nums := []int {1,2,2}
+	nums := []int{1, 2, 2}
 	a := permuteUnique(nums)
 	fmt.Print(a)
 }

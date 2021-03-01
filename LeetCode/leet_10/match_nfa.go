@@ -133,5 +133,3 @@ func check(now *Node, str string, idx int) bool {
 	}
 	return false
 }
-
-

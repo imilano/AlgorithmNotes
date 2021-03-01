@@ -13,11 +13,10 @@ Example 2:
 	Output: 2->3
 */
 
-
 // Definition for singly-linked list.
 type ListNode struct {
-    Val int
-    Next *ListNode
+	Val  int
+	Next *ListNode
 }
 
 // 注意题目，一旦一个值出现了重复，那么就要将所有的重复节点都删除。
@@ -26,65 +25,65 @@ type ListNode struct {
 // Recursive way
 //
 func deleteDuplicatesRec(head *ListNode) *ListNode {
-    if head == nil || head.Next == nil {
-        return head
-    }
+	if head == nil || head.Next == nil {
+		return head
+	}
 
-    if head.Val != head.Next.Val {
-        head.Next = deleteDuplicatesRec(head.Next)
-        return head
-    } else {
-        for head.Next != nil && head.Val == head.Next.Val {
-            head = head.Next
-        }
+	if head.Val != head.Next.Val {
+		head.Next = deleteDuplicatesRec(head.Next)
+		return head
+	} else {
+		for head.Next != nil && head.Val == head.Next.Val {
+			head = head.Next
+		}
 
-        return deleteDuplicatesRec(head.Next)
-    }
+		return deleteDuplicatesRec(head.Next)
+	}
 }
 func deleteDuplicates(head *ListNode) *ListNode {
-    if head == nil || head.Next == nil {
-        return head
-    }
+	if head == nil || head.Next == nil {
+		return head
+	}
 
-    //first,second := head,head.Next
-    //for second != nil {
-    //    if first.Val == second.Val {
-    //        second = second.Next
-    //    } else {
-    //        first.Next = second
-    //        first = second
-    //        second = second.Next
-    //    }
-    //}
+	//first,second := head,head.Next
+	//for second != nil {
+	//    if first.Val == second.Val {
+	//        second = second.Next
+	//    } else {
+	//        first.Next = second
+	//        first = second
+	//        second = second.Next
+	//    }
+	//}
 
-    cur := head
-    var que []*ListNode
-    que = append(que,cur)
-    for cur != nil && len(que) != 0  {
-        cur = cur.Next
-        tail := que[len(que)-1]
-        if cur.Val == tail.Val {
-            tmp := cur
-            for tmp != nil && tmp.Val == cur.Val {
-                tmp = tmp.Next
-            }
+	cur := head
+	var que []*ListNode
+	que = append(que, cur)
+	for cur != nil && len(que) != 0 {
+		cur = cur.Next
+		tail := que[len(que)-1]
+		if cur.Val == tail.Val {
+			tmp := cur
+			for tmp != nil && tmp.Val == cur.Val {
+				tmp = tmp.Next
+			}
 
-            cur = tmp
-            que = que[:len(que)-1]
-        }
+			cur = tmp
+			que = que[:len(que)-1]
+		}
 
-        if cur != nil {
-            que = append(que, cur)
-        }
-    }
+		if cur != nil {
+			que = append(que, cur)
+		}
+	}
 
-    if len(que) == 0 {
-        return nil
-    }
+	if len(que) == 0 {
+		return nil
+	}
 
-    for i := 0; i< len(que)-1;i++ {
-        que[i].Next = que[i+1].Next
-    }
-    que[len(que)-1].Next = nil
-    return que[0]
+	for i := 0; i < len(que)-1; i++ {
+		que[i].Next = que[i+1].Next
+	}
+	que[len(que)-1].Next = nil
+	return que[0]
 }

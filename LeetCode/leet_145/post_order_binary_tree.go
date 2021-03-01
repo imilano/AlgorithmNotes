@@ -1,7 +1,7 @@
 package leet_145
 
 import (
-    "lightsinger.life/algorithm/leetcode/utils"
+	"lightsinger.life/algorithm/leetcode/utils"
 )
 
 /*
@@ -15,93 +15,90 @@ import (
     方法2：使用栈
             同样采用前序遍历的方式，但是在插入的时候选择头插法而不是尾插法
 
- */
-
+*/
 
 //  Definition for a binary tree node.
- type TreeNode struct {
-     Val int
-     Left *TreeNode
-     Right *TreeNode
- }
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
 
 func postWithRec(root *TreeNode) []int {
-    var res []int
+	var res []int
 
-    if root == nil {
-        return res
-    }
+	if root == nil {
+		return res
+	}
 
-    res = append(postWithRec(root.Left),postWithRec(root.Right)...)
-    res = append(res,root.Val)
+	res = append(postWithRec(root.Left), postWithRec(root.Right)...)
+	res = append(res, root.Val)
 
-    return res
+	return res
 }
 
 func postWithStack(root *TreeNode) []int {
-    var result []int
-    if root == nil {
-        return result
-    }
+	var result []int
+	if root == nil {
+		return result
+	}
 
-    stack := utils.NewStack()
-    stack.Push(root)
-    for !stack.Empty() {  // 按照「根-右-左」的顺序遍历，但是在入栈时，由于后遍历左节点，所以需要先将左节点入栈
-        cur := stack.Pop().(*TreeNode)
-        result =  append([]int{cur.Val},result...)  // 逆序头插
+	stack := utils.NewStack()
+	stack.Push(root)
+	for !stack.Empty() { // 按照「根-右-左」的顺序遍历，但是在入栈时，由于后遍历左节点，所以需要先将左节点入栈
+		cur := stack.Pop().(*TreeNode)
+		result = append([]int{cur.Val}, result...) // 逆序头插
 
-        if cur.Left != nil {
-            stack.Push(cur.Left)
-        }
+		if cur.Left != nil {
+			stack.Push(cur.Left)
+		}
 
-        if cur.Right != nil {
-            stack.Push(cur.Right)
-        }
-    }
+		if cur.Right != nil {
+			stack.Push(cur.Right)
+		}
+	}
 
-    return result
+	return result
 }
 
-
- // Modify preorder result to get postorder result
+// Modify preorder result to get postorder result
 func postUsePre(root *TreeNode) []int {
-    var result []int
+	var result []int
 
-    if root == nil {
-        return result
-    }
+	if root == nil {
+		return result
+	}
 
-    stack := utils.NewStack()
-    stack.Push(root)
-    if !stack.Empty() {
-        cur := stack.Pop().(*TreeNode)
+	stack := utils.NewStack()
+	stack.Push(root)
+	if !stack.Empty() {
+		cur := stack.Pop().(*TreeNode)
 
-        result =  append(result,cur.Val)
-        if cur.Left != nil {
-            stack.Push(cur.Left)
-        }
+		result = append(result, cur.Val)
+		if cur.Left != nil {
+			stack.Push(cur.Left)
+		}
 
-        if cur.Right != nil {
-            stack.Push(cur.Right)
-        }
-    }
+		if cur.Right != nil {
+			stack.Push(cur.Right)
+		}
+	}
 
-    return reverse(result)
+	return reverse(result)
 }
 
- func reverse(arr []int) []int {
-    if len(arr) <=1 {
-        return arr
-    }
+func reverse(arr []int) []int {
+	if len(arr) <= 1 {
+		return arr
+	}
 
-    left,right := 0,len(arr)-1
-    for left < right{
-        arr[left],arr[right] = arr[right],arr[left]
+	left, right := 0, len(arr)-1
+	for left < right {
+		arr[left], arr[right] = arr[right], arr[left]
 
-        left++;
-        right--;
-     }
+		left++
+		right--
+	}
 
-     return arr
- }
-
+	return arr
+}

@@ -15,7 +15,7 @@ Example 2:
 Input: [-2,0,-1]
 Output: 0
 Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
- */
+*/
 
 //---------------------------------------------
 // Original wrong solution
@@ -29,18 +29,18 @@ func maxProductOriginal(nums []int) int {
 		return nums[0]
 	}
 
-	dp := make([][]int,length)
+	dp := make([][]int, length)
 	for i := range dp {
-		dp[i] =  make([]int,length)
+		dp[i] = make([]int, length)
 	}
-	for i := 0; i< length;i++ {
-		dp[i][i]=nums[i]
+	for i := 0; i < length; i++ {
+		dp[i][i] = nums[i]
 	}
 
 	max := math.MinInt32
-	for i := 0; i<length;i++ {
-		for j := i;j<length;j++ {
-			if j -1 >=0  && j != length -1{
+	for i := 0; i < length; i++ {
+		for j := i; j < length; j++ {
+			if j-1 >= 0 && j != length-1 {
 				dp[i][j] = dp[i][j-1] * nums[j]
 			}
 			if dp[i][j] > max {
@@ -63,24 +63,24 @@ func maxProduct(nums []int) int {
 		return 0
 	}
 
-	f,g := make([]int,length),make([]int,length)
-	f[0]= nums[0]
+	f, g := make([]int, length), make([]int, length)
+	f[0] = nums[0]
 	g[0] = nums[0]
 
 	//you can not just initialize res to 0
 	//var res int
 	res := nums[0]
-	for i := 1; i< length;i++ {
-		f[i] = max(max(f[i-1]*nums[i],g[i-1]*nums[i]),nums[i])
-		g[i] = min(min(f[i-1]*nums[i],g[i-1]*nums[i]),nums[i])
+	for i := 1; i < length; i++ {
+		f[i] = max(max(f[i-1]*nums[i], g[i-1]*nums[i]), nums[i])
+		g[i] = min(min(f[i-1]*nums[i], g[i-1]*nums[i]), nums[i])
 
-		res = max(f[i],res)
+		res = max(f[i], res)
 	}
 
 	return res
 }
 
-func max(a,b int) int {
+func max(a, b int) int {
 	if a > b {
 		return a
 	}
@@ -88,8 +88,8 @@ func max(a,b int) int {
 	return b
 }
 
-func min(a,b int) int {
-	if a > b  {
+func min(a, b int) int {
+	if a > b {
 		return b
 	}
 
@@ -104,18 +104,18 @@ func maxProductConcise(nums []int) int {
 		return 0
 	}
 
-	curMin,curMax,res := nums[0],nums[0],nums[0]
-	for i := 1; i<length; i++{
+	curMin, curMax, res := nums[0], nums[0], nums[0]
+	for i := 1; i < length; i++ {
 		// if negative, swap min and max
 		if nums[i] < 0 {
-			curMin,curMax = curMax,curMin
+			curMin, curMax = curMax, curMin
 		}
 
-		curMax = max(curMax*nums[i],nums[i])
-		curMin = min(curMin*nums[i],nums[i])
-		res = max(curMax,res)
+		curMax = max(curMax*nums[i], nums[i])
+		curMin = min(curMin*nums[i], nums[i])
+		res = max(curMax, res)
 	}
-	
+
 	return res
 }
 
@@ -130,23 +130,23 @@ func maxProduct2Times(nums []int) int {
 		return 0
 	}
 
-	res,prod := nums[0],1
-	for i := 0; i< length;i++ {
+	res, prod := nums[0], 1
+	for i := 0; i < length; i++ {
 		prod = nums[i] * prod
-		res = max(res,prod)
+		res = max(res, prod)
 		if nums[i] == 0 {
 			prod = 1
 		}
 	}
 
 	prod = 1
-	 for i := length -1; i>=0; i-- {
-		 prod = nums[i] * prod
-		 res = max(res,prod)
-	 	if nums[i] == 0 {
-	 		prod = 1
+	for i := length - 1; i >= 0; i-- {
+		prod = nums[i] * prod
+		res = max(res, prod)
+		if nums[i] == 0 {
+			prod = 1
 		}
-	 }
+	}
 
-	 return res
+	return res
 }

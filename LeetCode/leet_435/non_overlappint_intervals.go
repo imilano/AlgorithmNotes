@@ -15,9 +15,9 @@ func eraseOverlapIntervals(intervals [][]int) int {
 	}
 
 	// 至少有一个区间不相交
-	count,end,start:= 1,intervals[0][1],0
+	count, end, start := 1, intervals[0][1], 0
 
-	for i := 0; i< length; i++ {
+	for i := 0; i < length; i++ {
 		// 找到下一个区间
 		start = intervals[i][0]
 		if start >= end {

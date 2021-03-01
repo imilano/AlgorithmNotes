@@ -3,26 +3,26 @@ package leet_42
 /*
 	Given n non-negative integers representing an elevation map where the width of each bar is 1,
 	compute how much water it can trap after raining.
- */
+*/
 
 // stack
 import "sync"
 
 type (
 	Stack struct {
-		top *Node
+		top    *Node
 		length int
-		lock *sync.RWMutex
+		lock   *sync.RWMutex
 	}
 
 	Node struct {
 		value interface{}
-		pre *Node
+		pre   *Node
 	}
 )
 
 // Create new stack
-func NewStack() *Stack{
+func NewStack() *Stack {
 	return &Stack{
 		top:    nil,
 		length: 0,
@@ -31,13 +31,13 @@ func NewStack() *Stack{
 }
 
 // Length of stack
-func (s *Stack) Len() int{
+func (s *Stack) Len() int {
 	return s.length
 }
 
 // Top element  of stack
-func (s *Stack) Top()  interface{} {
-	if s.length ==0 {
+func (s *Stack) Top() interface{} {
+	if s.length == 0 {
 		return nil
 	}
 
@@ -71,23 +71,23 @@ func (s *Stack) Push(value interface{}) {
 }
 
 // Empty check if it is an empty stack
-func (s *Stack) Empty()  bool{
+func (s *Stack) Empty() bool {
 	return s.Len() == 0
 }
 
 // tool function
 
 func count(height []int, left, right int) int {
-	width := right - left -1
+	width := right - left - 1
 	area := height[left] * width
-	for i := left +1; i< right ;i ++ {
+	for i := left + 1; i < right; i++ {
 		area -= height[i]
 	}
 
 	return area
 }
 
-func max(a,b int) int {
+func max(a, b int) int {
 	if a > b {
 		return a
 	}
@@ -95,7 +95,7 @@ func max(a,b int) int {
 	return b
 }
 
-func min(a,b int) int {
+func min(a, b int) int {
 	if a > b {
 		return b
 	}
@@ -110,28 +110,27 @@ func min(a,b int) int {
 func trapWith2Scan(height []int) int {
 	var area int
 	length := len(height)
-	if length <= 1{
+	if length <= 1 {
 		return area
 	}
 
-	leftMax,rightMax := make([]int, length),make([]int,length)
+	leftMax, rightMax := make([]int, length), make([]int, length)
 	// get max from left to right
 	leftMax[0] = height[0]
-	for i := 1; i< length;i++ {
-		leftMax[i] = max(leftMax[i-1],height[i])
+	for i := 1; i < length; i++ {
+		leftMax[i] = max(leftMax[i-1], height[i])
 	}
 
 	// get max from right to left
 	rightMax[length-1] = height[length-1]
-	for i := length-2; i >= 0;i-- {
-		rightMax[i] = max(height[i],rightMax[i+1])
+	for i := length - 2; i >= 0; i-- {
+		rightMax[i] = max(height[i], rightMax[i+1])
 	}
 
 	// take care, here we use min, not max
-	for i := 0; i< length;i++ {
-		area += min(leftMax[i],rightMax[i]) - height[i]
+	for i := 0; i < length; i++ {
+		area += min(leftMax[i], rightMax[i]) - height[i]
 	}
-
 
 	return area
 }
@@ -146,8 +145,8 @@ func trapWith2Pointer(height []int) int {
 		return res
 	}
 
-	left,right := 0,len(height)-1
-	leftMax,rightMax := height[0],height[len(height)-1]
+	left, right := 0, len(height)-1
+	leftMax, rightMax := height[0], height[len(height)-1]
 
 	for left < right {
 		if height[left] < height[right] {
@@ -161,7 +160,7 @@ func trapWith2Pointer(height []int) int {
 		} else {
 			if height[right] >= rightMax {
 				rightMax = height[right]
-			} else  {
+			} else {
 				res += rightMax - height[right]
 			}
 
@@ -169,10 +168,8 @@ func trapWith2Pointer(height []int) int {
 		}
 	}
 
-
 	return res
 }
-
 
 // ------------------------------------------------
 // Monotone Stack
@@ -183,12 +180,12 @@ func trapWithMonotoneStack(height []int) int {
 	var res int
 	length := len(height)
 	if length == 0 {
-		return  res
+		return res
 	}
 
 	stack := NewStack()
 	var index int
-	for index <length {
+	for index < length {
 		// 注意等号
 		if stack.Empty() || height[index] <= height[stack.Top().(int)] {
 			stack.Push(index)
@@ -200,11 +197,11 @@ func trapWithMonotoneStack(height []int) int {
 				continue
 			}
 			border := stack.Top().(int)
-			res += (min(height[index],height[border])-height[bottom]) * (index - border-1)
+			res += (min(height[index], height[border]) - height[bottom]) * (index - border - 1)
 		}
 	}
 
-	return  res
+	return res
 }
 
 // ------------------------------------------------
@@ -212,10 +209,9 @@ func trapWithMonotoneStack(height []int) int {
 func trap(height []int) int {
 	var area int
 	length := len(height)
-	if length <= 1{
+	if length <= 1 {
 		return area
 	}
-
 
 	maxHeight := 0
 	for i := range height {
@@ -224,25 +220,25 @@ func trap(height []int) int {
 		}
 	}
 
-	lmin,lmax := maxHeight,maxHeight
+	lmin, lmax := maxHeight, maxHeight
 	for lmin >= 0 {
 		if lmin-1 >= 0 && !(height[lmin] >= height[lmin-1] && height[lmin] >= height[lmin+1]) {
 			lmin--
 			continue
 		}
-		area += count(height,lmin,lmax)
-		lmax =  lmin
+		area += count(height, lmin, lmax)
+		lmax = lmin
 		lmin--
 	}
 
-	rmin,rmax := maxHeight,maxHeight
+	rmin, rmax := maxHeight, maxHeight
 	for rmax < length {
 		if rmax+1 < length && height[rmax] >= height[rmax+1] && height[rmax] >= height[rmax-1] {
 			rmax++
 			continue
 		}
 
-		area += count(height,rmin,rmax)
+		area += count(height, rmin, rmax)
 		rmin = rmax
 		rmax++
 	}

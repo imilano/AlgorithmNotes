@@ -12,8 +12,8 @@ func climbStairsFib(n int) int {
 		return 1
 	}
 	// 为什么这么赋值，按照双指针滑动的方向就可以看出来。
-	MinusOne,MinusTwo := 1,2
-	for i := 3; i<= n;i++ {
+	MinusOne, MinusTwo := 1, 2
+	for i := 3; i <= n; i++ {
 		N := MinusOne + MinusTwo
 		MinusOne = MinusTwo
 		MinusTwo = N
@@ -21,6 +21,7 @@ func climbStairsFib(n int) int {
 
 	return MinusTwo
 }
+
 //func climbStairsFib(n int) int {
 //	if n == 1 {
 //		return 1
@@ -37,7 +38,7 @@ func climbStairsFib(n int) int {
 //}
 
 func climbStairs(n int) int {
-	dp := make([]int,n+1)
+	dp := make([]int, n+1)
 	if n == 1 {
 		return 1
 	}
@@ -45,9 +46,9 @@ func climbStairs(n int) int {
 		return 2
 	}
 
-	dp[1],dp[2] = 1,2
-	for i := 3; i<= n; i++ {
-		dp[i] = dp[i-1]  + dp[i-2]
+	dp[1], dp[2] = 1, 2
+	for i := 3; i <= n; i++ {
+		dp[i] = dp[i-1] + dp[i-2]
 	}
 
 	return dp[n]

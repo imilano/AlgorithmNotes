@@ -18,10 +18,9 @@ package leet_637
 		The range of node's value is in the range of 32-bit signed integer.
 */
 
-
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
@@ -34,26 +33,26 @@ func averageOfLevels(root *TreeNode) []float64 {
 		return res
 	}
 
-	que = append(que,root)
+	que = append(que, root)
 	for len(que) != 0 {
 		var sum float64
 		var node *TreeNode
 
 		cnt = len(que)
-		for i := 0; i< cnt;i++ {
+		for i := 0; i < cnt; i++ {
 			node = que[0]
 			que = que[1:]
 			sum += float64(node.Val)
 
 			if node.Left != nil {
-				que = append(que,node.Left)
+				que = append(que, node.Left)
 			}
 			if node.Right != nil {
-				que = append(que,node.Right)
+				que = append(que, node.Right)
 			}
 		}
 
-		res = append(res,sum/float64(cnt))
+		res = append(res, sum/float64(cnt))
 	}
 
 	return res

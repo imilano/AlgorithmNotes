@@ -16,50 +16,66 @@ package leet_222
 		Output: 6
 */
 
-
 //  Definition for a binary tree node.
- type TreeNode struct {
-     Val int
-     Left *TreeNode
-     Right *TreeNode
- }
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
 
+//----------------------------------------------
+// recursive way
 func left(root *TreeNode) int {
-    if root == nil {
-        return 0
-    }
+	if root == nil {
+		return 0
+	}
 
-    return 1 + left(root.Left)
+	return 1 + left(root.Left)
 }
 
 func right(root *TreeNode) int {
-    if root == nil {
-        return 0
-    }
+	if root == nil {
+		return 0
+	}
 
-    return right(root.Right) + 1
+	return right(root.Right) + 1
 }
 
-func  count(root *TreeNode) int {
-    if root == nil {
-        return 0
-    }
+func count(root *TreeNode) int {
+	if root == nil {
+		return 0
+	}
 
-    return count(root.Left) + count(root.Right) +1
+	return count(root.Left) + count(root.Right) + 1
 }
 
 func countNodes(root *TreeNode) int {
-    // recursive way
-    // return count(root)
+	// recursive way
+	// return count(root)
 
-    if root == nil {
-        return 0
-    }
+	if root == nil {
+		return 0
+	}
 
-    left,right := left(root),right(root)
-    if left == right {
-        return 1 << left -1
-    } else {
-        return count(root)
-    }
+	left, right := left(root), right(root)
+	if left == right {
+		return 1<<left - 1
+	} else {
+		return count(root)
+	}
+}
+
+//------------------------------------------
+// iterative way
+func countNodes2(root *TreeNode) int {
+	return countChild(root)
+}
+
+func countChild(root *TreeNode) int {
+	if root == nil {
+		return 0
+	}
+
+	left, right := countChild(root.Left), countChild(root.Right)
+	return left + right + 1
 }

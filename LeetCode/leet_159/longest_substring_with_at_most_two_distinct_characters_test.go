@@ -6,12 +6,12 @@ import (
 )
 
 func TestLength(t *testing.T) {
-	s := []string {
+	s := []string{
 		"eceba",
 		"ccaabbb",
 	}
 
-	for _,v := range s {
-		fmt.Printf("%s: %d\n",v,lengthOfLongestSubstringTwoDistinct(v))
+	for _, v := range s {
+		fmt.Printf("%s: %d\n", v, lengthOfLongestSubstringTwoDistinct(v))
 	}
 }

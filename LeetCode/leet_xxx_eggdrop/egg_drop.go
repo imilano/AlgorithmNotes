@@ -1,9 +1,8 @@
 package leet_xxx_eggdrop
 
-
-func getMax(i,j int) int {
+func getMax(i, j int) int {
 	if i > j {
-		return  i
+		return i
 	}
 
 	return i
@@ -21,8 +20,8 @@ func eggDrop(K int, N int) int {
 
 	var res int
 
-	for i := 1; i<= K; i++ {
-		res = getMax(res,getMax(eggDrop(i-1,N-1),eggDrop(K,N-i))+1)  // 在第i层扔鸡蛋的结果
+	for i := 1; i <= K; i++ {
+		res = getMax(res, getMax(eggDrop(i-1, N-1), eggDrop(K, N-i))+1) // 在第i层扔鸡蛋的结果
 	}
 
 	return res
@@ -55,5 +54,4 @@ def superEggDrop(K: int, N: int):
         return res
 
     return dp(K, N)
- */
-
+*/

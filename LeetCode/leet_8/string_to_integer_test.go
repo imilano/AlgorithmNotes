@@ -8,5 +8,5 @@ import (
 func TestMyAtoI(t *testing.T) {
 	s := "42"
 	//MyAtoI(s)
-	fmt.Printf("%T",s[0])
+	fmt.Printf("%T", s[0])
 }

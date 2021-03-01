@@ -17,7 +17,7 @@ Given the sorted rotated array nums, return the minimum element of this array.
 func findMin(nums []int) int {
 	res := math.MaxInt16
 	length := len(nums)
-	for i := 0; i< length; i++  {
+	for i := 0; i < length; i++ {
 		if nums[i] < res {
 			res = nums[i]
 		}
@@ -32,12 +32,12 @@ func findMin(nums []int) int {
 // TODO #二分 如何写出正确的二分
 func findMinBinary(nums []int) int {
 	length := len(nums)
-	left,right := 0,length-1
+	left, right := 0, length-1
 	for left < right {
-		mid := (left+right)/2
+		mid := (left + right) / 2
 		if nums[mid] > nums[right] {
-			left = mid+1
-		}else {
+			left = mid + 1
+		} else {
 			//right = mid -1
 			right = mid // TODO figure this out, why mid rather than mid -1
 		}
@@ -47,19 +47,19 @@ func findMinBinary(nums []int) int {
 
 // divide and conquer
 func findMinDC(nums []int) int {
-	return helper(nums,0,len(nums)-1)
+	return helper(nums, 0, len(nums)-1)
 }
 
-func helper(nums []int,start int, end int) int {
+func helper(nums []int, start int, end int) int {
 	if nums[start] <= nums[end] {
 		return nums[start]
 	}
 
-	mid := (start+end)/2
-	return min(helper(nums,start,mid),helper(nums,mid+1,end))
+	mid := (start + end) / 2
+	return min(helper(nums, start, mid), helper(nums, mid+1, end))
 }
 
-func min(a,b int) int {
+func min(a, b int) int {
 	if a < b {
 		return a
 	}

@@ -11,11 +11,10 @@ Input: head = 1->4->3->2->5->2, x = 3
 Output: 1->2->2->4->3->5
 */
 
-
 // Definition for singly-linked list.
 type ListNode struct {
-    Val int
-    Next *ListNode
+	Val  int
+	Next *ListNode
 }
 
 // 空间换时间
@@ -27,13 +26,13 @@ func partition(head *ListNode, x int) *ListNode {
 	}
 
 	// scan list to divide number into two group
-	var less,greater []int
+	var less, greater []int
 	cur := head
 	for cur != nil {
 		if cur.Val < x {
-			less = append(less,cur.Val)
+			less = append(less, cur.Val)
 		} else {
-			greater = append(greater,cur.Val)
+			greater = append(greater, cur.Val)
 		}
 
 		cur = cur.Next
@@ -42,7 +41,7 @@ func partition(head *ListNode, x int) *ListNode {
 	cur = head
 	for len(less) != 0 {
 		cur.Val = less[0]
-		cur =cur.Next
+		cur = cur.Next
 		less = less[1:]
 	}
 
@@ -58,11 +57,11 @@ func partition(head *ListNode, x int) *ListNode {
 // 使用指针，相比上一步，可以节约很多空间，并且解法更精妙
 func partitionConcise(head *ListNode, x int) *ListNode {
 	if head == nil || head.Next == nil {
-		return  head
+		return head
 	}
 
-	less,greater := new(ListNode),new(ListNode)
-	dummyLess,dummyGreater := less,greater
+	less, greater := new(ListNode), new(ListNode)
+	dummyLess, dummyGreater := less, greater
 	for head != nil {
 		node := head
 		// 使用尾插法
@@ -71,7 +70,7 @@ func partitionConcise(head *ListNode, x int) *ListNode {
 			less = node
 		} else {
 			greater.Next = node
-			greater= node
+			greater = node
 		}
 
 		head = head.Next

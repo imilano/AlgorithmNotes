@@ -7,5 +7,5 @@ import (
 
 func TestMyPower(t *testing.T) {
 	x := 2.1
-	fmt.Print(myPow(x,3))
+	fmt.Print(myPow(x, 3))
 }

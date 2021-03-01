@@ -3,7 +3,7 @@ package leet_80
 /*
 	Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.
 	Do not allocate extra space for another array; you must do this by modifying the input array in-place with O(1) extra memory.
- */
+*/
 
 //func removeDuplicates(nums []int) int {
 //	if len(nums) == 0 {
@@ -64,7 +64,7 @@ func removeDuplicates(nums []int) int {
 func atMostKDup(nums []int, k int) {
 	var i int
 	for _, n := range nums {
-		if i < k ||  n > nums[i-k] {
+		if i < k || n > nums[i-k] {
 			nums[i] = n
 			i++
 		}

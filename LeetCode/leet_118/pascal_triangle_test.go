@@ -1,10 +1,10 @@
 package leet_118
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 )
 
 func TestGenerate(t *testing.T) {
-	fmt.Printf("%v",generate(5))
+	fmt.Printf("%v", generate(5))
 }

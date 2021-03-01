@@ -24,7 +24,7 @@ Surrounded regions shouldn’t be on the border, which means that any 'O' on the
 
 //也就是说，将被X包围的O替换为X，但是需要注意的是，边界的O是不被X包含的。
 //解决思路：扫描矩阵的四条边，如果扫描到了O，那么从该处开始DFS，将每个O都设置为$，四条边扫描结束后，重新扫描整个矩阵，将扫描到的O都替换为X，然后将扫描到的$都替换为O。
-func solve(board [][]byte)  {
+func solve(board [][]byte) {
 	row := len(board)
 	if row == 0 {
 		return
@@ -32,17 +32,17 @@ func solve(board [][]byte)  {
 	col := len(board[0])
 
 	// scan to mark
-	for i := 0; i< row;i++ {
-		for j := 0; j< col; j++ {
-			if (i == 0 || i == row-1 || j == 0 || j == col -1) && board[i][j] == 'O' {
-				scanAndMark(board,i,j)
+	for i := 0; i < row; i++ {
+		for j := 0; j < col; j++ {
+			if (i == 0 || i == row-1 || j == 0 || j == col-1) && board[i][j] == 'O' {
+				scanAndMark(board, i, j)
 			}
 		}
 	}
 
 	// scan to restore
-	for i := 0; i< row; i++ {
-		for j := 0; j < col;j++ {
+	for i := 0; i < row; i++ {
+		for j := 0; j < col; j++ {
 			if board[i][j] == 'O' {
 				board[i][j] = 'X'
 			}
@@ -57,24 +57,24 @@ func solve(board [][]byte)  {
 }
 
 // dfs, scan and mark
-func scanAndMark(board [][]byte, i,j int) {
-	row,col := len(board),len(board[0])
+func scanAndMark(board [][]byte, i, j int) {
+	row, col := len(board), len(board[0])
 	if board[i][j] == 'O' {
 		// mark
 		board[i][j] = '$'
 
 		// DFS, 注意的是，标记的范围应该是可以包括边界的，也就是说，如果扫描到了边界上的元素也在未闭合的区域，那么该元素也要被标记。
-		if i > 0 && board[i-1][j] == 'O' {  // i > 0 或者 i < row-1，意味着可以标记边界上的元素；同理对j
-			scanAndMark(board,i-1,j)
+		if i > 0 && board[i-1][j] == 'O' { // i > 0 或者 i < row-1，意味着可以标记边界上的元素；同理对j
+			scanAndMark(board, i-1, j)
 		}
-		if i  < row-1 &&  board[i+1][j] == 'O' {
-			scanAndMark(board,i+1,j)
+		if i < row-1 && board[i+1][j] == 'O' {
+			scanAndMark(board, i+1, j)
 		}
 		if j > 0 && board[i][j-1] == 'O' {
-			scanAndMark(board,i,j-1)
+			scanAndMark(board, i, j-1)
 		}
 		if j < col-1 && board[i][j+1] == 'O' {
-			scanAndMark(board,i,j+1)
+			scanAndMark(board, i, j+1)
 		}
 	}
 }

@@ -6,6 +6,6 @@ import (
 )
 
 func TestMaxProfit(t *testing.T) {
-	arr := []int{7,1,5,3,6,4}
+	arr := []int{7, 1, 5, 3, 6, 4}
 	fmt.Println(MaxProfit(arr))
 }

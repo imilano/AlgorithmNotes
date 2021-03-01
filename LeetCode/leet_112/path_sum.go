@@ -4,13 +4,11 @@ package leet_112
 	Path Sum
 	Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
 	Note: A leaf is a node with no children.
- */
-
-
+*/
 
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
@@ -24,12 +22,12 @@ func hasPathSumRec(root *TreeNode, sum int) bool {
 		return true
 	}
 
-	return hasPathSum(root.Left,sum-root.Val) || hasPathSum(root.Right,sum-root.Val)
+	return hasPathSum(root.Left, sum-root.Val) || hasPathSum(root.Right, sum-root.Val)
 }
 
 // With DFS
 type Node struct {
-	val int
+	val  int
 	node *TreeNode
 }
 
@@ -40,7 +38,7 @@ func hasPathWithDFS(root *TreeNode, sum int) bool {
 
 	var que []Node
 	var node Node
-	que = append(que,Node{
+	que = append(que, Node{
 		val:  root.Val,
 		node: root,
 	})
@@ -55,12 +53,12 @@ func hasPathWithDFS(root *TreeNode, sum int) bool {
 
 		if node.node.Right != nil {
 			que = append(que, Node{
-				val:  node.val+node.node.Right.Val,
+				val:  node.val + node.node.Right.Val,
 				node: node.node.Right,
 			})
 		}
 
-		if node.node.Left != nil  {
+		if node.node.Left != nil {
 			que = append(que, Node{
 				val:  node.val + node.node.Left.Val,
 				node: node.node.Left,
@@ -77,5 +75,5 @@ func hasPathSum(root *TreeNode, sum int) bool {
 	// return hasPathSumRec(root,sum)
 
 	// DFS with Queue
-	return hasPathWithDFS(root,sum)
+	return hasPathWithDFS(root, sum)
 }

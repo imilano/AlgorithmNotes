@@ -35,7 +35,7 @@ func ladderLength(beginWord string, endWord string, wordList []string) int {
 		// WARNING
 		//for i := 0; i <len(que);i++{ // can not use this, cause we will delete node from que, so the node number is always changing,
 		// hence not the number of current level node
-		for i := 0; i<curNum;i++ {
+		for i := 0; i < curNum; i++ {
 			// get node of current level
 			word := que[0]
 			que = que[1:]
@@ -46,14 +46,14 @@ func ladderLength(beginWord string, endWord string, wordList []string) int {
 			}
 
 			// do not iterate this node again
-			delete(set,word)
+			delete(set, word)
 			// check if this node could transform to the node in dict
-			for i := 0; i<len(word);i++ {
-				for j := 0; j<26;j++ {
+			for i := 0; i < len(word); i++ {
+				for j := 0; j < 26; j++ {
 					tmp := []byte(word)
 					tmp[i] = byte('a' + j)
 					if v := set[string(tmp)]; v == 1 {
-						que = append(que,string(tmp))
+						que = append(que, string(tmp))
 					}
 				}
 			}
@@ -64,4 +64,3 @@ func ladderLength(beginWord string, endWord string, wordList []string) int {
 
 	return 0
 }
-

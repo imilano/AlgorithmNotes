@@ -20,8 +20,8 @@ package leet_103
 */
 
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
@@ -39,15 +39,15 @@ func zigzagLevelOrder(root *TreeNode) [][]int {
 		var s []int
 		cnt = len(que)
 
-		for i := 0; i < cnt ; i++ {
+		for i := 0; i < cnt; i++ {
 			node := que[0]
 			que = que[1:]
 
 			// 如果order，正序添加，如果!order，则逆序添加
 			if order {
-				s = append(s,node.Val)
+				s = append(s, node.Val)
 			} else {
-				s = append([]int{node.Val},s...)
+				s = append([]int{node.Val}, s...)
 			}
 
 			if node.Left != nil {
@@ -56,7 +56,6 @@ func zigzagLevelOrder(root *TreeNode) [][]int {
 			if node.Right != nil {
 				que = append(que, node.Right)
 			}
-
 
 			//if order {
 			//	if node.Left != nil {

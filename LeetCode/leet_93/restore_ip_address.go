@@ -18,12 +18,12 @@ func restoreIpAddresses(s string) []string {
 		return res
 	}
 
-	for i := 1; i < 4 && i< length-2;i++ {
-		for j := i+1; j < i  + 4 && j< length-1;j++ {
-			for k := j+1; k < j+4 && k < length; k++ {
-				s1,s2,s3,s4 := s[0:i],s[i:j],s[j:k],s[k:length]
+	for i := 1; i < 4 && i < length-2; i++ {
+		for j := i + 1; j < i+4 && j < length-1; j++ {
+			for k := j + 1; k < j+4 && k < length; k++ {
+				s1, s2, s3, s4 := s[0:i], s[i:j], s[j:k], s[k:length]
 				if isValid(s1) && isValid(s2) && isValid(s3) && isValid(s4) {
-					res = append(res,s1+"."+s2+"."+s3+"."+s4)
+					res = append(res, s1+"."+s2+"."+s3+"."+s4)
 				}
 			}
 		}
@@ -37,14 +37,13 @@ func isValid(s string) bool {
 		return false
 	}
 
-	p,_ := strconv.Atoi(s)
+	p, _ := strconv.Atoi(s)
 	if p > 255 {
 		return false
 	}
 
 	return true
 }
-
 
 //-----------------------------------------------------
 func restoreIpAddresses2(s string) []string {
@@ -54,15 +53,15 @@ func restoreIpAddresses2(s string) []string {
 		return res
 	}
 
-	for a := 1; a <=3;a++ {
+	for a := 1; a <= 3; a++ {
 		for b := 1; b <= 3; b++ {
 			for c := 1; c <= 3; c++ {
-				for d := 1; d <= 3;d++ {
-					if a+b+c+d  == length {
+				for d := 1; d <= 3; d++ {
+					if a+b+c+d == length {
 						if s[0:a] <= "255" && s[a:a+b] <= "255" && s[a+b:a+b+c] <= "255" && s[a+b+c:] <= "255" {
 							ss := s[0:a] + "." + s[a:a+b] + "." + s[a+b:a+b+c] + "." + s[a+b+c:]
-							if len(ss) == length + 3 {
-								res = append(res,ss )
+							if len(ss) == length+3 {
+								res = append(res, ss)
 							}
 						}
 					}
@@ -73,7 +72,6 @@ func restoreIpAddresses2(s string) []string {
 
 	return res
 }
-
 
 //----------------------------------------------------
 // DFS

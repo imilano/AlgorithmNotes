@@ -15,7 +15,7 @@ Example 1:
 
 Input: s = "the sky is blue"
 Output: "blue is sky the"
- */
+*/
 
 func reverseWords(s string) string {
 	var res string
@@ -30,17 +30,17 @@ func reverseWords(s string) string {
 			continue
 		} else {
 			i := 0
-			for i < len(s) && s[i] != ' '{
+			for i < len(s) && s[i] != ' ' {
 				i++
 			}
-			words = append(words,s[0:i])
+			words = append(words, s[0:i])
 			s = s[i:]
 		}
 	}
 
 	length := len(words)
 	for length != 0 {
-		res += words[length-1]+" "
+		res += words[length-1] + " "
 		length--
 	}
 	if len(res) > 1 {

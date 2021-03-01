@@ -8,14 +8,14 @@ package leet_27
 	Clarification:
 		Confused why the returned value is an integer but your answer is an array?
 		Note that the input array is passed in by reference, which means a modification to the input array will be known to the caller as well.
- */
+*/
 
 // two pointer
 // time complexity: O(n)
 // space complexity: O(1)
 func removeElement(nums []int, val int) int {
-	left,right := 0,0
-	for right <len(nums) {
+	left, right := 0, 0
+	for right < len(nums) {
 		if val != nums[right] {
 			nums[left] = nums[right]
 			left++
@@ -32,7 +32,7 @@ func removeElement(nums []int, val int) int {
 func removeElementOnSwap(nums []int, val int) int {
 	left := 0
 	n := len(nums)
-	for left < n{
+	for left < n {
 		if nums[left] == val {
 			nums[left] = nums[n-1]
 			n--

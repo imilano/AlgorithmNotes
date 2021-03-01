@@ -1,4 +1,5 @@
 package leet_107
+
 /*
 	Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).
 	For example:
@@ -18,8 +19,8 @@ package leet_107
 */
 
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
@@ -31,28 +32,28 @@ func levelOrderBottom(root *TreeNode) [][]int {
 		return res
 	}
 
-	que = append(que,root)
+	que = append(que, root)
 	for len(que) != 0 {
 		var s []int
 		var t [][]int
 
 		cnt := len(que)
-		for i := 0;i < cnt;i++ {
+		for i := 0; i < cnt; i++ {
 			node := que[0]
 			que = que[1:]
 
 			s = append(s, node.Val)
 			if node.Left != nil {
-				que = append(que,node.Left)
+				que = append(que, node.Left)
 			}
 			if node.Right != nil {
-				que = append(que,node.Right)
+				que = append(que, node.Right)
 			}
 		}
 
 		// add s to the start of res
-		t = append(t,s)
-		res = append(t,res...)
+		t = append(t, s)
+		res = append(t, res...)
 	}
 
 	return res

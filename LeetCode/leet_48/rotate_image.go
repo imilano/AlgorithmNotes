@@ -20,26 +20,26 @@ package leet_48
 
 func reverse(matrix [][]int) {
 	length := len(matrix)
-	for i := 0; i< length/2; i++ {
+	for i := 0; i < length/2; i++ {
 		tmp := matrix[i]
 		matrix[i] = matrix[length-i-1]
 		matrix[length-i-1] = tmp
 	}
 }
 
-func swap(matrix [][]int, i,j int) {
+func swap(matrix [][]int, i, j int) {
 	tmp := matrix[i][j]
 	matrix[i][j] = matrix[j][i]
 	matrix[j][i] = tmp
 }
 
-func rotate(matrix [][]int)  {
+func rotate(matrix [][]int) {
 	reverse(matrix)
 
 	row := len(matrix)
-	for i := 0; i< row; i++ {
-		for j := i +1; j < row; j++ {
-			swap(matrix,i,j)
+	for i := 0; i < row; i++ {
+		for j := i + 1; j < row; j++ {
+			swap(matrix, i, j)
 		}
 	}
 }
@@ -47,16 +47,16 @@ func rotate(matrix [][]int)  {
 func rotateAntiClock(matrix [][]int) {
 	// first , swap leftmost column and rightmost column
 	row := len(matrix)
-	for i := 0; i< row; i++ {
+	for i := 0; i < row; i++ {
 		tmp := matrix[0][i]
 		matrix[i][0] = matrix[i][row-1]
 		matrix[i][row-1] = tmp
 	}
 
 	// then swap
-	for i:= 0; i< row; i++ {
-		for j := i +1; j< row; j++ {
-			swap(matrix,i,j)
+	for i := 0; i < row; i++ {
+		for j := i + 1; j < row; j++ {
+			swap(matrix, i, j)
 		}
 	}
 }

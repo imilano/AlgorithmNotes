@@ -13,9 +13,7 @@ To determine how you "say" a digit string, split it into the minimal number of g
 For example, the saying and conversion for digit string "3322251":
 
 Given a positive integer n, return the nth term of the count-and-say sequence.
- */
-
-
+*/
 
 func countAndSay(n int) string {
 	if n < 0 {
@@ -27,7 +25,7 @@ func countAndSay(n int) string {
 	for n != 0 {
 		cur := ""
 
-		for i := 0; i< len(res);i++ {
+		for i := 0; i < len(res); i++ {
 			cnt := 1
 			for i+1 < len(res) && res[i] == res[i+1] {
 				cnt++

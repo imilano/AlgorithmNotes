@@ -3,9 +3,9 @@ package leet_84
 /*
 	Given n non-negative integers representing the histogram's bar height where the width of each bar is 1,
 	find the area of largest rectangle in the histogram.
- */
+*/
 
-func max(a,b int) int {
+func max(a, b int) int {
 	if a > b {
 		return a
 	}
@@ -31,12 +31,12 @@ func largestRectangleArea(heights []int) int {
 	}
 
 	length := len(heights)
-	lessFromLeft := make([]int,length)
-	lessFromRight := make([]int,length)
-	lessFromLeft[0],lessFromRight[length-1]=-1,length // used in loop for terminal condition
+	lessFromLeft := make([]int, length)
+	lessFromRight := make([]int, length)
+	lessFromLeft[0], lessFromRight[length-1] = -1, length // used in loop for terminal condition
 
-	for i := 1; i < length;i++ {
-		p := i-1
+	for i := 1; i < length; i++ {
+		p := i - 1
 		for p >= 0 && heights[p] >= heights[i] {
 			p = lessFromLeft[p]
 		}
@@ -44,7 +44,7 @@ func largestRectangleArea(heights []int) int {
 		lessFromLeft[i] = p
 	}
 
-	for i := length-2; i>=0;i-- {
+	for i := length - 2; i >= 0; i-- {
 		p := i + 1
 		for p < length && heights[p] >= heights[i] {
 			p = lessFromRight[p]
@@ -53,8 +53,8 @@ func largestRectangleArea(heights []int) int {
 		lessFromRight[i] = p
 	}
 
-	for i := 0; i< length;i++ {
-		maxArea = max(maxArea, heights[i] * (lessFromRight[i]-lessFromLeft[i]-1))
+	for i := 0; i < length; i++ {
+		maxArea = max(maxArea, heights[i]*(lessFromRight[i]-lessFromLeft[i]-1))
 	}
 
 	return maxArea

@@ -5,19 +5,19 @@ import "sync"
 
 type (
 	Stack struct {
-		top *Node
+		top    *Node
 		length int
-		lock *sync.RWMutex
+		lock   *sync.RWMutex
 	}
 
 	Node struct {
 		value interface{}
-		pre *Node
+		pre   *Node
 	}
 )
 
 // Create new stack
-func NewStack() *Stack{
+func NewStack() *Stack {
 	return &Stack{
 		top:    nil,
 		length: 0,
@@ -26,13 +26,13 @@ func NewStack() *Stack{
 }
 
 // Length of stack
-func (s *Stack) Len() int{
+func (s *Stack) Len() int {
 	return s.length
 }
 
 // Top element  of stack
-func (s *Stack) Top()  interface{} {
-	if s.length ==0 {
+func (s *Stack) Top() interface{} {
+	if s.length == 0 {
 		return nil
 	}
 
@@ -66,11 +66,11 @@ func (s *Stack) Push(value interface{}) {
 }
 
 // Empty check if it is an empty stack
-func (s *Stack) Empty()  bool{
+func (s *Stack) Empty() bool {
 	return s.Len() == 0
 }
 
-func max(a,b int) int {
+func max(a, b int) int {
 	if a > b {
 		return a
 	}
@@ -78,16 +78,17 @@ func max(a,b int) int {
 	return b
 }
 
-
 /*
 	Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
 */
 
+//-------------------------------
+// For test
 func LongestValidParentheses(s string) int {
 	return longestValidParentheses(s)
 }
 
-
+//-------------------------------------
 // brutal force
 // time complexity: O(n^2)
 // space complexity: O(1)
@@ -115,12 +116,12 @@ func longestValidParentheses(s string) int {
 	length := len(s)
 	var balanced int
 	res := math.MinInt8
-	for i := 0; i <length; i++ {
+	for i := 0; i < length; i++ {
 		balanced = 0
-		for j := i; j < length;j++ {
+		for j := i; j < length; j++ {
 			if s[j] == '(' {
 				balanced++
-			} else if s[j] == ')'{
+			} else if s[j] == ')' {
 				balanced--
 			}
 
@@ -129,7 +130,7 @@ func longestValidParentheses(s string) int {
 			}
 
 			if balanced == 0 {
-				res = max(j-i+1,res)
+				res = max(j-i+1, res)
 			}
 
 		}
@@ -154,7 +155,7 @@ func longestValidParenthesesWithStack(s string) int {
 	length := len(s)
 	// This is very tricky
 	stack.Push(-1)
-	for i := 0; i< length;i++ {
+	for i := 0; i < length; i++ {
 		if s[i] == '(' {
 			stack.Push(i)
 		} else {
@@ -162,7 +163,7 @@ func longestValidParenthesesWithStack(s string) int {
 			if stack.Empty() {
 				stack.Push(i)
 			} else {
-				ans = max(ans,i-stack.Top().(int))
+				ans = max(ans, i-stack.Top().(int))
 			}
 		}
 	}
@@ -173,7 +174,6 @@ func longestValidParenthesesWithStack(s string) int {
 // use dynamic programming
 // time complexity: O(n)
 // space complexity: O(n)
-
 
 // The main idea is as follows: construct a array longest[], for any longest[i], it stores the longest length of valid
 // parentheses which is end at i.
@@ -187,11 +187,11 @@ func longestValidParenthesesWithStack(s string) int {
 func longestValidParenthesesDP(s string) int {
 	var res int
 	length := len(s)
-	if length  == 0 {
+	if length == 0 {
 		return res
 	}
-	dp := make([]int,length)
-	for i := 1; i< length; i++ {
+	dp := make([]int, length)
+	for i := 1; i < length; i++ {
 		if s[i] == ')' {
 			if s[i-1] == '(' {
 				if i-2 > 0 {
@@ -202,13 +202,13 @@ func longestValidParenthesesDP(s string) int {
 
 				res = max(res, dp[i])
 			} else if s[i-1] == ')' && i-dp[i-1]-1 >= 0 && s[i-dp[i-1]-1] == '(' {
-					if i - dp[i-1]-2 > 0 {
-						dp[i] = dp[i-1] + 2 + dp[i-dp[i-1]-2]
-					} else {
-						dp[i] = dp[i-1] + 2
-					}
+				if i-dp[i-1]-2 > 0 {
+					dp[i] = dp[i-1] + 2 + dp[i-dp[i-1]-2]
+				} else {
+					dp[i] = dp[i-1] + 2
+				}
 
-					res = max(res,dp[i])
+				res = max(res, dp[i])
 			}
 		}
 	}
@@ -224,9 +224,9 @@ func longestValidParenthesesNewDP(s string) int {
 		return res
 	}
 
-	dp := make([]int,length)
+	dp := make([]int, length)
 	open := 0
-	for i := 0; i< length; i++ {
+	for i := 0; i < length; i++ {
 		if s[i] == '(' {
 			open++
 		}
@@ -234,7 +234,7 @@ func longestValidParenthesesNewDP(s string) int {
 		if s[i] == ')' && open > 0 {
 			dp[i] = dp[i-1] + 2
 
-			if i - dp[i] > 0 {
+			if i-dp[i] > 0 {
 				dp[i] += dp[i-dp[i]]
 			}
 

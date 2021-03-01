@@ -1,10 +1,10 @@
 package leet_198
 
-func max(a,b int) int {
+func max(a, b int) int {
 	if a > b {
 		return a
 	}
-	 return b
+	return b
 }
 
 // 递归解法，超时
@@ -14,16 +14,15 @@ func dp(nums []int, start int) int {
 	}
 
 	res := max(
-		dp(nums,start+1),  // 不抢，去下一家
-		dp(nums,start + 2)+nums[start], // 抢，去下下家
-		)
+		dp(nums, start+1),             // 不抢，去下一家
+		dp(nums, start+2)+nums[start], // 抢，去下下家
+	)
 
 	return res
 }
 
-
 // 递归解法中有重叠子问题，使用备忘录
-func dpWithMemo(nums,memo []int, start int) int {
+func dpWithMemo(nums, memo []int, start int) int {
 	if start >= len(nums) {
 		return 0
 	}
@@ -33,8 +32,8 @@ func dpWithMemo(nums,memo []int, start int) int {
 	}
 
 	res := max(
-		dp(nums,start+1),  // 不抢，去下一家
-		dp(nums,start + 2)+nums[start], // 抢，去下下家
+		dp(nums, start+1),             // 不抢，去下一家
+		dp(nums, start+2)+nums[start], // 抢，去下下家
 	)
 
 	memo[start] = res
@@ -47,10 +46,10 @@ func dpFromBottom2Top(nums []int) int {
 
 	// base condition: dp[n] = 0
 	// dp[n]=m，表示从第n间房子开始抢劫，可以得到的最大收益是m
-	dp := make([]int,length+2)
+	dp := make([]int, length+2)
 
-	for i := length-1; i>= 0; i-- {
-		dp[i] = max(dp[i+1],nums[i] + dp[i+2])
+	for i := length - 1; i >= 0; i-- {
+		dp[i] = max(dp[i+1], nums[i]+dp[i+2])
 	}
 
 	return dp[0]
@@ -60,10 +59,10 @@ func dpFromBottom2Top(nums []int) int {
 func dpFromBottom2Up2(nums []int) int {
 	length := len(nums)
 
-	N1,N2,N := 0,0,0
-	for i := length-1; i >=0; i-- {
-		N =  max(N1,N2+nums[i])
-		N2,N1 = N1,N
+	N1, N2, N := 0, 0, 0
+	for i := length - 1; i >= 0; i-- {
+		N = max(N1, N2+nums[i])
+		N2, N1 = N1, N
 	}
 
 	return N

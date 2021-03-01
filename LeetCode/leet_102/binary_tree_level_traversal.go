@@ -18,11 +18,11 @@ package leet_102
 	  [9,20],
 	  [15,7]
 	]
- */
+*/
 
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
@@ -35,25 +35,25 @@ func levelOrder(root *TreeNode) [][]int {
 		return res
 	}
 
-	que = append(que,root)
+	que = append(que, root)
 	for len(que) != 0 {
 		var s []int
 
 		cnt := len(que)
-		for i := 0;i < cnt;i++ {
+		for i := 0; i < cnt; i++ {
 			node := que[0]
 			que = que[1:]
 
 			s = append(s, node.Val)
 			if node.Left != nil {
-				que = append(que,node.Left)
+				que = append(que, node.Left)
 			}
 			if node.Right != nil {
-				que = append(que,node.Right)
+				que = append(que, node.Right)
 			}
 		}
 
-		res = append(res,s)
+		res = append(res, s)
 	}
 
 	return res

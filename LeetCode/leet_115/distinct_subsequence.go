@@ -21,20 +21,19 @@ It's guaranteed the answer fits on a 32-bit signed integer.
 //		- 当s中的第j个字符不等于t中的第i个字符时，dp[i][j] = dp[i][j-1]， 也就是说，当前的状态等于使用s中前j-1个字符去匹配t中前i个字符的数量。
 
 func numDistinct(s string, t string) int {
-	lens,lent := len(s),len(t)
-	dp := make([][]int,lent+1)
+	lens, lent := len(s), len(t)
+	dp := make([][]int, lent+1)
 	for i := range dp {
-		dp[i] = make([]int,lens+1)
+		dp[i] = make([]int, lens+1)
 	}
 
 	// base case
-	for i := 0; i<= lens;i++ {
+	for i := 0; i <= lens; i++ {
 		dp[0][i] = 1
 	}
 
-
-	for i := 1; i<= lent; i++ {
-		for j := 1; j<= lens; j++ {
+	for i := 1; i <= lent; i++ {
+		for j := 1; j <= lens; j++ {
 			if s[j-1] == t[i-1] {
 				dp[i][j] = dp[i][j-1] + dp[i-1][j-1]
 			} else {

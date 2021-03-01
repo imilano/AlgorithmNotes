@@ -4,19 +4,19 @@ package leet_34
 	Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.
 	If target is not found in the array, return [-1, -1].
 	Follow up: Could you write an algorithm with O(log n) runtime complexity?
- */
+*/
 
 // time complexity: O(n)
 // space complexity: O(1)
 func brutalForce(nums []int, target int) []int {
-	res := []int{-1,-1}
+	res := []int{-1, -1}
 	if nums == nil {
-		return  res
+		return res
 	}
 
 	// find leftmost position
-	for i := 0; i< len(nums);i++ {
-		if nums[i] ==  target {
+	for i := 0; i < len(nums); i++ {
+		if nums[i] == target {
 			res[0] = i
 			break
 		}
@@ -28,7 +28,7 @@ func brutalForce(nums []int, target int) []int {
 	}
 
 	// find rightmost position
-	for i := len(nums)-1; i>=0;i-- {
+	for i := len(nums) - 1; i >= 0; i-- {
 		if nums[i] == target {
 			res[1] = i
 			break
@@ -46,14 +46,14 @@ func searchRange(nums []int, target int) []int {
 		return nil
 	}
 
-	start,end := 0,len(nums)-1
-	res := []int{-1,-1}
+	start, end := 0, len(nums)-1
+	res := []int{-1, -1}
 
 	// find leftmost position
 	for start < end {
 		mid := start + (end-start)/2
 		if nums[mid] < target {
-			start = mid +1
+			start = mid + 1
 		} else {
 			end = mid
 		}
@@ -64,12 +64,12 @@ func searchRange(nums []int, target int) []int {
 	}
 
 	// find rightmost position
-	end = len(nums)-1
+	end = len(nums) - 1
 	for start < end {
-		mid := start + (end-start)/2 +1 // biased to right
+		mid := start + (end-start)/2 + 1 // biased to right
 
 		if target < nums[mid] {
-			end  = mid -1
+			end = mid - 1
 		} else {
 			start = mid
 		}

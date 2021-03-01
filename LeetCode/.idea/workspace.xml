@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc4889ae-92dd-4161-9539-6d2a041d6a57" name="Default Changelist" comment="" />
+    <list default="true" id="bc4889ae-92dd-4161-9539-6d2a041d6a57" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leet_287/find_duplicate_number_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_287/find_duplicate_number_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leet_287/find_the_duplicate_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_287/find_the_duplicate_number.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +25,17 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.15.5/libexec" />
+  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.14.7" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -53,67 +68,68 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Go Test.TestEvalRPM in lightsinger.life/algorithm/leetcode/leet_150">
-    <configuration name="go build lightsinger.life/algorithm/leetcode/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestFindDuplicate in lightsinger.life/algorithm/leetcode/leet_287">
+    <configuration name="TestFindDuplicate in lightsinger.life/algorithm/leetcode/leet_287" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main/main.go" />
-      <package value="lightsinger.life/algorithm/leetcode/main" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestEvalRPM in lightsinger.life/algorithm/leetcode/leet_150" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_150" />
+      <working_directory value="$PROJECT_DIR$/leet_287" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_150" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_287" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestEvalRPM\E$" />
+      <pattern value="^\QTestFindDuplicate\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestLongestConsecutive in lightsinger.life/algorithm/leetcode/leet_128" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFlipGame in lightsinger.life/algorithm/leetcode/leet_293" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_128" />
+      <working_directory value="$PROJECT_DIR$/leet_293" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_128" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_293" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestLongestConsecutive\E$" />
+      <pattern value="^\QTestFlipGame\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSingleNumber in lightsinger.life/algorithm/leetcode/leet_137" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMinTotalDistance in lightsinger.life/algorithm/leetcode/leet_296" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_137" />
+      <working_directory value="$PROJECT_DIR$/leet_296" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_137" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_296" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestSingleNumber\E$" />
+      <pattern value="^\QTestMinTotalDistance\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestWordBreak in lightsinger.life/algorithm/leetcode/leet_140" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestWordPattern in lightsinger.life/algorithm/leetcode/leet_291" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_140" />
+      <working_directory value="$PROJECT_DIR$/leet_291" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_140" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_291" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestWordBreak\E$" />
+      <pattern value="^\QTestWordPattern\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="best_meeting_point_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <working_directory value="$PROJECT_DIR$/leet_296" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="lightsinger.life/algorithm/leetcode" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/leet_296/best_meeting_point_test.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestEvalRPM in lightsinger.life/algorithm/leetcode/leet_150" />
-        <item itemvalue="Go Test.TestWordBreak in lightsinger.life/algorithm/leetcode/leet_140" />
-        <item itemvalue="Go Test.TestSingleNumber in lightsinger.life/algorithm/leetcode/leet_137" />
-        <item itemvalue="Go Build.go build lightsinger.life/algorithm/leetcode/main" />
-        <item itemvalue="Go Test.TestLongestConsecutive in lightsinger.life/algorithm/leetcode/leet_128" />
+        <item itemvalue="Go Test.TestFindDuplicate in lightsinger.life/algorithm/leetcode/leet_287" />
+        <item itemvalue="Go Test.TestMinTotalDistance in lightsinger.life/algorithm/leetcode/leet_296" />
+        <item itemvalue="Go Test.best_meeting_point_test.go" />
+        <item itemvalue="Go Test.TestFlipGame in lightsinger.life/algorithm/leetcode/leet_293" />
+        <item itemvalue="Go Test.TestWordPattern in lightsinger.life/algorithm/leetcode/leet_291" />
       </list>
     </recent_temporary>
   </component>
@@ -159,48 +175,6 @@
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1396" height="330" key="GridCell.Tab.0.bottom" timestamp="1606650602199">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="330" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606650602199" />
-    <state width="1396" height="330" key="GridCell.Tab.0.center" timestamp="1606650602199">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="330" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1606650602199" />
-    <state width="1396" height="330" key="GridCell.Tab.0.left" timestamp="1606650602198">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="330" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1606650602198" />
-    <state width="1396" height="330" key="GridCell.Tab.0.right" timestamp="1606650602199">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="330" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1606650602199" />
-    <state width="1396" height="425" key="GridCell.Tab.1.bottom" timestamp="1606650602195">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="425" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606650602195" />
-    <state width="1396" height="425" key="GridCell.Tab.1.center" timestamp="1606650602195">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="425" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1606650602195" />
-    <state width="1396" height="425" key="GridCell.Tab.1.left" timestamp="1606650602195">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="425" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1606650602195" />
-    <state width="1396" height="425" key="GridCell.Tab.1.right" timestamp="1606650602195">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1396" height="425" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1606650602195" />
-    <state x="518" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606440922441">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="518" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1606440922441" />
-    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup" timestamp="1606650567744">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="386" y="212" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1606650567744" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -229,7 +203,55 @@
           <line>9</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leet_210/course_schedule_II_test.go</url>
+          <line>16</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leet_221/maximal_square_test.go</url>
+          <line>15</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leet_229/majority_eleement_Ii_test.go</url>
+          <line>9</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leet_234/palindrome_lindked_list_test.go</url>
+          <line>33</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leet_266/palindrome_permutation_test.go</url>
+          <line>13</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leet_280/wiggle_sort_test.go</url>
+          <line>19</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leet_289/game_of_life_test.go</url>
+          <line>28</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leet_290/word_pattern_test.go</url>
+          <line>20</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GoTestRunConfiguration">
+        <watch expression="x" language="go" />
+        <watch expression="y" language="go" />
+        <watch expression="len(pattern)" language="go" />
+        <watch expression="len(m)" language="go" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

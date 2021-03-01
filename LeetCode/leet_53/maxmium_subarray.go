@@ -12,7 +12,7 @@ func maxSubArray(nums []int) int {
 	var res int
 	max := math.MinInt64
 
-	for i:= 0; i < len(nums); i++ {
+	for i := 0; i < len(nums); i++ {
 		res += nums[i]
 		if res > max {
 			max = res

@@ -7,40 +7,40 @@ Given an input string (s) and a pattern (p), implement wildcard pattern matching
     '*' Matches any sequence of characters (including the empty sequence).
 
 The matching should cover the entire input string (not partial).
- */
+*/
 
 // -----------------------------------------------------------------------------------------------------------
 // wrong answer, we need to flag *
 // Original wrong recursive method
-func helper(s string, p string, sp int, pp int ) bool {
+func helper(s string, p string, sp int, pp int) bool {
 	if sp == len(s) && pp == len(p) || pp == len(p)-1 && p[pp] == '*' {
 		return true
 	}
 
 	if (pp < len(p) && p[pp] == '?') || (sp < len(s) && pp < len(p) && s[sp] == p[pp]) {
-		return helper(s,p,sp+1,pp+1)
+		return helper(s, p, sp+1, pp+1)
 	}
 
 	if pp < len(p) && p[pp] == '*' {
-		return helper(s,p,sp,pp+1) || helper(s,p,sp+1,pp+1) || helper(s,p,sp+1,pp)
+		return helper(s, p, sp, pp+1) || helper(s, p, sp+1, pp+1) || helper(s, p, sp+1, pp)
 	}
 
 	return false
 }
 
 func isMatchOriginal(s string, p string) bool {
-	return helper(s,p,0,0)
+	return helper(s, p, 0, 0)
 }
 
 //------------------------------------------------------------------------
 // Greedy Algorithm
 func isMatchGreedy(s string, p string) bool {
-	sp,pp,match := 0,0,0
+	sp, pp, match := 0, 0, 0
 	starIdx := -1
 
-	for sp < len(s){
+	for sp < len(s) {
 		// ? matches at least one character, we need to move forward both pointer
-		if  pp < len(p) && (p[pp] == '?' || p[pp] == s[sp]) {
+		if pp < len(p) && (p[pp] == '?' || p[pp] == s[sp]) {
 			sp++
 			pp++
 			continue
@@ -52,21 +52,21 @@ func isMatchGreedy(s string, p string) bool {
 			match = sp
 			pp++
 		} else if starIdx != -1 {
-		//仍然不匹配，但是sp有路可走，且sp已经停在那一次了，那么sp要后移，连同pp停留的位置也要更新，
-		//pp直接到回路'*'的后一个位置。此时pp也可以取starIdx，但运行速度会变慢
+			//仍然不匹配，但是sp有路可走，且sp已经停在那一次了，那么sp要后移，连同pp停留的位置也要更新，
+			//pp直接到回路'*'的后一个位置。此时pp也可以取starIdx，但运行速度会变慢
 			pp = starIdx + 1
 			match++
 			sp = match
-		} else {	//仍然不匹配，sp与pp均已无路可走，返回false
+		} else { //仍然不匹配，sp与pp均已无路可走，返回false
 			return false
 		}
 	}
 
-	for pp  < len(p) && p[pp] == '*' {  // //sp扫描完成后要看pp能不能够到达终点，即pp可以沿着'*'行程的通路一直向下
+	for pp < len(p) && p[pp] == '*' { // //sp扫描完成后要看pp能不能够到达终点，即pp可以沿着'*'行程的通路一直向下
 		pp++
 	}
 
-	return pp == len(p)  //sp与ss同时到达终点完成匹配
+	return pp == len(p) //sp与ss同时到达终点完成匹配
 }
 
 // ------------------------------------------------------------------------------------
@@ -96,25 +96,24 @@ func isMatchGreedy(s string, p string) bool {
 //golang中，bool数组默认初始化为false。
 
 func isMatchDP(s string, p string) bool {
-	m,n := len(s),len(p)
-	dp := make([][]bool,m+1)
+	m, n := len(s), len(p)
+	dp := make([][]bool, m+1)
 	for i := range dp {
-		dp[i] = make([]bool,n+1)
+		dp[i] = make([]bool, n+1)
 	}
 
 	// default all the element to false
 	dp[0][0] = true
 	for i := 1; i <= n; i++ {
 		if p[i-1] == '*' {
-			dp[0][i] =  true
+			dp[0][i] = true
 		} else {
 			break
 		}
 	}
 
-
 	for i := 1; i <= m; i++ {
-		for j := 1; j<= n;j++ {
+		for j := 1; j <= n; j++ {
 			if p[j-1] == '*' {
 				dp[i][j] = dp[i-1][j] || dp[i][j-1]
 			}

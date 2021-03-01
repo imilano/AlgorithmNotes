@@ -24,30 +24,29 @@ The given node will always be the first node with val = 1. You must return the c
 
 // Definition for a Node.
 type Node struct {
-    Val int
-    Neighbors []*Node
+	Val       int
+	Neighbors []*Node
 }
-
 
 func cloneGraph(node *Node) *Node {
 	m := make(map[*Node]*Node)
-	return dfs(&m,node)
+	return dfs(&m, node)
 }
 
 // DFS
-func dfs(m *map[*Node]*Node,root *Node) *Node {
-    if root == nil {
-        return nil
-    }
+func dfs(m *map[*Node]*Node, root *Node) *Node {
+	if root == nil {
+		return nil
+	}
 
-    if _, ok := (*m)[root]; ok {
-        return (*m)[root]
-    }
-    clone := new(Node)
-    clone.Val = root.Val
-    for _,node := range root.Neighbors {
-        clone.Neighbors = append(clone.Neighbors,dfs(m,node))
-    }
-    (*m)[root] = clone
-    return clone
+	if _, ok := (*m)[root]; ok {
+		return (*m)[root]
+	}
+	clone := new(Node)
+	clone.Val = root.Val
+	for _, node := range root.Neighbors {
+		clone.Neighbors = append(clone.Neighbors, dfs(m, node))
+	}
+	(*m)[root] = clone
+	return clone
 }

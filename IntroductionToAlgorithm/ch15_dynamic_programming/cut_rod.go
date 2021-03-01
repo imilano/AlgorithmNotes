@@ -4,21 +4,19 @@ import (
 	"math"
 )
 
-
 // 对自身的递归调用导致子问题的重复求解
-func cutRod(profit []int , n int) int {
+func cutRod(profit []int, n int) int {
 	if n == 0 {
 		return 0
 	}
 
 	p := math.MinInt32
-	for i := 0; i<n;i++ {
-		p = max(p,profit[i]+cutRod(profit,n-i))
+	for i := 0; i < n; i++ {
+		p = max(p, profit[i]+cutRod(profit, n-i))
 	}
 
 	return p
 }
-
 
 // 带备忘录的自顶向下方法
 func curRodWithMemo(profit []int, n int) int {
@@ -27,7 +25,7 @@ func curRodWithMemo(profit []int, n int) int {
 		memo[i] = math.MinInt32
 	}
 
-	return topDownMemo(profit,n,memo)
+	return topDownMemo(profit, n, memo)
 }
 
 func topDownMemo(profit []int, n int, memo []int) int {
@@ -39,34 +37,32 @@ func topDownMemo(profit []int, n int, memo []int) int {
 		return memo[n]
 	}
 
-	for i := 0; i< n;i++ {
-		p = max(p,profit[i] + topDownMemo(profit,n-i,memo))
+	for i := 0; i < n; i++ {
+		p = max(p, profit[i]+topDownMemo(profit, n-i, memo))
 	}
 
 	memo[n] = p
 	return p
 }
 
-
 // bottom Up
-func cutRodBottomUp(profit []int, n int)int {
-	memo := make([]int, len(profit) + 1)
+func cutRodBottomUp(profit []int, n int) int {
+	memo := make([]int, len(profit)+1)
 
 	memo[0] = 0
-	for i :=1 ; i<=n;i++ {
+	for i := 1; i <= n; i++ {
 		q := math.MinInt32
-		for j := 1; j<=i;j++ {
-			q = max(q, profit[j] + memo[i-j])
+		for j := 1; j <= i; j++ {
+			q = max(q, profit[j]+memo[i-j])
 		}
 
-		memo[i]= q
+		memo[i] = q
 	}
 
 	return memo[n]
 }
 
-
-func max(a,b int) int {
+func max(a, b int) int {
 	if a > b {
 		return a
 	}

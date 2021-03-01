@@ -1,12 +1,11 @@
 package utils
 
-
 type Queue struct {
 	que []interface{}
 }
 
 func (q *Queue) Enqueue(v interface{}) {
-	q.que = append(q.que,v)
+	q.que = append(q.que, v)
 }
 
 func (q *Queue) Dequeue() interface{} {

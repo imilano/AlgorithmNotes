@@ -16,32 +16,32 @@ func candy(ratings []int) int {
 	length := len(ratings)
 	candy := make([]int, length)
 	for i := range candy {
-		candy[i] = 1  // at least 1 candy for every child
+		candy[i] = 1 // at least 1 candy for every child
 	}
 
 	// 注意i的写法
-	for i := 0; i <length-1;i++ {
+	for i := 0; i < length-1; i++ {
 		if ratings[i+1] > ratings[i] {
 			candy[i+1] = candy[i] + 1
 		}
 	}
 
 	// 注意i的写法
-	for i := length-1;i>0;i-- {
+	for i := length - 1; i > 0; i-- {
 		if ratings[i-1] > ratings[i] {
-			candy[i-1] = max(candy[i-1],candy[i] +1)
+			candy[i-1] = max(candy[i-1], candy[i]+1)
 		}
 	}
 
 	var sum int
-	for _,v := range candy {
+	for _, v := range candy {
 		sum += v
 	}
 
 	return sum
 }
 
-func max(a,b int) int {
+func max(a, b int) int {
 	if a > b {
 		return a
 	}

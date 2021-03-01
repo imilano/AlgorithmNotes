@@ -24,26 +24,25 @@ Explanation: The square root of 8 is 2.82842..., and since
 
 // binary solution
 func mySqrt(x int) int {
-	left,right := 0,x
-
+	left, right := 0, x
 
 	for left <= right {
-		fmt.Println(left," ",right)
+		fmt.Println(left, " ", right)
 		mid := left + (right-left)/2
 
 		if mid*mid < x {
-			left = mid+1
+			left = mid + 1
 		} else {
-			right=mid-1
+			right = mid - 1
 		}
 	}
 
-	return left-1
+	return left - 1
 }
 
 func mySqrtOriginal(x int) int {
 	res := 0
-	for (res+1) * (res+1) <= x {
+	for (res+1)*(res+1) <= x {
 		res++
 	}
 

@@ -8,9 +8,9 @@ package leet_651
 
 	base condition应该是dp(0,num,copy),当n为0时，num即为我们想要的答案。
 
- */
+*/
 
-func max(a,b int) int {
+func max(a, b int) int {
 	if a > b {
 		return a
 	}
@@ -18,9 +18,8 @@ func max(a,b int) int {
 }
 
 func maxA(N int) int {
-	return dp(N,0,0)  // 按N次按键，此时屏幕中还没有A
+	return dp(N, 0, 0) // 按N次按键，此时屏幕中还没有A
 }
-
 
 // 可以把函数更改为dp数组
 func dp(n int, num int, copy int) int {
@@ -29,7 +28,7 @@ func dp(n int, num int, copy int) int {
 	}
 
 	// 可以用备忘录消除重叠子问题
-	return max(max(dp(n-1,num+1,copy),dp(n-1,num+copy,copy)),dp(num-2,num,num))  // Max in four conditions，
+	return max(max(dp(n-1, num+1, copy), dp(n-1, num+copy, copy)), dp(num-2, num, num)) // Max in four conditions，
 }
 
 /*
@@ -37,20 +36,18 @@ func dp(n int, num int, copy int) int {
 这个算法基于这样一个事实，最优按键序列一定只有两种情况：
 	- 要么一直按 A：A,A,...A（当 N 比较小时）。
 	- 要么是这么一个形式：A,A,...C-A,C-C,C-V,C-V,...C-V（当 N 比较大时）。
- */
+*/
 
 func dpNew(N int) int {
-	dp := make([]int,N+1)
+	dp := make([]int, N+1)
 	dp[0] = 0
 
 	for i := 1; i <= N; i++ {
 		dp[i] = dp[i-1] + 1
 		for j := 2; j < i; j++ {
-			dp[i] = max(dp[i],dp[j-2]*(i-j+1))
+			dp[i] = max(dp[i], dp[j-2]*(i-j+1))
 		}
 	}
 
 	return dp[N]
 }
-
-

@@ -2,29 +2,30 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 )
 
 type Node struct {
 	Age int
 }
+
 //  Definition for a binary tree node.
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
 func search(nums []int, target int) int {
-	left,right := 0,len(nums)
+	left, right := 0, len(nums)
 	for left < right {
 
-
-		mid := left + (right -left)/2
-		fmt.Printf("[%d,%d,%d)\n",left,mid,right)
+		mid := left + (right-left)/2
+		fmt.Printf("[%d,%d,%d)\n", left, mid, right)
 		if nums[mid] == target {
 			return mid
 		} else if nums[mid] < target {
-			left = mid +1
+			left = mid + 1
 		} else if nums[mid] > target {
 			right = mid
 		}
@@ -135,19 +136,30 @@ func main() {
 	//m := make(map[string]bool)
 	//v := m["hello"]
 	//fmt.Println(v)
-	fmt.Print('a' - 'A')
-	a := "hello"
-	t := []byte(a)
-	t[0] = 'o'
-	fmt.Print(a, " ",string(t)," ",a)
+	//fmt.Print('a' - 'A')
+	//a := "hello"
+	//t := []byte(a)
+	//t[0] = 'o'
+	//fmt.Print(a, " ",string(t)," ",a)
+
+	fmt.Println(string('a'))
+	var res int
+	res = 1<<31 - 1
+	fmt.Println(res)
+	res = 1 << 32
+	fmt.Printf("%T", res)
+	fmt.Printf("%T\n", 1<<32)
+	fmt.Println(reflect.TypeOf(res).String())
+	res = -(1 << 32)
+	fmt.Println(res)
+
 }
 
-
-func gcd(n1,n2 int) int {
+func gcd(n1, n2 int) int {
 	var gcd int
-	k  := 2
+	k := 2
 	for k <= n1/2 && k <= n2/2 {
-		if n1 % k ==0 && n2 % k == 0 {
+		if n1%k == 0 && n2%k == 0 {
 			gcd = k
 		}
 		k++
@@ -156,6 +168,5 @@ func gcd(n1,n2 int) int {
 }
 
 func sliceCopy(a []int) {
-	fmt.Printf("%p\n",a)
+	fmt.Printf("%p\n", a)
 }
-
