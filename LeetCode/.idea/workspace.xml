@@ -9,52 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc4889ae-92dd-4161-9539-6d2a041d6a57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leet_286/walls_and_gates.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_286/walls_and_gates_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_287/find_duplicate_number_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_287/find_the_duplicate_number.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_288/unique_word_abbreviation.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_289/game_of_life.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_289/game_of_life_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_290/word_pattern.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_290/word_pattern_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_291/word_pattern_ii.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_292/nine_game.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_293/flip_game.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_293/flip_game_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_294/flip_game_ii.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_295/find_median_from_data_stream.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_296/best_meeting_point.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leet_296/best_meeting_point_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_260/single_number_iii.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_260/single_number_iii.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_261/graph_valid_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_261/graph_valid_tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_263/ugly_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_263/ugly_number.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_263/ugly_number_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_263/ugly_number_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_264/ugly_number_ii.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_264/ugly_number_ii.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_264/ugly_number_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_264/ugly_number_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_265/paint_house_ii.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_265/paint_house_ii.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_265/paint_house_ii_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_265/paint_house_ii_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_266/palindorme_permutation.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_266/palindorme_permutation.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_266/palindrome_permutation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_266/palindrome_permutation_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_267/palindrome_permutation_ii.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_267/palindrome_permutation_ii.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_267/palindrome_permutation_ii_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_267/palindrome_permutation_ii_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_268/missing_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_268/missing_number.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_270/closest_binary_search_tree_value.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_270/closest_binary_search_tree_value.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_270/closest_binary_search_tree_value_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_270/closest_binary_search_tree_value_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_271/encode_and_decode_strings_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_271/encode_and_decode_strings_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_274/h_index.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_274/h_index.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_274/h_index_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_274/h_index_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_275/h_index_ii.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_275/h_index_ii.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_275/h_index_ii_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_275/h_index_ii_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_276/paint_fence_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_276/paint_fence_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_279/perfect_squares.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_279/perfect_squares.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_280/wiggle_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_280/wiggle_sort.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_280/wiggle_sort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_280/wiggle_sort_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_281/zigzag_iterator.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_281/zigzag_iterator.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_283/move_zeroes.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_283/move_zeroes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_284/peeking_iterator.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_284/peeking_iterator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leet_287/find_duplicate_number_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_287/find_duplicate_number_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leet_287/find_the_duplicate_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/leet_287/find_the_duplicate_number.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +68,18 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Go Test.TestMinTotalDistance in lightsinger.life/algorithm/leetcode/leet_296">
+  <component name="RunManager" selected="Go Test.TestFindDuplicate in lightsinger.life/algorithm/leetcode/leet_287">
+    <configuration name="TestFindDuplicate in lightsinger.life/algorithm/leetcode/leet_287" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <working_directory value="$PROJECT_DIR$/leet_287" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_287" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestFindDuplicate\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestFlipGame in lightsinger.life/algorithm/leetcode/leet_293" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <working_directory value="$PROJECT_DIR$/leet_293" />
@@ -132,17 +100,6 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestMinTotalDistance\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestWordPattern in lightsinger.life/algorithm/leetcode/leet_290" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
-      <working_directory value="$PROJECT_DIR$/leet_290" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_290" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestWordPattern\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestWordPattern in lightsinger.life/algorithm/leetcode/leet_291" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -168,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestFindDuplicate in lightsinger.life/algorithm/leetcode/leet_287" />
         <item itemvalue="Go Test.TestMinTotalDistance in lightsinger.life/algorithm/leetcode/leet_296" />
         <item itemvalue="Go Test.best_meeting_point_test.go" />
         <item itemvalue="Go Test.TestFlipGame in lightsinger.life/algorithm/leetcode/leet_293" />
         <item itemvalue="Go Test.TestWordPattern in lightsinger.life/algorithm/leetcode/leet_291" />
-        <item itemvalue="Go Test.TestWordPattern in lightsinger.life/algorithm/leetcode/leet_290" />
       </list>
     </recent_temporary>
   </component>

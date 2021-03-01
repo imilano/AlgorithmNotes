@@ -29,7 +29,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_295/find_median_from_data_stream_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/leet_946/validate_stack_sequences.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/utils/heap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SwordOnOffer/40_k_min_number/k_min_number.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SwordOnOffer/41_first_char_appearing_only_once/first_char_appearing_only_once.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SwordOnOffer/5_replace_space/5_replace_space.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SwordOnOffer/5_replace_space/5_replace_space_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SwordOnOffer/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/剑指offer/src/05_替换空格/replace_space.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_287/find_duplicate_number_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_287/find_duplicate_number_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_287/find_the_duplicate_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_287/find_the_duplicate_number.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_295/find_median_from_data_stream.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_295/find_median_from_data_stream.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/leet_54/spiral_matrix.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_54/spiral_matrix.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/leet_239/sliding_window_maximum.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/leet_239/sliding_window_maximum.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +58,18 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file:///usr/local/Cellar/go/1.15.6/libexec" />
+  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.14.7" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -85,42 +108,33 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SwordOnOffer/5_replace_space" />
+      <recent name="$PROJECT_DIR$/SwordOnOffer" />
       <recent name="$PROJECT_DIR$/leetcode/leet_195" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestMinSubarrayLen in lightsinger.life/algorithm/leetcode/leet_209">
-    <configuration name="TestDiffWaysToCompute in lightsinger.life/algorithm/leetcode/leet_241" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestMaxSlidingWindow in lightsinger.life/algorithm/leetcode/leet_239">
+    <configuration name="TestFindMedian in lightsinger.life/algorithm/leetcode/leet_295" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/leetcode/leet_241" />
+      <working_directory value="$PROJECT_DIR$/leetcode/leet_295" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_241" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_295" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestDiffWaysToCompute\E$" />
+      <pattern value="^\QTestFindMedian\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestKnapsackGreedy in lightsinger.life/algorithm/IntroductionToAlgorithm/lab/lab5" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMaxSlidingWindow in lightsinger.life/algorithm/leetcode/leet_239" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/IntroductionToAlgorithm/lab/lab5" />
+      <working_directory value="$PROJECT_DIR$/leetcode/leet_239" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/IntroductionToAlgorithm/lab/lab5" />
+      <package value="lightsinger.life/algorithm/leetcode/leet_239" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestKnapsackGreedy\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestLetterCombination in lightsinger.life/algorithm/leetcode/leet_17" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/leetcode/leet_17" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_17" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestLetterCombination\E$" />
+      <pattern value="^\QTestMaxSlidingWindow\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestMinSubarrayLen in lightsinger.life/algorithm/leetcode/leet_209" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -134,24 +148,35 @@
       <pattern value="^\QTestMinSubarrayLen\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestNillPointer in lightsinger.life/algorithm/leetcode/leet_2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestReplaceSpace in lightsinger.life/algorithm/SwordOnOffer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/leetcode/leet_2" />
+      <working_directory value="$PROJECT_DIR$/SwordOnOffer" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_2" />
+      <package value="lightsinger.life/algorithm/SwordOnOffer" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestNillPointer\E$" />
+      <pattern value="^\QTestReplaceSpace\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestReplaceSpace in lightsinger.life/algorithm/SwordOnOffer/src/05_替换空格" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <working_directory value="$PROJECT_DIR$/SwordOnOffer/src/05_替换空格" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="lightsinger.life/algorithm/SwordOnOffer/src/05_替换空格" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestReplaceSpace\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestMaxSlidingWindow in lightsinger.life/algorithm/leetcode/leet_239" />
+        <item itemvalue="Go Test.TestFindMedian in lightsinger.life/algorithm/leetcode/leet_295" />
+        <item itemvalue="Go Test.TestReplaceSpace in lightsinger.life/algorithm/SwordOnOffer" />
+        <item itemvalue="Go Test.TestReplaceSpace in lightsinger.life/algorithm/SwordOnOffer/src/05_替换空格" />
         <item itemvalue="Go Test.TestMinSubarrayLen in lightsinger.life/algorithm/leetcode/leet_209" />
-        <item itemvalue="Go Test.TestDiffWaysToCompute in lightsinger.life/algorithm/leetcode/leet_241" />
-        <item itemvalue="Go Test.TestLetterCombination in lightsinger.life/algorithm/leetcode/leet_17" />
-        <item itemvalue="Go Test.TestNillPointer in lightsinger.life/algorithm/leetcode/leet_2" />
-        <item itemvalue="Go Test.TestKnapsackGreedy in lightsinger.life/algorithm/IntroductionToAlgorithm/lab/lab5" />
       </list>
     </recent_temporary>
   </component>
@@ -247,11 +272,38 @@
           <line>10</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/SwordOnOffer/5_replace_space/5_replace_space.go</url>
+          <line>8</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/SwordOnOffer/5_replace_space/5_replace_space.go</url>
+          <line>13</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/SwordOnOffer/5_replace_space/5_replace_space.go</url>
+          <line>16</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/SwordOnOffer/5_replace_space/5_replace_space_test.go</url>
+          <line>18</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/leetcode/leet_239/sliding_window_maximum_test.go</url>
+          <line>27</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="GoTestRunConfiguration">
         <watch expression="m" language="go" />
+        <watch expression="rs" />
+        <watch expression="print(string(rs))" language="go" />
       </configuration>
     </watches-manager>
   </component>

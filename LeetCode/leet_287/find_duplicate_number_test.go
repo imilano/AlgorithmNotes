@@ -10,7 +10,7 @@ func TestFindDuplicate(t *testing.T) {
 	ans := []int{2, 3}
 
 	for i := range nums {
-		if ans[i] != findDuplicate(nums[i]) {
+		if ans[i] != findDuplicate3(nums[i]) {
 			t.Errorf("test fail: index %d, want %d, get %d", i, ans[i], findDuplicate(nums[i]))
 		}
 	}

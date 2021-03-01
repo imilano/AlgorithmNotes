@@ -63,3 +63,52 @@ func spiralOrder(matrix [][]int) []int {
 
 	return res
 }
+
+
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ * @param matrix int整型二维数组
+ * @return int整型一维数组
+ */
+func printMatrix( matrix [][]int ) []int {
+	var res []int
+	if matrix == nil {
+		return res
+	}
+	rows := len(matrix)
+	var cols int
+	if rows != 0 {
+		cols = len(matrix[0])
+	}
+
+	left,right,top,bottom := 0,cols-1,0,rows-1
+	for len(res) < rows * cols {
+		for l := left; l <= right;l++ {
+			res = append(res, matrix[top][l])
+		}
+
+		for r := top + 1; r <= bottom;r++ {
+			res = append(res,matrix[r][right])
+		}
+
+		if top != bottom {   // 注意：上与下不重合时候才能够从右向左遍历
+			for r := right-1; r >= left; r-- {
+				res = append(res, matrix[bottom][r])
+			}
+		}
+
+		if left != right {   // 注意： 左与右不重合时候才能够从下到上遍历
+			for b := bottom-1; b > top;b-- {
+				res = append(res, matrix[b][left])
+			}
+		}
+
+		left++
+		right--
+		top++
+		bottom--
+	}
+
+	return res
+}

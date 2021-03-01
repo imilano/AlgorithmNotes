@@ -69,27 +69,27 @@ func findDuplicate2(nums []int) int {
 	return slow
 }
 
-// 位操作，直接看代码，很易懂
-func findDuplicate3(nums []int) int {
-	var res int
-	n := len(nums)
-	for i := 0; i < 23; i++ {
-		t := 1 << i
-		var cnt1, cnt2 int
-		for i := 0; i < n; i++ {
-			if t&i > 0 {
-				cnt1++
-			}
-
-			if t&nums[i] > 0 {
-				cnt2++
-			}
-
-			if cnt2 > cnt1 {
-				res += t
-			}
-		}
-	}
-
-	return res
-}
+//// 位操作，直接看代码，很易懂
+//func findDuplicate3(nums []int) int {
+//	var res int
+//	n := len(nums)
+//	for i := 0; i < 32; i++ {
+//		t := 1 << i
+//		var cnt1, cnt2 int
+//		for k := 0; k < n; k++ {
+//			if t&k > 0 {
+//				cnt1++
+//			}
+//
+//			if (t&nums[k]) > 0 {
+//				cnt2++
+//			}
+//
+//			if cnt2 > cnt1 {
+//				res += t
+//			}
+//		}
+//	}
+//
+//	return res
+//}
