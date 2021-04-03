@@ -1,4 +1,4 @@
-package __replace_space
+package _5_替换空格
 
 import (
 	"testing"

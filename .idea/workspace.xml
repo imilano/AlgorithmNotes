@@ -29,22 +29,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_295/find_median_from_data_stream_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/leet_946/validate_stack_sequences.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/utils/heap.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SwordOnOffer/40_k_min_number/k_min_number.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SwordOnOffer/41_first_char_appearing_only_once/first_char_appearing_only_once.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SwordOnOffer/5_replace_space/5_replace_space.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SwordOnOffer/5_replace_space/5_replace_space_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SwordOnOffer/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/05_替换空格/replace_space.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/剑指offer/src/15_调整数组奇数前于偶/reOrder_array.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/剑指offer/src/40_把数组排成最小的数/golang/get_min_number.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/剑指offer/src/40_把数组排成最小的数/golang/get_min_number_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/剑指offer/src/47_数组中的逆序对/inverse_pairs.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/leet_287/find_duplicate_number_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_287/find_duplicate_number_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/leet_287/find_the_duplicate_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_287/find_the_duplicate_number.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/leet_295/find_median_from_data_stream.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_295/find_median_from_data_stream.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/leet_54/spiral_matrix.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/leet_54/spiral_matrix.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/leet_239/sliding_window_maximum.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/leet_239/sliding_window_maximum.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SwordOnOffer/40_k_min_number/k_min_number.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SwordOnOffer/41_first_char_appearing_only_once/first_char_appearing_only_once.go" beforeDir="false" afterPath="$PROJECT_DIR$/剑指offer/src/45_第一个只出现一次的字符/first_char_appearing_only_once.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SwordOnOffer/5_replace_space/5_replace_space.go" beforeDir="false" afterPath="$PROJECT_DIR$/剑指offer/src/05_替换空格/5_replace_space.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SwordOnOffer/5_replace_space/5_replace_space_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/剑指offer/src/05_替换空格/5_replace_space_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SwordOnOffer/go.mod" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,13 +102,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/剑指Offer/src/40_把数组排成最小的数/golang" />
+      <recent name="$PROJECT_DIR$/剑指Offer/src/05_替换空格" />
+      <recent name="$PROJECT_DIR$/剑指Offer/src/45_第一个只出现一次的字符" />
       <recent name="$PROJECT_DIR$/SwordOnOffer/5_replace_space" />
       <recent name="$PROJECT_DIR$/SwordOnOffer" />
-      <recent name="$PROJECT_DIR$/leetcode/leet_195" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestMaxSlidingWindow in lightsinger.life/algorithm/leetcode/leet_239">
+  <component name="RunManager" selected="Go Test.TestPrintMinNumber in lightsinger.life/algorithm/剑指Offer/src/40_把数组排成最小的数/golang">
     <configuration name="TestFindMedian in lightsinger.life/algorithm/leetcode/leet_295" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <working_directory value="$PROJECT_DIR$/leetcode/leet_295" />
@@ -137,15 +132,15 @@
       <pattern value="^\QTestMaxSlidingWindow\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestMinSubarrayLen in lightsinger.life/algorithm/leetcode/leet_209" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPrintMinNumber in lightsinger.life/algorithm/剑指Offer/src/40_把数组排成最小的数/golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/leetcode/leet_209" />
+      <working_directory value="$PROJECT_DIR$/剑指Offer/src/40_把数组排成最小的数/golang" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_209" />
+      <package value="lightsinger.life/algorithm/剑指Offer/src/40_把数组排成最小的数/golang" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestMinSubarrayLen\E$" />
+      <pattern value="^\QTestPrintMinNumber\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestReplaceSpace in lightsinger.life/algorithm/SwordOnOffer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -172,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestPrintMinNumber in lightsinger.life/algorithm/剑指Offer/src/40_把数组排成最小的数/golang" />
         <item itemvalue="Go Test.TestMaxSlidingWindow in lightsinger.life/algorithm/leetcode/leet_239" />
         <item itemvalue="Go Test.TestFindMedian in lightsinger.life/algorithm/leetcode/leet_295" />
         <item itemvalue="Go Test.TestReplaceSpace in lightsinger.life/algorithm/SwordOnOffer" />
         <item itemvalue="Go Test.TestReplaceSpace in lightsinger.life/algorithm/SwordOnOffer/src/05_替换空格" />
-        <item itemvalue="Go Test.TestMinSubarrayLen in lightsinger.life/algorithm/leetcode/leet_209" />
       </list>
     </recent_temporary>
   </component>
@@ -273,22 +268,22 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/SwordOnOffer/5_replace_space/5_replace_space.go</url>
+          <url>file://$PROJECT_DIR$/剑指Offer/src/05_替换空格/5_replace_space.go</url>
           <line>8</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/SwordOnOffer/5_replace_space/5_replace_space.go</url>
+          <url>file://$PROJECT_DIR$/剑指Offer/src/05_替换空格/5_replace_space.go</url>
           <line>13</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/SwordOnOffer/5_replace_space/5_replace_space.go</url>
+          <url>file://$PROJECT_DIR$/剑指Offer/src/05_替换空格/5_replace_space.go</url>
           <line>16</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/SwordOnOffer/5_replace_space/5_replace_space_test.go</url>
+          <url>file://$PROJECT_DIR$/剑指Offer/src/05_替换空格/5_replace_space_test.go</url>
           <line>18</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
