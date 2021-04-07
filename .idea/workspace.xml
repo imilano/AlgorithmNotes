@@ -29,16 +29,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/42_礼物的最大价值/golang/max_value.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/42_礼物的最大价值/golang/max_value_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/43_最长不含重复字符的子字符串/golang/longest_substring_without_dup.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/43_最长不含重复字符的子字符串/golang/longest_substring_without_dup_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/44_丑数/golang/ugly_number.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/61_圆圈中最后剩下的数字（约瑟夫环问题）/golang/last_remaining.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/65_构建乘积数组 /golang/multoply.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/83_n个骰子的点数/golang/dice_sum.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/剑指offer/src/83_n个骰子的点数/getProbability.cc" beforeDir="false" afterPath="$PROJECT_DIR$/剑指offer/src/83_n个骰子的点数/getProbability.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/剑指Offer/src/61_圆圈中最后剩下的数字（约瑟夫环问题）/golang/last_remaining.go" beforeDir="false" afterPath="$PROJECT_DIR$/剑指Offer/src/61_圆圈中最后剩下的数字（约瑟夫环问题）/golang/last_remaining.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
