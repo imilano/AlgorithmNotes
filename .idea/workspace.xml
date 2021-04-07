@@ -29,13 +29,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/10_斐波那契数列/fib.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/11_青蛙跳台阶问题/jump_steps.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/12_矩形覆盖/rect_cover.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/36_连续子数组的最大和/find_greatest_sum_of_array.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/71_变态跳台阶/golang/jump_steps.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/剑指offer/src/36_连续子数组的最大和/findGreatestValueInArray" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/剑指Offer/src/61_圆圈中最后剩下的数字（约瑟夫环问题）/golang/last_remaining.go" beforeDir="false" afterPath="$PROJECT_DIR$/剑指Offer/src/61_圆圈中最后剩下的数字（约瑟夫环问题）/golang/last_remaining.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,28 +91,18 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/剑指Offer/src/42_礼物的最大价值/golang" />
       <recent name="$PROJECT_DIR$/剑指Offer/src/71_变态跳台阶/golang" />
       <recent name="$PROJECT_DIR$/剑指Offer/src/40_把数组排成最小的数/golang" />
       <recent name="$PROJECT_DIR$/剑指Offer/src/05_替换空格" />
       <recent name="$PROJECT_DIR$/剑指Offer/src/45_第一个只出现一次的字符" />
-      <recent name="$PROJECT_DIR$/SwordOnOffer/5_replace_space" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestJumpSteps in lightsinger.life/algorithm/剑指Offer/src/71_变态跳台阶/golang">
-    <configuration name="TestFindMedian in lightsinger.life/algorithm/leetcode/leet_295" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/leetcode/leet_295" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/leetcode/leet_295" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestFindMedian\E$" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.TestLongestSubstringWithoutDup in lightsinger.life/algorithm/剑指Offer/src/43_最长不含重复字符的子字符串/golang">
     <configuration name="TestJumpSteps in lightsinger.life/algorithm/剑指Offer/src/71_变态跳台阶/golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <working_directory value="$PROJECT_DIR$/剑指Offer/src/71_变态跳台阶/golang" />
@@ -127,6 +112,17 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestJumpSteps\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestLongestSubstringWithoutDup in lightsinger.life/algorithm/剑指Offer/src/43_最长不含重复字符的子字符串/golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <working_directory value="$PROJECT_DIR$/剑指Offer/src/43_最长不含重复字符的子字符串/golang" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="lightsinger.life/algorithm/剑指Offer/src/43_最长不含重复字符的子字符串/golang" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestLongestSubstringWithoutDup\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestMaxSlidingWindow in lightsinger.life/algorithm/leetcode/leet_239" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -140,6 +136,17 @@
       <pattern value="^\QTestMaxSlidingWindow\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestMaxValue in lightsinger.life/algorithm/剑指Offer/src/42_礼物的最大价值/golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <working_directory value="$PROJECT_DIR$/剑指Offer/src/42_礼物的最大价值/golang" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="lightsinger.life/algorithm/剑指Offer/src/42_礼物的最大价值/golang" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestMaxValue\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestPrintMinNumber in lightsinger.life/algorithm/剑指Offer/src/40_把数组排成最小的数/golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <working_directory value="$PROJECT_DIR$/剑指Offer/src/40_把数组排成最小的数/golang" />
@@ -151,24 +158,13 @@
       <pattern value="^\QTestPrintMinNumber\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestReplaceSpace in lightsinger.life/algorithm/SwordOnOffer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/SwordOnOffer" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/SwordOnOffer" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestReplaceSpace\E$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestLongestSubstringWithoutDup in lightsinger.life/algorithm/剑指Offer/src/43_最长不含重复字符的子字符串/golang" />
+        <item itemvalue="Go Test.TestMaxValue in lightsinger.life/algorithm/剑指Offer/src/42_礼物的最大价值/golang" />
         <item itemvalue="Go Test.TestJumpSteps in lightsinger.life/algorithm/剑指Offer/src/71_变态跳台阶/golang" />
         <item itemvalue="Go Test.TestPrintMinNumber in lightsinger.life/algorithm/剑指Offer/src/40_把数组排成最小的数/golang" />
         <item itemvalue="Go Test.TestMaxSlidingWindow in lightsinger.life/algorithm/leetcode/leet_239" />
-        <item itemvalue="Go Test.TestFindMedian in lightsinger.life/algorithm/leetcode/leet_295" />
-        <item itemvalue="Go Test.TestReplaceSpace in lightsinger.life/algorithm/SwordOnOffer" />
       </list>
     </recent_temporary>
   </component>
