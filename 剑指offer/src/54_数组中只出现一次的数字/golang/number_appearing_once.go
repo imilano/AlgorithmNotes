@@ -13,33 +13,23 @@ package golang
 func FindNumsAppearOnce( array []int ) []int {
 	// write code here
 	var res int
-	n := len(array)
-	for i := 0; i < n; i++ {
-		res ^= array[i]
+	for _,v := range array {
+		res ^= v
 	}
 
-
-	//var index int
-	//for i := 0; i < 32;i++ {
-	//	if res & 1 == 1 {
-	//		index = i
-	//		break
-	//	}
-	//
-	//	res >>= 1
-	//}
-
-	res &= -res
-
+	res &= -res   // 此处将res最右边的边1保留，其余位都置为0
 	var r1,r2 int
-	for i := 0; i < n; i++{
-		if array[i] & res == 1 {
-			r1 ^= array[i]
+	for _,v := range array{
+		//if v & res == 1 {
+		if v & res == 0 {   // 此处只能跟0做比较, 因为res只保存了一个1；如果跟1进行比较，根本不对
+			r1 ^= v
 		} else {
-			r2 ^= array[i]
+			r2 ^= v
 		}
 	}
 
-
+	if r2 < r1 {
+		return  []int{r2,r1}
+	}
 	return []int{r1,r2}
 }

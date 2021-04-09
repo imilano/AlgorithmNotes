@@ -29,12 +29,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/54_数组中只出现一次的数字/golang/number_appearing_once.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/剑指offer/src/54_数组中只出现一次的数字/golang/number_appearing_once_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/剑指offer/src/13_二进制中1的个数/13_numberOfOneInBinary" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/剑指offer/src/38_整数中1出现的次数/golang/count_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/剑指offer/src/38_整数中1出现的次数/golang/count_number.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/剑指offer/src/54_数组中只出现一次的数字/findNumsAppearingOnce.cc" beforeDir="false" afterPath="$PROJECT_DIR$/剑指offer/src/54_数组中只出现一次的数字/findNumsAppearingOnce.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/剑指Offer/src/54_数组中只出现一次的数字/golang/number_appearing_once.go" beforeDir="false" afterPath="$PROJECT_DIR$/剑指Offer/src/54_数组中只出现一次的数字/golang/number_appearing_once.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
