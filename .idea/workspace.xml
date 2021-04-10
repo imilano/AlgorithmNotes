@@ -29,8 +29,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe774214-ad6d-448e-b87a-6680a8f61418" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/剑指offer/src/63_对1到n求和/golang/sum.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/剑指offer/src/76_打印从1到n的n位数/golang/print_number.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/剑指offer/src/76_打印从1到n的n位数/golang/print_number_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/剑指Offer/src/54_数组中只出现一次的数字/golang/number_appearing_once.go" beforeDir="false" afterPath="$PROJECT_DIR$/剑指Offer/src/54_数组中只出现一次的数字/golang/number_appearing_once.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +104,7 @@
       <recent name="$PROJECT_DIR$/剑指Offer/src/05_替换空格" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestFindNumsAppearOnce in lightsinger.life/algorithm/剑指Offer/src/54_数组中只出现一次的数字/golang">
+  <component name="RunManager" selected="Go Test.TestPrintNumber in lightsinger.life/algorithm/剑指Offer/src/76_打印从1到n的n位数/golang">
     <configuration name="TestFindNumsAppearOnce in lightsinger.life/algorithm/剑指Offer/src/54_数组中只出现一次的数字/golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <working_directory value="$PROJECT_DIR$/剑指Offer/src/54_数组中只出现一次的数字/golang" />
@@ -125,17 +127,6 @@
       <pattern value="^\QTestGetIndex\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestJumpSteps in lightsinger.life/algorithm/剑指Offer/src/71_变态跳台阶/golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/剑指Offer/src/71_变态跳台阶/golang" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/剑指Offer/src/71_变态跳台阶/golang" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestJumpSteps\E$" />
-      <method v="2" />
-    </configuration>
     <configuration name="TestLongestSubstringWithoutDup in lightsinger.life/algorithm/剑指Offer/src/43_最长不含重复字符的子字符串/golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
       <working_directory value="$PROJECT_DIR$/剑指Offer/src/43_最长不含重复字符的子字符串/golang" />
@@ -147,24 +138,35 @@
       <pattern value="^\QTestLongestSubstringWithoutDup\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestMaxValue in lightsinger.life/algorithm/剑指Offer/src/42_礼物的最大价值/golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPrintNumber in lightsinger.life/algorithm/剑指Offer/src/76_打印从1到n的n位数/golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithm" />
-      <working_directory value="$PROJECT_DIR$/剑指Offer/src/42_礼物的最大价值/golang" />
+      <working_directory value="$PROJECT_DIR$/剑指Offer/src/76_打印从1到n的n位数/golang" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="lightsinger.life/algorithm/剑指Offer/src/42_礼物的最大价值/golang" />
+      <package value="lightsinger.life/algorithm/剑指Offer/src/76_打印从1到n的n位数/golang" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestMaxValue\E$" />
+      <pattern value="^\QTestPrintNumber\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestRune in lightsinger.life/algorithm/剑指Offer/src/76_打印从1到n的n位数/golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algorithm" />
+      <working_directory value="$PROJECT_DIR$/剑指Offer/src/76_打印从1到n的n位数/golang" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="lightsinger.life/algorithm/剑指Offer/src/76_打印从1到n的n位数/golang" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestRune\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestPrintNumber in lightsinger.life/algorithm/剑指Offer/src/76_打印从1到n的n位数/golang" />
+        <item itemvalue="Go Test.TestRune in lightsinger.life/algorithm/剑指Offer/src/76_打印从1到n的n位数/golang" />
         <item itemvalue="Go Test.TestFindNumsAppearOnce in lightsinger.life/algorithm/剑指Offer/src/54_数组中只出现一次的数字/golang" />
         <item itemvalue="Go Test.TestGetIndex in lightsinger.life/algorithm/剑指Offer/src/54_数组中只出现一次的数字/golang" />
         <item itemvalue="Go Test.TestLongestSubstringWithoutDup in lightsinger.life/algorithm/剑指Offer/src/43_最长不含重复字符的子字符串/golang" />
-        <item itemvalue="Go Test.TestMaxValue in lightsinger.life/algorithm/剑指Offer/src/42_礼物的最大价值/golang" />
-        <item itemvalue="Go Test.TestJumpSteps in lightsinger.life/algorithm/剑指Offer/src/71_变态跳台阶/golang" />
       </list>
     </recent_temporary>
   </component>
@@ -284,6 +286,11 @@
           <url>file://$PROJECT_DIR$/leetcode/leet_239/sliding_window_maximum_test.go</url>
           <line>27</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/剑指Offer/src/76_打印从1到n的n位数/golang/print_number_test.go</url>
+          <line>11</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
